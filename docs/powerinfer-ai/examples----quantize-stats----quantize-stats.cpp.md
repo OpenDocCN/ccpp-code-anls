@@ -10,7 +10,7 @@
 // 引入头文件 llama.h
 #include "llama.h"
 
-// 引入标准库头文件
+// 引入 C++ 标准库头文件
 #include <algorithm>
 #include <cassert>
 #include <cinttypes>
@@ -25,41 +25,52 @@
 #include <vector>
 #include <thread>
 #include <mutex>
-// 如果是在 MSC 编译器下，禁止特定警告
+
+// 如果编译器为 MSC_VER，则禁用警告 4244 和 4267
 #if defined(_MSC_VER)
 #pragma warning(disable: 4244 4267) // possible loss of data
 #endif
 
-// 定义量化统计参数结构体
+// 定义结构体 quantize_stats_params
 struct quantize_stats_params {
-    std::string model = "models/7B/ggml-model-f16.gguf"; // 默认模型路径
-    bool verbose = false; // 是否输出详细信息
-    bool per_layer_stats = false; // 是否输出每层的统计信息
-    bool print_histogram = false; // 是否输出直方图
-    bool reference = false; // 是否使用参考值
-    std::vector<std::string> include_layers; // 包含的层
-    std::vector<std::string> exclude_layers; // 排除的层
-    std::vector<enum ggml_type> include_types; // 包含的类型
+    // 模型路径，默认为 "models/7B/ggml-model-f16.gguf"
+    std::string model = "models/7B/ggml-model-f16.gguf";
+    // 是否输出详细信息，默认为 false
+    bool verbose = false;
+    // 是否输出每层的统计信息，默认为 false
+    bool per_layer_stats = false;
+    // 是否打印直方图，默认为 false
+    bool print_histogram = false;
+    // 是否使用参考实现，默认为 false
+    bool reference = false;
+    // 包含的层名称列表
+    std::vector<std::string> include_layers;
+    // 排除的层名称列表
+    std::vector<std::string> exclude_layers;
+    // 包含的类型列表
+    std::vector<enum ggml_type> include_types;
 };
 
-// 直方图桶的数量
+// 定义常量 HISTOGRAM_BUCKETS，值为 150
 constexpr size_t HISTOGRAM_BUCKETS = 150;
-// 直方图范围
+// 定义常量 HISTOGRAM_RANGE，值为 0.03
 constexpr double HISTOGRAM_RANGE = 0.03;
 
-// 错误统计结构体
+// 定义结构体 error_stats
 struct error_stats {
-    size_t num_samples; // 样本数量
-    // 定义两个双精度浮点型变量，用于存储总误差和最大误差
+    // 样本数量
+    size_t num_samples;
+    // 总误差
     double total_error;
+    // 最大误差
     double max_error;
-    // 定义一个包含 HISTOGRAM_BUCKETS 个元素的无符号64位整型数组，用于存储误差直方图
+    // 误差直方图
     uint64_t error_histogram[HISTOGRAM_BUCKETS];
 };
 
-// 定义一个静态函数，用于打印使用说明
+// 定义静态函数 quantize_stats_print_usage，用于打印使用说明
 static void quantize_stats_print_usage(int /*argc*/, char ** argv) {
-    // 定义一个 quantize_stats_params 结构体变量
+    // 创建 quantize_stats_params 对象 params
     quantize_stats_params params;
     // 打印使用说明
     fprintf(stderr, "usage: %s [options]\n", argv[0]);
@@ -75,77 +86,66 @@ static void quantize_stats_print_usage(int /*argc*/, char ** argv) {
     fprintf(stderr, "  -p, --per-layer-stats\n");
     fprintf(stderr, "                        print stats per layer (default: false)\n");
     fprintf(stderr, "  --histogram\n");
-    // 其他选项的说明
 }
-// 打印错误直方图的选项说明
-fprintf(stderr, "                        print error histogram (default: false)\n");
-// 包含特定层的选项说明
-fprintf(stderr, "  -l LAYER, --include-layer LAYER\n");
-// 排除特定层的选项说明
-fprintf(stderr, "  -L LAYER, --exclude-layer LAYER\n");
-// 只测试给定类型的选项说明
-fprintf(stderr, "  -t TYPE, --type TYPE\n");
-// 空行
-fprintf(stderr, "\n");
-}
-
-// 检查命令行中是否包含/排除了特定层
+    # 打印错误直方图的选项，默认为 false
+    fprintf(stderr, "                        print error histogram (default: false)\n");
+    # 包含指定层的选项，只测试与模式匹配的层
+    fprintf(stderr, "  -l LAYER, --include-layer LAYER\n");
+    # 排除指定层的选项，排除与模式匹配的层
+    fprintf(stderr, "                        only test layers matching pattern\n");
+    # 只测试给定类型的选项（q4_0, q4_1）
+    fprintf(stderr, "  -t TYPE, --type TYPE\n");
+    # 换行
+    fprintf(stderr, "                        only test given type (q4_0, q4_1)\n");
+    # 换行
+    fprintf(stderr, "\n");
+// 检查图层是否被命令行包含/排除
 static bool layer_included(const quantize_stats_params & params, const std::string & layer) {
-    // 遍历排除的层列表，如果层名匹配则返回false
+    // 遍历排除图层列表，如果图层名称匹配正则表达式，则返回 false
     for (const auto& excluded : params.exclude_layers) {
         if (std::regex_search(layer, std::regex(excluded))) {
             return false;
         }
     }
-    // 遍历包含的层列表，如果层名匹配则返回true
+    // 遍历包含图层列表，如果图层名称匹配正则表达式，则返回 true
     for (const auto& included : params.include_layers) {
         if (std::regex_search(layer, std::regex(included))) {
             return true;
         }
     }
-// 检查是否参数 params 中的 include_layers 为空，如果是则返回 true，否则返回 false
-}
-}
-return params.include_layers.empty();
+    // 如果包含图层列表为空，则返回 true
+    return params.include_layers.empty();
 }
 
-// 根据量化前后结果的向量更新错误统计信息
+// 更新错误统计信息，给定量化前后结果的向量
 static void update_error_stats(int64_t nelements, const float * input, const float * output, error_stats & stats) {
-    // 遍历输入和输出向量，计算差值的平方并累加到总误差中
+    // 遍历元素，计算差值并更新统计信息
     for (int64_t i = 0; i < nelements; i++) {
         double diff = input[i] - output[i];
         stats.total_error += diff * diff;
-        // 更新最大误差
         stats.max_error = fmax(fabs(diff), stats.max_error);
-        // 更新误差直方图
         stats.error_histogram[std::max(std::min((size_t) floor(fabs(diff) / HISTOGRAM_RANGE * HISTOGRAM_BUCKETS), HISTOGRAM_BUCKETS-1), (size_t) 0)]++;
     }
-    // 更新样本数量
     stats.num_samples += nelements;
 }
 
 // 合并错误统计信息
 static void combine_error_stats(error_stats & into, const error_stats & from) {
-    // 合并样本数量
     into.num_samples += from.num_samples;
-    // 合并总误差
     into.total_error += from.total_error;
-    // 如果 from 的最大误差大于 into 的最大误差，则更新 into 的最大误差
     if (from.max_error > into.max_error) into.max_error = from.max_error;
-// 将from的error_histogram数组中的值累加到into的error_histogram数组中
-for (size_t i=0; i<HISTOGRAM_BUCKETS; ++i) into.error_histogram[i] += from.error_histogram[i];
+    for (size_t i=0; i<HISTOGRAM_BUCKETS; ++i) into.error_histogram[i] += from.error_histogram[i];
 }
 
 // 查找给定分位数的值
 static double find_quantile(const error_stats & stats, double quantile) {
-    // 计算error_histogram数组中所有值的总和
+    // 计算直方图中的总和
     double sum = std::accumulate(std::begin(stats.error_histogram), std::end(stats.error_histogram), 0.0);
 
     double accum = 0;
-    // 遍历error_histogram数组
+    // 遍历直方图，找到累积和超过总和乘以分位数的位置
     for (size_t i = 0; i < HISTOGRAM_BUCKETS; i++) {
         accum += stats.error_histogram[i];
-        // 当累积值超过总和的quantile时，返回对应的分位数值
         if (accum >= sum*quantile) {
             return (i+1) * HISTOGRAM_RANGE / HISTOGRAM_BUCKETS;
         }
@@ -161,68 +161,66 @@ static void print_error_stats(const std::string & name, const error_stats & stat
     double median = find_quantile(stats, .5);
     // 计算95%分位数
     double pct95 = find_quantile(stats, .95);
-    // 使用 printf 函数打印出给定格式的字符串，包括名称、均方根误差、最大误差、95% 百分位以下的值和中位数
+    // 打印结果，包括名称、均方根误差、最大误差、95%分位数、中位数
     printf("%-50s: rmse %.8f, maxerr %.8f, 95pct<%.4f, median<%.4f\n", name.c_str(), rmse, stats.max_error, pct95, median);
     // 如果需要打印误差分布直方图
     if (print_histogram) {
-        // 打印误差分布的区间和对应的频数
+        // 打印误差分布直方图
         printf("Error distribution:\n");
+        // 遍历直方图桶
         for (size_t i = 0; i < HISTOGRAM_BUCKETS; i++) {
-            // 计算当前区间的下限和上限
+            // 计算当前桶的上下界
             double lower = i * HISTOGRAM_RANGE / HISTOGRAM_BUCKETS;
             double upper = (i+1) * HISTOGRAM_RANGE / HISTOGRAM_BUCKETS;
-            // 如果是最后一个区间，上限为无穷大
+            // 如果是最后一个桶，上界为无穷大
             if (i == HISTOGRAM_BUCKETS -1) upper = INFINITY;
-            // 打印当前区间的下限、上限和频数
+            // 打印当前桶的范围和频数
             printf("[%3.4f, %3.4f): %11" PRIu64 "\n", lower, upper, stats.error_histogram[i]);
         }
     }
-}
-
-// 从 ggml.h 复制过来的函数，用于验证是否可以将张量视为一个平坦数组
+// 从 ggml.h 复制过来 - 验证我们是否可以将其作为一个平面数组访问
 static bool tensor_is_contiguous(const struct ggml_tensor * tensor) {
-    // 静态断言，确保 GGML_MAX_DIMS 的值为 4
+    // 静态断言，确保 GGML_MAX_DIMS 等于 4，如果不是则更新此函数
     static_assert(GGML_MAX_DIMS == 4, "GGML_MAX_DIMS is not 4 - update this function");
 
-    // 返回张量是否是连续的
+    // 检查张量是否是连续的
     return
         tensor->nb[0] == ggml_type_size(tensor->type) &&
         tensor->nb[1] == (tensor->nb[0]*tensor->ne[0])/ggml_blck_size(tensor->type) &&
         tensor->nb[2] == tensor->nb[1]*tensor->ne[1] &&
-```
+        tensor->nb[3] == tensor->nb[2]*tensor->ne[2];
+}
 
-// 检查第三个维度的大小是否等于第二个维度的大小乘以第二个维度的元素个数
-tensor->nb[3] == tensor->nb[2]*tensor->ne[2];
-
-// 在给定的数据块上进行往返测试
+// 在一个块上进行往返测试
 static void test_roundtrip_on_chunk(
     const ggml_tensor * layer, int64_t offset, int64_t chunk_size, const ggml_type_traits_t & qfns, bool use_reference,
     float * input_scratch, char * quantized_scratch, float * output_scratch, error_stats & stats
 ) {
-    // 如果层的类型是 GGML_TYPE_F16，则将数据从半精度浮点数转换为单精度浮点数
+    // 如果层的类型是 GGML_TYPE_F16
     if (layer->type == GGML_TYPE_F16) {
+        // 遍历块大小，将层中的数据复制到输入缓冲区
         for (int i = 0; i < chunk_size; i++) {
             input_scratch[i] = ggml_get_f32_1d(layer, i + offset);
         }
     } else {
-        // 否则直接获取单精度浮点数数据
+        // 否则，将输入缓冲区指向层的数据
         input_scratch = ggml_get_data_f32(layer) + offset;
     }
 
-    // 根据是否使用参考值，将输入数据转换为量化数据
+    // 如果使用参考值
     if (use_reference) {
+        // 使用参考值将输入缓冲区的数据转换为量化数据
         qfns.from_float_reference(input_scratch, quantized_scratch, chunk_size);
     } else {
+        // 否则，使用量化函数将输入缓冲区的数据转换为量化数据
         qfns.from_float(input_scratch, quantized_scratch, chunk_size);
     }
-}
-// 调用to_float函数将quantized_scratch中的数据转换为浮点数，并存储到output_scratch中，chunk_size为每次处理的数据块大小
-qfns.to_float(quantized_scratch, output_scratch, chunk_size);
+    // 使用反量化函数将量化数据转换为浮点数数据
+    qfns.to_float(quantized_scratch, output_scratch, chunk_size);
 
-// 更新错误统计信息，包括输入数据、输出数据、统计信息
-update_error_stats(chunk_size, input_scratch, output_scratch, stats);
+    // 更新错误统计信息
+    update_error_stats(chunk_size, input_scratch, output_scratch, stats);
 }
-
 
 // 对单个层运行量化函数并更新错误统计信息
 static void test_roundtrip_on_layer(
@@ -230,263 +228,182 @@ static void test_roundtrip_on_layer(
     const ggml_tensor * layer, std::vector<float> & input_scratch, std::vector<char> & quantized_scratch,
     std::vector<float> & output_scratch, error_stats & total_error, int max_thread = 0
 ) {
-    // 断言确保tensor是连续的
+    // 断言张量是连续的
     assert(tensor_is_contiguous(layer));
     // 初始化层错误统计信息
     error_stats layer_error {};
-    // 获取tensor中元素的数量
+    // 获取层中元素的数量
     uint64_t nelements = ggml_nelements(layer);
 
-    // 初始化输入数据的指针
+    // 初始化输入缓冲区指针为空
     float* input_scratch_ptr = nullptr;
-    // 如果层的类型是GGML_TYPE_F16，且输入数据的大小小于元素数量，则调整输入数据的大小
+}
+    # 如果层的类型是 GGML_TYPE_F16
     if (layer->type == GGML_TYPE_F16) {
+        # 如果输入缓冲区的大小小于元素数量，则调整输入缓冲区的大小为元素数量
         if (input_scratch.size() < nelements) input_scratch.resize(nelements);
+        # 将输入缓冲区的指针指向输入缓冲区的数据
         input_scratch_ptr = input_scratch.data();
-    // 如果量化后的临时数据大小小于4*nelements，则调整大小为4*nelements
+    }
+    # 如果量化缓冲区的大小小于 4*nelements，则调整量化缓冲区的大小为 4*nelements
     if (quantized_scratch.size() < 4*nelements) quantized_scratch.resize(4*nelements);
-    // 如果输出临时数据大小小于nelements，则调整大小为nelements
+    # 如果输出缓冲区的大小小于元素数量，则调整输出缓冲区的大小为元素数量
     if (output_scratch.size() < nelements) output_scratch.resize(nelements);
 
-    // 如果最大线程数小于1，则设置为硬件支持的线程数
+    # 如果最大线程数小于 1，则将最大线程数设置为硬件并发数
     if (max_thread < 1) max_thread = std::thread::hardware_concurrency();
-    // 设置每个块的大小为32*512
+    # 设置块大小为 32*512
     int chunk_size = 32*512;
-    // 计算需要处理的块数
+    # 计算块的数量，保证能够覆盖所有元素
     int num_chunks = (nelements + chunk_size - 1)/chunk_size;
 
-    // 如果块数小于2或最大线程数小于2，则在单线程下测试往返传输
+    # 如果块的数量小于 2 或者最大线程数小于 2
     if (num_chunks < 2 || max_thread < 2) {
+        # 在块上测试往返传输
         test_roundtrip_on_chunk(layer, 0, nelements, qfns, use_reference, input_scratch_ptr, quantized_scratch.data(),
                 output_scratch.data(), print_layer_stats ? layer_error : total_error);
     } else {
-        // 否则，使用多线程进行测试
+        // 根据是否需要打印每一层的统计信息，选择相应的错误统计对象
         auto & stats = print_layer_stats ? layer_error : total_error;
-        // 创建互斥锁和计数器
+        // 创建互斥锁
         std::mutex mutex;
+        // 初始化计数器
         uint64_t counter = 0;
-        // 定义计算函数
+        // 定义并发执行的函数
         auto compute = [&mutex, &counter, &stats, &qfns, nelements, layer, use_reference, input_scratch_ptr,
              &quantized_scratch, &output_scratch, chunk_size] () {
+            // 初始化本地错误统计对象
             error_stats local_stats {};
-            // 循环处理数据
+            // 循环执行直到所有元素都被处理
             while (true) {
                 // 获取互斥锁
                 std::unique_lock<std::mutex> lock(mutex);
-// 设置偏移量为当前计数器的值，然后增加块大小到计数器
-uint64_t offset = counter; counter += chunk_size;
-// 如果偏移量大于等于元素数量，则合并错误统计并跳出循环
-if (offset >= nelements) {
-    combine_error_stats(stats, local_stats);
-    break;
-}
-// 解锁
-lock.unlock();
-// 计算当前块的大小
-uint64_t chunk = offset + chunk_size < nelements ? chunk_size : nelements - offset;
-// 在多线程环境下测试当前块的往返传输
-test_roundtrip_on_chunk(layer, offset, chunk, qfns, use_reference, input_scratch_ptr + offset,
+                // 获取当前处理的起始位置，并更新计数器
+                uint64_t offset = counter; counter += chunk_size;
+                // 如果已经处理完所有元素，则合并本地错误统计到全局错误统计对象，并结束循环
+                if (offset >= nelements) {
+                    combine_error_stats(stats, local_stats);
+                    break;
+                }
+                // 释放互斥锁
+                lock.unlock();
+                // 计算当前处理的数据块大小
+                uint64_t chunk = offset + chunk_size < nelements ? chunk_size : nelements - offset;
+                // 在数据块上执行测试往返，并更新本地错误统计
+                test_roundtrip_on_chunk(layer, offset, chunk, qfns, use_reference, input_scratch_ptr + offset,
                         quantized_scratch.data() + 4*offset, output_scratch.data() + offset, local_stats);
-// 定义并启动多个线程
-};
-int nthread = std::min(num_chunks, max_thread);
-std::vector<std::thread> workers(nthread-1);
-for (auto& w : workers) w = std::thread(compute);
-compute();
-for (auto& w : workers) w.join();
+            }
+        };
+        // 确定并发执行的线程数
+        int nthread = std::min(num_chunks, max_thread);
+        // 创建线程对象
+        std::vector<std::thread> workers(nthread-1);
+        // 启动并发执行的线程
+        for (auto& w : workers) w = std::thread(compute);
+        // 主线程也执行一次并发函数
+        compute();
+        // 等待所有线程执行完毕
+        for (auto& w : workers) w.join();
+    }
+
+    // 如果需要打印每一层的统计信息，则打印并合并到总的错误统计对象中
+    if (print_layer_stats) {
+        print_error_stats(name, layer_error, false);
+        combine_error_stats(total_error, layer_error);
+    }
 }
 
-// 如果需要打印层的统计信息，则打印错误统计
-if (print_layer_stats) {
-    print_error_stats(name, layer_error, false);
-// 调用 combine_error_stats 函数，传入 total_error 和 layer_error 作为参数
-combine_error_stats(total_error, layer_error);
-}
-
-// 主函数
 int main(int argc, char ** argv) {
-    // 初始化时间
-    ggml_time_init();
+    ggml_time_init();  // 初始化时间
 
-    // 创建 quantize_stats_params 对象
-    quantize_stats_params params;
+    quantize_stats_params params;  // 定义参数结构体
 
     // 读取命令行参数
-    int max_thread = 0; // 最大线程数
-    bool invalid_param = false; // 无效参数标志
-    std::string arg; // 命令行参数
-    for (int i = 1; i < argc; i++) { // 遍历命令行参数
-        arg = argv[i]; // 获取当前参数
 
-        if (arg == "-h" || arg == "--help") { // 如果参数为 -h 或 --help
-            quantize_stats_print_usage(argc, argv); // 调用 quantize_stats_print_usage 函数打印用法
-            exit(0); // 退出程序
-        } else if (arg == "-r" || arg == "--reference") {
-            // 如果参数是"-r"或"--reference"，则设置参数中的参考标志为true
-            params.reference = true;
-        } else if (arg == "-v") {
-            // 如果参数是"-v"，则设置参数中的详细信息标志为true
-            params.verbose = true;
-        } else if (arg == "-p" || arg == "--per-layer-stats") {
-            // 如果参数是"-p"或"--per-layer-stats"，则设置参数中的每层统计标志为true
-            params.per_layer_stats = true;
-        } else if (arg == "--histogram") {
-            // 如果参数是"--histogram"，则设置参数中的打印直方图标志为true
-            params.print_histogram = true;
-        } else if (arg == "-m" || arg == "--model") {
-            // 如果参数是"-m"或"--model"，则检查下一个参数是否存在，如果不存在则设置无效参数标志为true，否则将下一个参数作为模型参数
-            if (++i >= argc) {
-                invalid_param = true;
-                break;
-            }
-            params.model = argv[i];
-        } else if (arg == "-l" || arg == "--include-layer") {
-            // 如果参数是"-l"或"--include-layer"，则检查下一个参数是否存在，如果不存在则设置无效参数标志为true，否则将下一个参数添加到参数中的包含层列表中
-            if (++i >= argc) {
-                invalid_param = true;
-                break;
-            }
-            params.include_layers.push_back(argv[i]);
-// 如果参数为"-L"或"--exclude-layer"，则将下一个参数加入到排除图层的列表中
-} else if (arg == "-L" || arg == "--exclude-layer") {
-    // 检查下一个参数是否存在，如果不存在则标记为无效参数并跳出循环
-    if (++i >= argc) {
-        invalid_param = true;
-        break;
+    int max_thread = 0;  // 最大线程数
+    bool invalid_param = false;  // 参数是否有效
+    std::string arg;  // 字符串参数
     }
-    // 将下一个参数加入到排除图层的列表中
-    params.exclude_layers.push_back(argv[i]);
-} else if (arg == "-t" || arg == "--type") {
-    // 如果参数为"-t"或"--type"，则将下一个参数作为类型进行处理
-    if (++i >= argc) {
-        invalid_param = true;
-        break;
+    if (invalid_param) {  // 如果参数无效
+        fprintf(stderr, "error: invalid parameter for argument: %s\n", arg.c_str());  // 输出错误信息
+        quantize_stats_print_usage(argc, argv);  // 打印用法
+        return 1;  // 返回错误码
     }
-    int j;
-    // 遍历所有类型，查找与参数匹配的类型
-    for (j = 0; j < GGML_TYPE_COUNT; ++j) {
-       const auto * name = ggml_type_name((ggml_type) j);
-       // 如果找到匹配的类型，则将其加入到包含类型的列表中
-       if (name && strcmp(argv[i], name) == 0) break;
-    }
-    // 如果找到匹配的类型，则将其加入到包含类型的列表中，否则输出错误信息
-    if (j < GGML_TYPE_COUNT) {
-        params.include_types.push_back((ggml_type) j);
-    } else {
-        fprintf(stderr, "error: %s not in list of types\n", argv[i]);
-    }
-        // 初始化参数无效标志
-        invalid_param = true;
-    }
-} else if (arg == "-n" || arg == "--num-threads") {
-    // 如果参数是"-n"或"--num-threads"
-    if (++i >= argc) {
-        // 如果下一个参数超出范围
-        invalid_param = true;
-        // 退出循环
-        break;
-    }
-    // 将下一个参数转换为整数并赋给max_thread
-    max_thread = atoi(argv[i]);
-} else {
-    // 如果参数不是上述两种情况，打印错误信息
-    fprintf(stderr, "error: unknown argument: %s\n", arg.c_str());
-    // 打印用法信息
-    quantize_stats_print_usage(argc, argv);
-    // 返回错误代码
-    return 1;
-}
-// 如果存在无效参数
-if (invalid_param) {
-    // 打印无效参数错误信息
-    fprintf(stderr, "error: invalid parameter for argument: %s\n", arg.c_str());
-    // 打印用法信息
-    quantize_stats_print_usage(argc, argv);
-    // 返回错误代码
-    return 1;
-}
-    // 打印构建信息
-    print_build_info();
+
+    print_build_info();  // 打印构建信息
 
     // 加载模型
-    fprintf(stderr, "Loading model\n");
+    fprintf(stderr, "Loading model\n");  // 输出加载模型信息
 
-    // 获取当前时间
-    const int64_t t_main_start_us = ggml_time_us();
-    llama_model * model;
-    llama_context * ctx;
+    const int64_t t_main_start_us = ggml_time_us();  // 获取当前时间
+
+    llama_model * model;  // 定义模型指针
+    llama_context * ctx;  // 定义上下文指针
 
     {
-        // 获取默认的模型参数
-        auto mparams = llama_model_default_params();
-        mparams.use_mlock  = false;
+        auto mparams = llama_model_default_params();  // 获取默认模型参数
+        mparams.use_mlock  = false;  // 设置模型参数
 
-        // 从文件加载模型
-        model = llama_load_model_from_file(params.model.c_str(), mparams);
+        model = llama_load_model_from_file(params.model.c_str(), mparams);  // 从文件加载模型
 
-        // 如果加载失败，打印错误信息并返回
-        if (model == NULL) {
-            fprintf(stderr, "%s: error: failed to load model '%s'\n", __func__, params.model.c_str());
+        if (model == NULL) {  // 如果模型为空
+            fprintf(stderr, "%s: error: failed to load model '%s'\n", __func__, params.model.c_str());  // 输出错误信息
+            return 1;  // 返回错误码
+        }
+
+        auto cparams = llama_context_default_params();  // 获取默认上下文参数
+        cparams.n_ctx      = 256;  // 设置上下文参数
+        cparams.seed       = 1;  // 设置上下文参数
+        cparams.f16_kv     = false;  // 设置上下文参数
+
+        ctx = llama_new_context_with_model(model, cparams);  // 创建带有模型的上下文
+
+        if (ctx == NULL) {  // 如果上下文为空
+            fprintf(stderr, "%s: error: failed to create context with model '%s'\n", __func__, params.model.c_str());  // 输出错误信息
+            llama_free_model(model);  // 释放模型内存
+            return 1;  // 返回错误码
+        }
+    }
+
+    const auto &tensors = llama_internal_get_tensor_map(ctx);  // 获取张量映射
+
+    // 检查层张量
+    int included_layers = 0;  // 包含的层数
+    int64_t max_nelements = 0;  // 最大元素数
+    bool is_f16 = false;  // 是否为f16类型
+    // 遍历tensors中的每个键值对
+    for (const auto& kv_tensor : tensors) {
+        // 如果params中不包含kv_tensor的键，则跳过当前循环
+        if (!layer_included(params, kv_tensor.first)) {
+            continue;
+        }
+        // 如果params中设置了verbose为true，则打印kv_tensor的类型和大小
+        if (params.verbose) {
+            printf("%s: type %s, size %" PRId64 "\n", kv_tensor.first.c_str(), ggml_type_name(kv_tensor.second->type), ggml_nelements(kv_tensor.second));
+        }
+        // 如果kv_tensor的类型为GGML_TYPE_F16，则将is_f16设置为true
+        if (kv_tensor.second->type == GGML_TYPE_F16) {
+            is_f16 = true;
+        } 
+        // 如果kv_tensor的类型不是GGML_TYPE_F32，则打印错误信息并返回1
+        else if (kv_tensor.second->type != GGML_TYPE_F32) {
+            fprintf(stderr, "%s: error: Quantization should be tested with a float model, "
+                "this model contains already quantized layers (%s is type %d)\n", __func__, kv_tensor.first.c_str(), kv_tensor.second->type);
+            llama_free(ctx);
+            llama_free_model(model);
             return 1;
         }
-// 使用默认参数创建LLAMA上下文参数对象
-auto cparams = llama_context_default_params();
-// 设置上下文参数对象的上下文数为256
-cparams.n_ctx = 256;
-// 设置上下文参数对象的种子为1
-cparams.seed = 1;
-// 设置上下文参数对象的f16_kv为false
-cparams.f16_kv = false;
-
-// 使用给定模型和上下文参数对象创建LLAMA上下文对象
-ctx = llama_new_context_with_model(model, cparams);
-
-// 如果上下文对象创建失败，则输出错误信息并释放模型资源，然后返回1
-if (ctx == NULL) {
-    fprintf(stderr, "%s: error: failed to create context with model '%s'\n", __func__, params.model.c_str());
-    llama_free_model(model);
-    return 1;
-}
-
-// 获取LLAMA上下文对象中的张量映射
-const auto &tensors = llama_internal_get_tensor_map(ctx);
-
-// 检查层张量
-int included_layers = 0;
-int64_t max_nelements = 0;
-bool is_f16 = false;
-// 遍历 tensors 容器中的每个键值对
-for (const auto& kv_tensor : tensors) {
-    // 如果 params 中不包含 kv_tensor 的键值对，则跳过当前循环
-    if (!layer_included(params, kv_tensor.first)) {
-        continue;
+        // 记录已包含的层数
+        included_layers++;
+        // 更新max_nelements为当前kv_tensor的元素个数和max_nelements中的较大值
+        max_nelements = std::max(max_nelements, ggml_nelements(kv_tensor.second));
     }
-    // 如果 params 中设置了 verbose 标志，则打印输出键值对的信息
-    if (params.verbose) {
-        printf("%s: type %s, size %" PRId64 "\n", kv_tensor.first.c_str(), ggml_type_name(kv_tensor.second->type), ggml_nelements(kv_tensor.second));
-    }
-    // 如果键值对对应的值的类型为 GGML_TYPE_F16，则设置 is_f16 为 true
-    if (kv_tensor.second->type == GGML_TYPE_F16) {
-        is_f16 = true;
-    } 
-    // 如果键值对对应的值的类型不为 GGML_TYPE_F32，则输出错误信息并返回
-    else if (kv_tensor.second->type != GGML_TYPE_F32) {
-        fprintf(stderr, "%s: error: Quantization should be tested with a float model, "
-            "this model contains already quantized layers (%s is type %d)\n", __func__, kv_tensor.first.c_str(), kv_tensor.second->type);
-        llama_free(ctx);
-        llama_free_model(model);
-        return 1;
-    }
-    // 统计包含的层数量
-    included_layers++;
-    // 更新最大元素数量
-    max_nelements = std::max(max_nelements, ggml_nelements(kv_tensor.second));
-}
-    // 如果是 f16 类型的模型，打印提示信息
+
+    // 如果is_f16为true，则打印提示信息
     if (is_f16) {
         printf("note: source model is f16\n");
     }
-    // 打印测试信息，包括层数和最大尺寸
+    // 打印测试的层数和最大大小
     printf("testing %d layers with max size %" PRId64 "\n", included_layers, max_nelements);
     // 分配临时空间
     std::vector<float> input_scratch;
@@ -494,72 +411,73 @@ for (const auto& kv_tensor : tensors) {
     std::vector<float> output_scratch;
 
     // 循环遍历量化类型
+    // 遍历 GGML_TYPE_COUNT 范围内的所有类型
     for (int i = 0; i < GGML_TYPE_COUNT; i++) {
-        // 获取当前类型
+        // 将当前索引转换为 ggml_type 类型
         const ggml_type type = (ggml_type) i;
-        // 如果指定了包含的类型，并且当前类型不在其中，则跳过
+        // 如果参数中包含需要的类型，并且当前类型不在其中，则跳过当前循环
         if (!params.include_types.empty() && std::find(params.include_types.begin(), params.include_types.end(), i) == params.include_types.end()) {
             continue;
         }
-        // 获取当前类型的量化函数
+        // 获取当前类型的类型特性
         ggml_type_traits_t qfns = ggml_internal_get_type_traits(type);
-        // 如果存在从浮点数到当前类型的转换函数和从当前类型到浮点数的转换函数
+        // 如果当前类型支持从浮点数到量化数的转换以及从量化数到浮点数的转换
         if (qfns.from_float && qfns.to_float) {
-            // 如果设置了详细输出，打印当前类型的测试信息
+            // 如果参数中设置了详细输出，则打印当前类型的测试信息
             if (params.verbose) {
                 printf("testing %s ...\n",  ggml_type_name(type));
             }
-// 创建一个名为error_stats的全局统计数据结构
-error_stats global_stats {};
 
-// 遍历tensors中的每个键值对
-for (const auto& kv_tensor : tensors) {
-    // 如果该层不在params中指定的层中，则跳过当前循环
-    if (!layer_included(params, kv_tensor.first)) {
-        continue;
+            // 初始化全局错误统计
+            error_stats global_stats {};
+
+            // 遍历所有张量
+            for (const auto& kv_tensor : tensors) {
+                // 如果当前层不在参数指定的层中，则跳过当前循环
+                if (!layer_included(params, kv_tensor.first)) {
+                    continue;
+                }
+                // 如果参数中设置了详细输出，则打印当前张量的信息
+                if (params.verbose) {
+                    printf("  %s ...\n",  kv_tensor.first.c_str());
+                }
+                // 构建层名
+                std::string layer_name { ggml_type_name(type) };
+                layer_name += "::" + kv_tensor.first;
+                // 在当前层上进行往返测试
+                test_roundtrip_on_layer(
+                        layer_name,
+                        params.per_layer_stats,
+                        qfns,
+                        params.reference,
+                        kv_tensor.second,
+                        input_scratch,
+                        quantized_scratch,
+                        output_scratch,
+                        global_stats,
+                        max_thread
+                );
+            }
+
+            // 打印当前类型的错误统计信息
+            print_error_stats(ggml_type_name(type), global_stats, params.print_histogram);
+        }
     }
-    // 如果params中设置了verbose标志，则打印当前处理的张量名
-    if (params.verbose) {
-        printf("  %s ...\n",  kv_tensor.first.c_str());
+
+    // 释放上下文内存
+    llama_free(ctx);
+    // 释放模型内存
+    llama_free_model(model);
+    // 报告运行时间
+    {
+        // 获取当前时间
+        const int64_t t_main_end_us = ggml_time_us();
+        // 打印总运行时间
+        printf("\n");
+        printf("%s:    total time = %8.2f ms\n", __func__, (t_main_end_us - t_main_start_us)/1000.0);
     }
-    // 创建一个名为layer_name的字符串，用于存储类型名称和张量名的组合
-    std::string layer_name { ggml_type_name(type) };
-    layer_name += "::" + kv_tensor.first;
-    // 在该层上执行测试往返操作，传入相关参数和数据
-    test_roundtrip_on_layer(
-            layer_name,
-            params.per_layer_stats,
-            qfns,
-            params.reference,
-            kv_tensor.second,
-            input_scratch,
-            quantized_scratch,
-    // 调用模型训练函数，传入输入数据、输出数据、全局统计数据和最大线程数
-    train_model(
-        input_data,
-        output_scratch,
-        global_stats,
-        max_thread
-    );
-}
 
-// 打印错误统计信息
-print_error_stats(ggml_type_name(type), global_stats, params.print_histogram);
-}
-
-// 释放上下文和模型内存
-llama_free(ctx);
-llama_free_model(model);
-
-// 报告时间
-{
-    // 获取主函数结束时间
-    const int64_t t_main_end_us = ggml_time_us();
-
-    // 打印总时间
-    printf("\n");
-    printf("%s:    total time = %8.2f ms\n", __func__, (t_main_end_us - t_main_start_us)/1000.0);
-}
-# 返回整数值0
-return 0;
+    // 返回成功
+    return 0;
+# 闭合之前的函数定义
 ```

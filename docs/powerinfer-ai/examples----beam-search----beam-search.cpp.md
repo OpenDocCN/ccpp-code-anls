@@ -1,10 +1,11 @@
 # `PowerInfer\examples\beam-search\beam-search.cpp`
 
 ```
+// 包含自定义头文件 common.h 和 llama.h
 #include "common.h"
 #include "llama.h"
-// 引入自定义的头文件 common.h 和 llama.h
 
+// 包含 C++ 标准库头文件
 #include <cassert>
 #include <cinttypes>
 #include <cmath>
@@ -15,80 +16,78 @@
 #include <iostream>
 #include <string>
 #include <vector>
-// 引入标准库头文件
 
+// 根据操作系统定义不同的头文件
 #if defined (__unix__) || (defined (__APPLE__) && defined (__MACH__))
 #include <signal.h>
 #include <unistd.h>
-// 如果是 UNIX 系统或者苹果系统，则引入信号处理和进程控制的头文件
 #elif defined (_WIN32)
 #define WIN32_LEAN_AND_MEAN
 #ifndef NOMINMAX
-// 如果是 Windows 系统，则定义 WIN32_LEAN_AND_MEAN，并且不定义 NOMINMAX
-// 定义NOMINMAX，用于防止Windows.h中的宏定义干扰
-#ifndef NOMINMAX
+#   define NOMINMAX
+#endif
 #include <windows.h>
 #include <signal.h>
 #endif
 
-// 用于调试，打印出beam tokens的结构体
+// 用于调试，打印出 beam tokens
 struct ostream_beam_view {
-    llama_context * ctx; // 指向llama_context的指针
-    llama_beam_view beam_view; // llama_beam_view类型的变量
+    llama_context * ctx;
+    llama_beam_view beam_view;
 };
 
-// 重载操作符<<，用于打印ostream_beam_view对象
+// 重载输出运算符，用于打印 beam tokens
 static std::ostream & operator<<(std::ostream & os, const ostream_beam_view & obv) {
-    os << "p(" << obv.beam_view.p << ") eob(" << std::boolalpha << obv.beam_view.eob << ") tokens("; // 打印beam_view的p和eob属性
-    for (size_t i = 0 ; i < obv.beam_view.n_tokens ; ++i) { // 遍历tokens数组
-        os << llama_token_to_piece(obv.ctx, obv.beam_view.tokens[i]); // 调用llama_token_to_piece函数打印tokens数组中的元素
+    os << "p(" << obv.beam_view.p << ") eob(" << std::boolalpha << obv.beam_view.eob << ") tokens(";
+    for (size_t i = 0 ; i < obv.beam_view.n_tokens ; ++i) {
+        os << llama_token_to_piece(obv.ctx, obv.beam_view.tokens[i]);
     }
-    return os << ')'; // 返回打印结果
+    return os << ')';
 }
-// 在beam_search_callback()函数中需要返回的任何内容都放在这里。
+
+// 存储在 beam_search_callback() 中需要返回的数据
 struct beam_search_callback_data {
-    llama_context * ctx;  // 上下文对象指针
-    std::vector<llama_token> response;  // 存储响应的标记向量
+    llama_context * ctx;
+    std::vector<llama_token> response;
 };
 
-// 在这种情况下，结束标记（eob）等同于句子的结束标记（eos），但这并不总是相同的。
-// 例如，eob可以由于最大标记长度、停用词等而被标记。
+// 判断是否到达 beam 结尾
 static bool is_at_eob(const beam_search_callback_data & callback_data, const llama_token * tokens, size_t n_tokens) {
-    return n_tokens && tokens[n_tokens-1] == llama_token_eos(llama_get_model(callback_data.ctx));  // 检查是否到达了结束标记
+    return n_tokens && tokens[n_tokens-1] == llama_token_eos(llama_get_model(callback_data.ctx));
 }
 
-// 匹配类型llama_beam_search_callback_fn_t的函数。
-// 自定义回调示例在每次beam长度增加时被调用：
-//  * 通过打印','后跟任何收敛的beam标记数量来显示进度。
-//  * 当所有beam收敛到一个共同的前缀时，它们将在beams_state.beams[0]中可用。
+// 匹配类型 llama_beam_search_callback_fn_t 的函数
+// 自定义回调函数示例，在每次 beam 长度增加时调用：
+//  * 通过打印','和收敛的 beam tokens 数量来显示进度。
+//  * 当所有 beam 收敛到一个共同的前缀时，它们将在 beams_state.beams[0] 中可用。
 //    当满足停止条件时，也会调用此函数。
-//    将标记收集到由callback_data指向的std::vector<llama_token> response中。
+// Collect tokens into std::vector<llama_token> response which is pointed to by callback_data.
 static void beam_search_callback(void * callback_data_ptr, llama_beams_state beams_state) {
-    auto& callback_data = *static_cast<beam_search_callback_data*>(callback_data_ptr);  // 获取回调数据对象的引用
-    // 标记需要的情况下将光束标记为EOS（End of Sequence）。
+    // 将回调数据指针转换为beam_search_callback_data类型的引用
+    auto& callback_data = *static_cast<beam_search_callback_data*>(callback_data_ptr);
+    // 标记需要的beam为EOS
     for (size_t i = 0 ; i < beams_state.n_beams ; ++i) {
-        // 获取当前光束的视图
         llama_beam_view& beam_view = beams_state.beam_views[i];
-        // 如果光束尚未结束，并且在结束位置，则将其标记为结束
         if (!beam_view.eob && is_at_eob(callback_data, beam_view.tokens, beam_view.n_tokens)) {
             beam_view.eob = true;
         }
     }
     printf(",");  // 显示进度
-    // 如果存在公共前缀长度，则将其添加到回调数据的响应中
     if (const size_t n = beams_state.common_prefix_length) {
+        // 调整response的大小以容纳新的tokens
         callback_data.response.resize(callback_data.response.size() + n);
         assert(0u < beams_state.n_beams);
         const llama_token * tokens = beams_state.beam_views[0].tokens;
+        // 将新的tokens复制到response中
         std::copy(tokens, tokens + n, callback_data.response.end() - n);
         printf("%zu", n);
     }
     fflush(stdout);
-#if 1 // DEBUG: 打印当前迭代的光束
+#if 1 // DEBUG: print current beams for this iteration
+    // 调试信息：打印当前迭代的beam
     std::cout << "\n\nCurrent beams (last_call=" << beams_state.last_call << "):\n";
     for (size_t i = 0 ; i < beams_state.n_beams ; ++i) {
         std::cout << "beams["<<i<<"]: " << ostream_beam_view{callback_data.ctx,beams_state.beam_views[i]} << std::endl;
-    }
     }
 #endif
 }
@@ -96,125 +95,122 @@ static void beam_search_callback(void * callback_data_ptr, llama_beams_state bea
 int main(int argc, char ** argv)
 {
     gpt_params params;
-    //params.n_gpu_layers = 200;  // 设置参数n_gpu_layers的值为200
+    //params.n_gpu_layers = 200;
 
     //---------------------------------
     // Print help :
     //---------------------------------
 
-    if ( argc < 2 || argv[1][0] == '-' )  // 如果命令行参数小于2或者第一个参数的第一个字符是'-'，则执行以下代码
+    // 如果参数不足或第一个参数为'-'，则打印使用说明并返回
+    if ( argc < 2 || argv[1][0] == '-' )
     {
-        printf( "Usage: %s MODEL_PATH [BEAM_WIDTH=2] [PROMPT]\n" , argv[0] );  // 打印使用说明
-        return 1 ;  // 返回1
+        printf( "Usage: %s MODEL_PATH [BEAM_WIDTH=2] [PROMPT]\n" , argv[0] );
+        return 1 ;
     }
 
     //---------------------------------
-```
-
-    // 加载参数：
+    // Load parameters :
     //---------------------------------
 
-    // 设置模型参数为命令行参数中的第一个参数
+    // 加载模型路径
     params.model = argv[1];
 
-    // 如果命令行参数数量大于2，则将第二个参数转换为整数并赋值给params.n_beams，否则默认为2
+    // 设置beam的宽度
     params.n_beams = 2 < argc ? std::stoi(argv[2]) : 2;
 
-    // 如果命令行参数数量大于3，则将第三个参数赋值给params.prompt
+    // 如果有第三个参数，则设置prompt
     if ( argc > 3 )
     {
         params.prompt = argv[3];
     }
 
-    // 如果params.prompt为空，则设置默认的提示语句
-    if ( params.prompt.empty() )
+    // 如果prompt为空
     {
+        // 设置提示信息，包括请求和响应
         params.prompt = "### Request:\nHow many countries are there?\n\n### Response:\n";
     }
 
     //---------------------------------
     // 初始化LLM：
     //---------------------------------
-# 初始化 LLAMA 后端
-llama_backend_init(params.numa);
 
-# 声明 LLAMA 模型和上下文
-llama_model * model;
-llama_context * ctx;
+    // 初始化LLM后端
+    llama_backend_init(params.numa);
 
-# 从 GPT 参数初始化 LLAMA 模型和上下文
-std::tie(model, ctx) = llama_init_from_gpt_params( params );
+    // 初始化LLM模型和上下文
+    llama_model * model;
+    llama_context * ctx;
 
-# 如果模型为空，则打印错误信息并返回
-if ( model == NULL )
-{
-    fprintf( stderr , "%s: error: unable to load model\n" , __func__ );
-    return 1;
-}
+    std::tie(model, ctx) = llama_init_from_gpt_params( params );
 
-# 分词提示信息
-std::vector<llama_token> tokens_list = llama_tokenize(ctx, params.prompt, true);
-// 获取上下文的最大大小
-const size_t max_context_size = llama_n_ctx(ctx);
-// 计算最大的 tokens_list 大小
-const size_t max_tokens_list_size = max_context_size - 4;
+    // 如果无法加载模型，则输出错误信息并返回
+    if ( model == NULL )
+    {
+        fprintf( stderr , "%s: error: unable to load model\n" , __func__ );
+        return 1;
+    }
 
-// 如果 tokens_list 的大小超过最大 tokens_list 大小
-if (tokens_list.size() > max_tokens_list_size)
-{
-    // 打印错误信息并返回 1
-    fprintf(stderr, "%s: error: prompt too long (%zu tokens, max %zu)\n",
-        __func__, tokens_list.size(), max_tokens_list_size);
-    return 1;
-}
+    //---------------------------------
+    // 对提示进行标记化：
+    //---------------------------------
 
-// 打印换行符
-fprintf(stderr, "\n\n");
+    // 对提示进行标记化，返回标记列表
+    std::vector<llama_token> tokens_list = llama_tokenize(ctx, params.prompt, true);
 
-// 打印提示中的 tokens
-for (auto id : tokens_list)
-{
-    std::cout << llama_token_to_piece(ctx, id);
-}
-// 刷新输出缓冲区
-std::cout << std::flush;
-    # 初始化过去的标记数量
+    // 设置最大上下文大小和最大标记列表大小
+    const size_t max_context_size     = llama_n_ctx( ctx );
+    const size_t max_tokens_list_size = max_context_size - 4 ;
+
+    // 如果标记列表大小超过最大限制，则输出错误信息并返回
+    if (tokens_list.size() > max_tokens_list_size)
+    {
+        fprintf( stderr , "%s: error: prompt too long (%zu tokens, max %zu)\n" ,
+             __func__ , tokens_list.size() , max_tokens_list_size );
+        return 1;
+    }
+
+    // 输出换行符
+    fprintf( stderr, "\n\n" );
+
+    // 打印提示中的标记
+    for( auto id : tokens_list )
+    {
+        std::cout << llama_token_to_piece(ctx, id);
+    }
+    std::cout << std::flush;
+
+    // 初始化过去标记数量
     int n_past = 0;
 
-    # 调用 llama_decode 函数，解码 tokens_list 中的数据，并将结果存储到 ctx 中
+    // 解码提示并获取响应
     if (llama_decode(ctx, llama_batch_get_one(tokens_list.data(), tokens_list.size(), n_past, 0)))
     {
-        # 如果解码失败，打印错误信息并返回 1
         fprintf(stderr, "%s : failed to eval prompt.\n" , __func__ );
         return 1;
     }
-    # 更新过去的标记数量
     n_past += tokens_list.size();
 
-    # 初始化 beam_search_callback_data 结构体
+    // 设置beam search回调数据和参数
     beam_search_callback_data callback_data{ctx, {}};
-    # 设置 beam 宽度
     size_t const beam_width = static_cast<size_t>(params.n_beams);
-    # 设置预测数量
     int const n_predict = 256;
-    # 调用 llama_beam_search 函数，进行 beam search
+    // 进行beam search
     llama_beam_search(ctx, beam_search_callback, &callback_data, beam_width, n_past, n_predict);
 
-    # 打印换行符
+    // 输出换行符
     std::cout << "\n\n";
-    # 遍历 callback_data.response 中的 token_id，并打印对应的文本
+    // 打印响应中的标记
     for (llama_token const token_id : callback_data.response) {
         std::cout << llama_token_to_piece(ctx,token_id);
     }
-    # 打印换行符
     std::cout << std::endl;
-    释放上下文资源
+
+    // 释放上下文和模型
     llama_free( ctx );
-    释放模型资源
     llama_free_model( model );
-    释放后端资源
+    # 释放后端资源，清理内存
     llama_backend_free();
-    返回成功状态码
+    # 返回 0，表示程序正常结束
     return 0;
-}
+# 闭合前面的函数定义
 ```

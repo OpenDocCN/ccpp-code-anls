@@ -9,9 +9,9 @@
 // 包含字符串库
 #include <string>
 
-// 控制台命名空间
+// 命名空间，包含控制台相关函数
 namespace console {
-    // 显示类型枚举
+    // 枚举类型，定义显示类型
     enum display_t {
         reset = 0,      // 重置显示
         prompt,         // 提示
