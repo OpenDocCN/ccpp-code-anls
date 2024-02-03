@@ -1,6 +1,6 @@
 # `stable-diffusion.cpp\thirdparty\miniz.h`
 
-```
+```cpp
 /*
    定义 MINIZ_EXPORT，用于导出符号
 */

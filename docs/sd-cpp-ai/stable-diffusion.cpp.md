@@ -1,6 +1,6 @@
 # `stable-diffusion.cpp\stable-diffusion.cpp`
 
-```
+```cpp
 #include "ggml_extend.hpp"
 
 #include "model.h"

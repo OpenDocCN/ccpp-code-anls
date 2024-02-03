@@ -1,6 +1,6 @@
 # `stable-diffusion.cpp\stable-diffusion.h`
 
-```
+```cpp
 #ifndef __STABLE_DIFFUSION_H__
 #define __STABLE_DIFFUSION_H__
 

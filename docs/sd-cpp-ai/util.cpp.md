@@ -1,6 +1,6 @@
 # `stable-diffusion.cpp\util.cpp`
 
-```
+```cpp
 // 包含必要的头文件
 #include "util.h"
 #include <stdarg.h>

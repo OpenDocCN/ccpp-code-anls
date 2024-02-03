@@ -1,3 +1,5 @@
+# StableDiffusion.CPP 源码解析
+
 <p align="center">
   <img src="./assets/a%20lovely%20cat.png" width="256x">
 </p>
@@ -62,14 +64,14 @@ Inference of [Stable Diffusion](https://github.com/CompVis/stable-diffusion) in 
 
 ### Get the Code
 
-```
+```cpp
 git clone --recursive https://github.com/leejet/stable-diffusion.cpp
 cd stable-diffusion.cpp
 ```
 
 - If you have already cloned the repository, you can use the following command to update the repository to the latest code.
 
-```
+```cpp
 cd stable-diffusion.cpp
 git pull origin master
 git submodule init
@@ -83,7 +85,7 @@ git submodule update
     - Stable Diffusion v1.5 from https://huggingface.co/runwayml/stable-diffusion-v1-5
     - Stable Diffuison v2.1 from https://huggingface.co/stabilityai/stable-diffusion-2-1
 
-    ```shell
+    ```cpp
     curl -L -O https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt
     # curl -L -O https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.safetensors
     # curl -L -O https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-nonema-pruned.safetensors
@@ -93,7 +95,7 @@ git submodule update
 
 #### Build from scratch
 
-```shell
+```cpp
 mkdir build
 cd build
 cmake ..
@@ -102,7 +104,7 @@ cmake --build . --config Release
 
 ##### Using OpenBLAS
 
-```
+```cpp
 cmake .. -DGGML_OPENBLAS=ON
 cmake --build . --config Release
 ```
@@ -111,7 +113,7 @@ cmake --build . --config Release
 
 This provides BLAS acceleration using the CUDA cores of your Nvidia GPU. Make sure to have the CUDA toolkit installed. You can download it from your Linux distro's package manager (e.g. `apt install nvidia-cuda-toolkit`) or from here: [CUDA Toolkit](https://developer.nvidia.com/cuda-downloads). Recommended to have at least 4 GB of VRAM.
 
-```
+```cpp
 cmake .. -DSD_CUBLAS=ON
 cmake --build . --config Release
 ```
@@ -121,7 +123,7 @@ This provides BLAS acceleration using the ROCm cores of your AMD GPU. Make sure 
 
 Windows User Refer to [docs/hipBLAS_on_Windows.md](docs%2FhipBLAS_on_Windows.md) for a comprehensive guide.
 
-```
+```cpp
 cmake .. -G "Ninja" -DCMAKE_C_COMPILER=clang -DCMAKE_CXX_COMPILER=clang++ -DSD_HIPBLAS=ON -DCMAKE_BUILD_TYPE=Release -DAMDGPU_TARGETS=gfx1100
 cmake --build . --config Release
 ```
@@ -131,7 +133,7 @@ cmake --build . --config Release
 
 Using Metal makes the computation run on the GPU. Currently, there are some issues with Metal when performing operations on very large matrices, making it highly inefficient at the moment. Performance improvements are expected in the near future.
 
-```
+```cpp
 cmake .. -DSD_METAL=ON
 cmake --build . --config Release
 ```
@@ -140,14 +142,14 @@ cmake --build . --config Release
 
 Enabling flash attention reduces memory usage by at least 400 MB. At the moment, it is not supported when CUBLAS is enabled because the kernel implementation is missing.
 
-```
+```cpp
 cmake .. -DSD_FLASH_ATTN=ON
 cmake --build . --config Release
 ```
 
 ### Run
 
-```
+```cpp
 usage: ./bin/sd [arguments]
 
 arguments:
@@ -205,13 +207,13 @@ You can also convert weights in the formats `ckpt/safetensors/diffusers` to gguf
 
 For example:
 
-```sh
+```cpp
 ./bin/sd -M convert -m ../models/v1-5-pruned-emaonly.safetensors -o  ../models/v1-5-pruned-emaonly.q8_0.gguf -v --type q8_0
 ```
 
 #### txt2img example
 
-```sh
+```cpp
 ./bin/sd -m ../models/sd-v1-4.ckpt -p "a lovely cat"
 # ./bin/sd -m ../models/v1-5-pruned-emaonly.safetensors -p "a lovely cat"
 # ./bin/sd -m ../models/sd_xl_base_1.0.safetensors --vae ../models/sdxl_vae-fp16-fix.safetensors -H 1024 -W 1024 -p "a lovely cat" -v
@@ -228,7 +230,7 @@ Using formats of different precisions will yield results of varying quality.
 - `./output.png` is the image generated from the above txt2img pipeline
 
 
-```
+```cpp
 ./bin/sd --mode img2img -m ../models/sd-v1-4.ckpt -p "cat with blue eyes" -i ./output.png -o ./img2img_output.png --strength 0.4
 ```
 
@@ -244,7 +246,7 @@ Using formats of different precisions will yield results of varying quality.
 
 Here's a simple example:
 
-```
+```cpp
 ./bin/sd -m ../models/v1-5-pruned-emaonly.safetensors -p "a lovely cat<lora:marblesh:1>" --lora-model-dir ../models
 ```
 
@@ -258,7 +260,7 @@ Here's a simple example:
 
 Here's a simple example:
 
-```
+```cpp
 ./bin/sd -m ../models/v1-5-pruned-emaonly.safetensors -p "a lovely cat<lora:lcm-lora-sdv1-5:1>" --steps 4 --lora-model-dir ../models -v --cfg-scale 1
 ```
 
@@ -274,13 +276,13 @@ You can use TAESD to accelerate the decoding of latent images by following these
 
 Or curl
 
-```bash
+```cpp
 curl -L -O https://huggingface.co/madebyollin/taesd/blob/main/diffusion_pytorch_model.safetensors
 ```
 
 - Specify the model path using the `--taesd PATH` parameter. example:
 
-```bash
+```cpp
 sd -m ../models/v1-5-pruned-emaonly.safetensors -p "a lovely cat" --taesd ../models/diffusion_pytorch_model.safetensors
 ```
 
@@ -290,7 +292,7 @@ You can use ESRGAN to upscale the generated images. At the moment, only the [Rea
 
 - Specify the model path using the `--upscale-model PATH` parameter. example:
 
-```bash
+```cpp
 sd -m ../models/v1-5-pruned-emaonly.safetensors -p "a lovely cat" --upscale-model ../models/RealESRGAN_x4plus_anime_6B.pth
 ```
 
@@ -298,13 +300,13 @@ sd -m ../models/v1-5-pruned-emaonly.safetensors -p "a lovely cat" --upscale-mode
 
 #### Building using Docker
 
-```shell
+```cpp
 docker build -t sd .
 ```
 
 #### Run
 
-```shell
+```cpp
 docker run -v /path/to/models:/models -v /path/to/output/:/output sd [args...]
 # For example
 # docker run -v ./models:/models -v ./build:/output sd -m /models/sd-v1-4.ckpt -p "a lovely cat" -v -o /output/output.png

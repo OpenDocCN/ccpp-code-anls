@@ -3,3 +3,4 @@
 +   [Nmap 源码解析](docs/nmap-ai/README.md)
 +   [PowerInfer 源码解析](docs/powerinfer-ai/README.md)
 +   [ChatGLM.CPP 源码解析](docs/chatglm-cpp-ai/README.md)
++   [StableDiffusion.CPP 源码解析 源码解析](docs/sd-cpp-ai/README.md)

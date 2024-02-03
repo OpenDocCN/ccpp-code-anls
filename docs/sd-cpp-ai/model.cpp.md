@@ -1,6 +1,6 @@
 # `stable-diffusion.cpp\model.cpp`
 
-```
+```cpp
 #include <stdarg.h>
 #include <fstream>
 #include <regex>

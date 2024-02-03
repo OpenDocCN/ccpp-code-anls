@@ -1,6 +1,6 @@
 # `stable-diffusion.cpp\upscaler.cpp`
 
-```
+```cpp
 // 包含头文件 esrgan.hpp
 // 包含头文件 ggml_extend.hpp
 // 包含头文件 model.h

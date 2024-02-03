@@ -1,6 +1,6 @@
 # `stable-diffusion.cpp\examples\cli\main.cpp`
 
-```
+```cpp
 #include <stdio.h> // 包含标准输入输出头文件
 #include <string.h> // 包含字符串处理头文件
 #include <time.h> // 包含时间处理头文件
