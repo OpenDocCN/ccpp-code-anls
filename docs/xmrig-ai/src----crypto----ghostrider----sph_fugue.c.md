@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_fugue.c`
 
-```
+```cpp
 #include <stddef.h>  // 包含标准库stddef.h，提供一些常用的宏和类型
 #include <string.h>  // 包含标准库string.h，提供字符串处理函数
 

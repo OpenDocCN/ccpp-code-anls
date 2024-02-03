@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\chrono.h`
 
-```
+```cpp
 // 格式化库的 C++ - 时间支持
 //
 // 版权所有 (c) 2012 - 现在，Victor Zverovich

@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\gguf\gguf_writer.py`
 
-```
+```cpp
 # 导入必要的模块和类
 from __future__ import annotations
 import os

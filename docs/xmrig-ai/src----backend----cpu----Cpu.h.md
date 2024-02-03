@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cpu\Cpu.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 (c) 2018-2023 SChernykh   <https://github.com/SChernykh>

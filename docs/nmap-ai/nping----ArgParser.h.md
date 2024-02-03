@@ -1,6 +1,6 @@
 # `nmap\nping\ArgParser.h`
 
-```
+```cpp
 #ifndef NPING_ARGPARSER_H
 #define NPING_ARGPARSER_H
 

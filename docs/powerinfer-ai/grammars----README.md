@@ -13,7 +13,7 @@ In GBNF, we define *production rules* that specify how a *non-terminal* (rule na
 ## Example
 
 Before going deeper, let's look at some of the features demonstrated in `grammars/chess.gbnf`, a small chess notation grammar:
-```
+```cpp
 # `root` specifies the pattern for the overall output
 root ::= (
     # it must start with the characters "1. " followed by a sequence
@@ -45,7 +45,7 @@ Terminals are actual characters ([code points](https://en.wikipedia.org/wiki/Cod
 Terminals support the full range of Unicode. Unicode characters can be specified directly in the grammar, for example `hiragana ::= [ぁ-ゟ]`, or with escapes: 8-bit (`\xXX`), 16-bit (`\uXXXX`) or 32-bit (`\UXXXXXXXX`).
 
 Character ranges can be negated with `^`:
-```
+```cpp
 single-line ::= [^\n]+ "\n"`
 ```
 
@@ -66,7 +66,7 @@ Parentheses `()` can be used to group sequences, which allows for embedding alte
 ## Comments and newlines
 
 Comments can be specified with `#`:
-```
+```cpp
 # defines optional whitespace
 ws ::= [ \t\n]+
 ```
@@ -77,7 +77,7 @@ Newlines are allowed between rules and between symbols or sequences nested insid
 
 In a full grammar, the `root` rule always defines the starting point of the grammar. In other words, it specifies what the entire output must match.
 
-```
+```cpp
 # a grammar for lists
 root ::= ("- " item)+
 item ::= [^\n]+ "\n"
@@ -86,6 +86,6 @@ item ::= [^\n]+ "\n"
 ## Next steps
 
 This guide provides a brief overview. Check out the GBNF files in this directory (`grammars/`) for examples of full grammars. You can try them out with:
-```
+```cpp
 ./main -m <model> --grammar-file grammars/some-grammar.gbnf -p 'Some prompt'
 ```

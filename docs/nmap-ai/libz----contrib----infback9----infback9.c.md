@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\infback9\infback9.c`
 
-```
+```cpp
 /* infback9.c -- 使用回调接口解压缩 deflate64 数据
  * 版权所有 (C) 1995-2008 Mark Adler
  * 发行和使用条件，请参见 zlib.h 中的版权声明

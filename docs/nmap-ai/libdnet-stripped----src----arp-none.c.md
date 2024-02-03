@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\arp-none.c`
 
-```
+```cpp
 /*
  * arp-none.c
  *

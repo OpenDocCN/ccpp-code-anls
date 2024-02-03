@@ -6,7 +6,7 @@ The jeopardy test can be used to compare the fact knowledge of different models 
 
 
 Step 1: Open jeopardy.sh and modify the following:
-```
+```cpp
 MODEL=(path to your model)
 MODEL_NAME=(name of your model)
 prefix=(basically, if you use vicuna it's Human: , if you use something else it might be User: , etc)

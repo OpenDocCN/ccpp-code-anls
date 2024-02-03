@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-2\convert-cerebras-to-ggml.py`
 
-```
+```cpp
 # Convert Cerebras models to ggml format
 #
 # ref: https://www.cerebras.net/blog/cerebras-gpt-a-family-of-open-compute-efficient-large-language-models/

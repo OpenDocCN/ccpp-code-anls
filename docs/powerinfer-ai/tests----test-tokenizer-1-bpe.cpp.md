@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-tokenizer-1-bpe.cpp`
 
-```
+```cpp
 #include "llama.h"
 #include "common.h"
 #include "unicode.h"

@@ -1,6 +1,6 @@
 # `nmap\libpcap\msdos\bin2c.c`
 
-```
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>

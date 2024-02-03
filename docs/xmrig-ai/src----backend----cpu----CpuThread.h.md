@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cpu\CpuThread.h`
 
-```
+```cpp
 /* XMRig
  * 版权声明
  */

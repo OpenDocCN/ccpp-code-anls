@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\swap.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_INTERNAL_SWAP_H_
 #define RAPIDJSON_INTERNAL_SWAP_H_
 

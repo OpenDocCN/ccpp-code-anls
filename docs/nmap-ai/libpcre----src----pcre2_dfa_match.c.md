@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_dfa_match.c`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

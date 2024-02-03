@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\infback9\inftree9.c`
 
-```
+```cpp
 /* inftree9.c -- 生成用于高效解码的哈夫曼树
  * 版权所有 (C) 1995-2022 Mark Adler
  * 发行和使用条件，请参见 zlib.h 中的版权声明

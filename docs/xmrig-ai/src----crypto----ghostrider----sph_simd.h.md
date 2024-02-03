@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_simd.h`
 
-```
+```cpp
 /* $Id: sph_simd.h 154 2010-04-26 17:00:24Z tp $ */
 /**
  * SIMD interface. SIMD is a family of functions which differ by

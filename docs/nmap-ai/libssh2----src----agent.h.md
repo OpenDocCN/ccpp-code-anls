@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\agent.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_AGENT_H
 #define __LIBSSH2_AGENT_H
 /*

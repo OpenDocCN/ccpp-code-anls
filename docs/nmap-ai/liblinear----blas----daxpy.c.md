@@ -1,6 +1,6 @@
 # `nmap\liblinear\blas\daxpy.c`
 
-```
+```cpp
 #include "blas.h"
 
 int daxpy_(int *n, double *sa, double *sx, int *incx, double *sy,

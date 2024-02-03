@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\untgz\untgz.c`
 
-```
+```cpp
 /*
  * untgz.c -- Display contents and extract files from a gzip'd TAR file
  * 从 gzip'd TAR 文件中显示内容并提取文件

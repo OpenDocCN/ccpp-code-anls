@@ -1,6 +1,6 @@
 # `ggml\examples\python\ggml\__init__.py`
 
-```
+```cpp
 """
   Python bindings for the ggml library.
 

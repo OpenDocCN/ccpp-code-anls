@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_bmw.h`
 
-```
+```cpp
 /* $Id: sph_bmw.h 216 2010-06-08 09:46:57Z tp $ */
 /**
  * BMW interface. BMW (aka "Blue Midnight Wish") is a family of

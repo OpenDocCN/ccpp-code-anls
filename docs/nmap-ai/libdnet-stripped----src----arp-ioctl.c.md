@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\arp-ioctl.c`
 
-```
+```cpp
 /*
  * arp-ioctl.c
  *

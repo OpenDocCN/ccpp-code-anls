@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\knownhost.c`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  * 作者：Daniel Stenberg

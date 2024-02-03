@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\aes_helper.c`
 
-```
+```cpp
 /* $Id: aes_helper.c 220 2010-06-09 09:21:50Z tp $ */
 #include "sph_types.h"
 #ifdef __cplusplus

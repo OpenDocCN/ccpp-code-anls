@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\icmp.h`
 
-```
+```cpp
 # 定义 ICMP 头部长度常量
 #define ICMP_HDR_LEN    4    /* base ICMP header length */
 # 定义 ICMP 消息的最小长度常量，包括头部

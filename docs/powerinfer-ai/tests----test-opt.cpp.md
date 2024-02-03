@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-opt.cpp`
 
-```
+```cpp
 #include "ggml.h"
 
 #include <cmath>

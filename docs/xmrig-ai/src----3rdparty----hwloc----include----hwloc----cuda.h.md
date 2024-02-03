@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\cuda.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2010-2021 Inria。
  * 版权所有 © 2010-2011 Université Bordeaux

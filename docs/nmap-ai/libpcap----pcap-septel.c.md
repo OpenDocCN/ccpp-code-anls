@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-septel.c`
 
-```
+```cpp
 /*
  * pcap-septel.c: Packet capture interface for Intel/Septel card.
  *

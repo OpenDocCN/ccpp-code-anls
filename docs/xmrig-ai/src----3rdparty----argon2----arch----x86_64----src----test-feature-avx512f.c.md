@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\src\test-feature-avx512f.c`
 
-```
+```cpp
 # 包含 x86 指令集的头文件
 #include <x86intrin.h>
 

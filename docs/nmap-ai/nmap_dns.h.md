@@ -1,6 +1,6 @@
 # `nmap\nmap_dns.h`
 
-```
+```cpp
 #ifndef NMAP_DNS_H
 #define NMAP_DNS_H
 

@@ -1,6 +1,6 @@
 # `nmap\nping\winfix.h`
 
-```
+```cpp
 #ifndef WINFIX_H
 #define WINFIX_H
 

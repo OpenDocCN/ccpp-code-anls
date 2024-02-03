@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\CryptoNight_x86_vaes.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 2010      Jeff Garzik <jgarzik@pobox.com>

@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\route-bsd.c`
 
-```
+```cpp
 /*
  * route-bsd.c
  *

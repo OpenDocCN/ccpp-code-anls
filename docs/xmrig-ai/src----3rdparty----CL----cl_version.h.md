@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\CL\cl_version.h`
 
-```
+```cpp
 #ifndef __CL_VERSION_H
 #define __CL_VERSION_H
 

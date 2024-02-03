@@ -1,6 +1,6 @@
 # `nmap\nping\NpingTargets.h`
 
-```
+```cpp
 #ifndef NPINGTARGETS_H
 #define NPINGTARGETS_H
 

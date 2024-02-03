@@ -1,6 +1,6 @@
 # `nmap\zenmap\radialnet\gui\Application.py`
 
-```
+```cpp
 # 设置文件编码为 UTF-8
 
 # 重要提示：NMAP 许可证条款

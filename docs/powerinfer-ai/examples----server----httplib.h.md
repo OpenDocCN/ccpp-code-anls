@@ -1,6 +1,6 @@
 # `PowerInfer\examples\server\httplib.h`
 
-```
+```cpp
 #ifndef CPPHTTPLIB_HTTPLIB_H
 #define CPPHTTPLIB_HTTPLIB_H
 

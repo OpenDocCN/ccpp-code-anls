@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_core.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "ncat.h"  // 包含自定义的头文件 ncat.h

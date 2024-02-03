@@ -1,6 +1,6 @@
 # `nmap\liblua\lstate.h`
 
-```
+```cpp
 /*
 ** $Id: lstate.h $
 ** Global State

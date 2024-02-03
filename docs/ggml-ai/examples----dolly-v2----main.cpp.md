@@ -1,6 +1,6 @@
 # `ggml\examples\dolly-v2\main.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"
 // 引入 ggml 库的头文件
 

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\topology-x86.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 本后端仅在操作系统未将必要的硬件拓扑信息导出到用户空间应用程序时使用。

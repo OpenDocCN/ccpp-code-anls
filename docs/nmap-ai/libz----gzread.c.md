@@ -1,6 +1,6 @@
 # `nmap\libz\gzread.c`
 
-```
+```cpp
 # gzread.c -- 用于读取 gzip 文件的 zlib 函数
 # 版权所有 2004-2017 Mark Adler
 # 有关分发和使用条件，请参阅 zlib.h 中的版权声明

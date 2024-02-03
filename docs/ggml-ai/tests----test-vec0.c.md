@@ -1,6 +1,6 @@
 # `ggml\tests\test-vec0.c`
 
-```
+```cpp
 #include <stdio.h>  // 包含标准输入输出库
 #include <assert.h>  // 包含断言库
 #include <stdlib.h>  // 包含标准库

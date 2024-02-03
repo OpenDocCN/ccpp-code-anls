@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\gguf\constants.py`
 
-```
+```cpp
 # 导入必要的模块
 from __future__ import annotations
 import sys

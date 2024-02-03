@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\packet.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_PACKET_H
 #define __LIBSSH2_PACKET_H
 /*

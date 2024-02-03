@@ -1,6 +1,6 @@
 # `xmrig\scripts\js\opencl_minify.js`
 
-```
+```cpp
 'use strict';
 
 // 对输入的字符串进行压缩处理

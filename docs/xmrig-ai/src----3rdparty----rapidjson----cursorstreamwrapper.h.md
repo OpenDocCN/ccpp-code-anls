@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\cursorstreamwrapper.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_CURSORSTREAMWRAPPER_H_
 #define RAPIDJSON_CURSORSTREAMWRAPPER_H_
 

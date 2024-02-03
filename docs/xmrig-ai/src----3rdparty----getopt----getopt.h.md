@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\getopt\getopt.h`
 
-```
+```cpp
 #ifndef __GETOPT_H__
 /**
  * DISCLAIMER

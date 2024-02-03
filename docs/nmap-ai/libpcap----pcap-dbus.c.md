@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-dbus.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 作者：Jakub Zawadzki

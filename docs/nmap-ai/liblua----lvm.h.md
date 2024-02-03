@@ -1,6 +1,6 @@
 # `nmap\liblua\lvm.h`
 
-```
+```cpp
 # 定义了 Lua 虚拟机的头文件
 # 包含了一些必要的头文件
 #ifndef lvm_h

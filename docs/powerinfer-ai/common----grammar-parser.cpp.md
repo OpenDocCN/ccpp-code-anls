@@ -1,6 +1,6 @@
 # `PowerInfer\common\grammar-parser.cpp`
 
-```
+```cpp
 namespace grammar_parser {
     // NOTE: assumes valid utf8 (but checks for overrun)
     // 从给定的 UTF-8 编码的字符串中解码出一个 Unicode 字符

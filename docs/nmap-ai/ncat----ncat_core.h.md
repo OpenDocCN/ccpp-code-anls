@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_core.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NCAT_CORE_H

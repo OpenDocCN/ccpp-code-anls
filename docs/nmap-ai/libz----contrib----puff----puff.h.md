@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\puff\puff.h`
 
-```
+```cpp
 /*
   puff.h
   版权所有 (C) 2002-2013 Mark Adler

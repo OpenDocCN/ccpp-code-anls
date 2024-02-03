@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_whirlpool.h`
 
-```
+```cpp
 /* $Id: sph_whirlpool.h 216 2010-06-08 09:46:57Z tp $ */
 // 定义了一个头文件保护符，防止重复包含
 #ifndef SPH_WHIRLPOOL_H__

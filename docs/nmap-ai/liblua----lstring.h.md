@@ -1,6 +1,6 @@
 # `nmap\liblua\lstring.h`
 
-```
+```cpp
 /*
 ** $Id: lstring.h $
 ** 字符串表（保存 Lua 处理的所有字符串）

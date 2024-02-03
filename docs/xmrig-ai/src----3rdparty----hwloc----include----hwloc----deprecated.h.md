@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\deprecated.h`
 
-```
+```cpp
 /*
  * 版权声明
  * 该文件包含在 hwloc.h 中声明的内联函数的内联代码

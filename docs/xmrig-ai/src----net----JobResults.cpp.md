@@ -1,6 +1,6 @@
 # `xmrig\src\net\JobResults.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权声明，列出了程序的各个版本的版权所有者和联系方式
  */

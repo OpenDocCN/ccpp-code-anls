@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_proxy.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NSOCK_PROXY_H

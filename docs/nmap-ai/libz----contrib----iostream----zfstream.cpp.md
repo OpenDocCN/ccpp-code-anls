@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\iostream\zfstream.cpp`
 
-```
+```cpp
 // 默认构造函数，初始化成员变量
 gzfilebuf::gzfilebuf() :
   file(NULL),

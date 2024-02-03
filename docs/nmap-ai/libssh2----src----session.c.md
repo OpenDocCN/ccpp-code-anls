@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\session.c`
 
-```
+```cpp
 /*
  * 版权声明和许可声明
  * 作者：Sara Golemon <sarag@libssh2.org>，Daniel Stenberg，Simon Josefsson <simon@josefsson.org>

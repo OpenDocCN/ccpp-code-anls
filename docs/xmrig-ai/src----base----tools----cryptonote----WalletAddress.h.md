@@ -1,6 +1,6 @@
 # `xmrig\src\base\tools\cryptonote\WalletAddress.h`
 
-```
+```cpp
 // XMRig程序的版权声明
 // 包含必要的头文件
 #ifndef XMRIG_WALLETADDRESS_H

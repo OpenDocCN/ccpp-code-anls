@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_listen.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "ncat.h"

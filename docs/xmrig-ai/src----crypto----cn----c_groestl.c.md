@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\c_groestl.c`
 
-```
+```cpp
 /* hash.c     April 2012
  * Groestl ANSI C code optimised for 32-bit machines
  * Author: Thomas Krinninger

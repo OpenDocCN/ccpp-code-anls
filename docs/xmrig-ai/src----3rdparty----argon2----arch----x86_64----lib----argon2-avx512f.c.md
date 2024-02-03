@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-avx512f.c`
 
-```
+```cpp
 #include "argon2-avx512f.h"
 
 #ifdef HAVE_AVX512F

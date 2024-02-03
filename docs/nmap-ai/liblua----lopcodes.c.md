@@ -1,6 +1,6 @@
 # `nmap\liblua\lopcodes.c`
 
-```
+```cpp
 /*
 ** $Id: lopcodes.c $
 ** Opcodes for Lua virtual machine

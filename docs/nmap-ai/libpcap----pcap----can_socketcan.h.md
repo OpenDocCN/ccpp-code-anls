@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\can_socketcan.h`
 
-```
+```cpp
 #ifndef lib_pcap_can_socketcan_h
 #define lib_pcap_can_socketcan_h
 

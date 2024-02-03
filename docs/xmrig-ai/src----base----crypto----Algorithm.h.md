@@ -1,6 +1,6 @@
 # `xmrig\src\base\crypto\Algorithm.h`
 
-```
+```cpp
 #ifndef XMRIG_ALGORITHM_H
 #define XMRIG_ALGORITHM_H
 

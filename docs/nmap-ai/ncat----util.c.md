@@ -1,6 +1,6 @@
 # `nmap\ncat\util.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "sys_wrap.h"  // 包含系统封装的头文件

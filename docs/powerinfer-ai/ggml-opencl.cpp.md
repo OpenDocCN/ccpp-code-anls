@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-opencl.cpp`
 
-```
+```cpp
 #include "ggml-opencl.h"
 
 #include <array>

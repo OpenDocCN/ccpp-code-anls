@@ -1,6 +1,6 @@
 # `ggml\examples\starcoder\convert-hf-to-ggml.py`
 
-```
+```cpp
 # Convert HF models to ggml format
 #
 

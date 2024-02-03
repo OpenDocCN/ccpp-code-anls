@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_connect.h`
 
-```
+```cpp
 # 定义宏，用于标识版本信息
 /* $Id$ */
 # 防止头文件重复包含

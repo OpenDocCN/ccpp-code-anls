@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-tokenizer-0-falcon.cpp`
 
-```
+```cpp
 #include "llama.h"
 #include "common.h"
 #include "console.h"

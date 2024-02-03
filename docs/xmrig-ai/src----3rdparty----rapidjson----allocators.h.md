@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\allocators.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_ALLOCATORS_H_
 #define RAPIDJSON_ALLOCATORS_H_
 

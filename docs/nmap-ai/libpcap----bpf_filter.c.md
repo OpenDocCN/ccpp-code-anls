@@ -1,6 +1,6 @@
 # `nmap\libpcap\bpf_filter.c`
 
-```
+```cpp
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif

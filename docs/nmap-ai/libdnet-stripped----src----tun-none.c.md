@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\tun-none.c`
 
-```
+```cpp
 /*
  * tun-none.c
  *

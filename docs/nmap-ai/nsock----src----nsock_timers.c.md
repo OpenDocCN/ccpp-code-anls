@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_timers.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock_internal.h"

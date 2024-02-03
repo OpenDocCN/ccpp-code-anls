@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\intf.h`
 
-```
+```cpp
 #ifndef DNET_INTF_H
 #define DNET_INTF_H
 

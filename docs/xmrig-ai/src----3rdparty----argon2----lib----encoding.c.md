@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\encoding.c`
 
-```
+```cpp
 #include <stdio.h>  // 包含标准输入输出库
 #include <stdlib.h>  // 包含标准库
 #include <string.h>  // 包含字符串处理库

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\ranges.h`
 
-```
+```cpp
 // C++格式化库的范围支持 - 实验性范围支持
 //
 // 版权所有，Victor Zverovich，2012年至今

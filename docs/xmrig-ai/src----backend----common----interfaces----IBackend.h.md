@@ -1,6 +1,6 @@
 # `xmrig\src\backend\common\interfaces\IBackend.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2018-2020 SChernykh   <https://github.com/SChernykh>

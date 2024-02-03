@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\jit_compiler_fallback.cpp`
 
-```
+```cpp
 /*
  * 版权所有 2018-2019, tevador    <tevador@gmail.com>
  * 版权所有 2018-2020, SChernykh  <https://github.com/SChernykh>

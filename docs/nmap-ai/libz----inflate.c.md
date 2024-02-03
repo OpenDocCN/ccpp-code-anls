@@ -1,6 +1,6 @@
 # `nmap\libz\inflate.c`
 
-```
+```cpp
 /* inflate.c -- zlib decompression
  * zlib解压缩的代码文件
  * 版权所有 (C) 1995-2022 Mark Adler

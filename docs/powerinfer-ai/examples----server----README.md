@@ -36,13 +36,13 @@ server is build alongside everything else from the root of the project
 
 - Using `make`:
 
-  ```bash
+  ```cpp
   make
   ```
 
 - Using `CMake`:
 
-  ```bash
+  ```cpp
   cmake --build . --config Release
   ```
 
@@ -52,13 +52,13 @@ To get started right away, run the following command, making sure to use the cor
 
 ### Unix-based systems (Linux, macOS, etc.):
 
-```bash
+```cpp
 ./server -m models/7B/ggml-model.gguf -c 2048
 ```
 
 ### Windows:
 
-```powershell
+```cpp
 server.exe -m models\7B\ggml-model.gguf -c 2048
 ```
 The above command will start a server that by default listens on `127.0.0.1:8080`.
@@ -68,7 +68,7 @@ You can consume the endpoints with Postman or NodeJS with axios library. You can
 
 Using [curl](https://curl.se/). On Windows `curl.exe` should be available in the base OS.
 
-```sh
+```cpp
 curl --request POST \
     --url http://localhost:8080/completion \
     --header "Content-Type: application/json" \
@@ -79,14 +79,14 @@ curl --request POST \
 
 You need to have [Node.js](https://nodejs.org/en) installed.
 
-```bash
+```cpp
 mkdir llama-client
 cd llama-client
 ```
 
 Create a index.js file and put inside this:
 
-```javascript
+```cpp
 const prompt = `Building a website can be done in 10 simple steps:`;
 
 async function Test() {
@@ -105,7 +105,7 @@ Test()
 
 And run it:
 
-```bash
+```cpp
 node index.js
 ```
 
@@ -247,7 +247,7 @@ To use the server example to serve multiple chat-type clients while keeping the 
 
 `assistant_name`: The bot's name is necessary for each customer to generate the prompt. This must be sent to each client through the `/props` endpoint.
 
-```json
+```cpp
 {
     "system_prompt": {
         "prompt": "Transcript of a never ending dialog, where the User interacts with an Assistant.\nThe Assistant is helpful, kind, honest, good at writing, and never fails to answer the User's requests immediately and with precision.\nUser: Recommend a nice restaurant in the area.\nAssistant: I recommend the restaurant \"The Golden Duck\". It is a 5 star restaurant with a great view of the city. The food is delicious and the service is excellent. The prices are reasonable and the portions are generous. The restaurant is located at 123 Main Street, New York, NY 10001. The phone number is (212) 555-1234. The hours are Monday through Friday from 11:00 am to 10:00 pm. The restaurant is closed on Saturdays and Sundays.\nUser: Who is Richard Feynman?\nAssistant: Richard Feynman was an American physicist who is best known for his work in quantum mechanics and particle physics. He was awarded the Nobel Prize in Physics in 1965 for his contributions to the development of quantum electrodynamics. He was a popular lecturer and author, and he wrote several books, including \"Surely You're Joking, Mr. Feynman!\" and \"What Do You Care What Other People Think?\".\nUser:",
@@ -264,7 +264,7 @@ To use the server example to serve multiple chat-type clients while keeping the 
 Check the sample in [chat.mjs](chat.mjs).
 Run with NodeJS version 16 or later:
 
-```sh
+```cpp
 node chat.mjs
 ```
 
@@ -272,7 +272,7 @@ Another sample in [chat.sh](chat.sh).
 Requires [bash](https://www.gnu.org/software/bash/), [curl](https://curl.se) and [jq](https://jqlang.github.io/jq/).
 Run with bash:
 
-```sh
+```cpp
 bash chat.sh
 ```
 
@@ -281,12 +281,12 @@ bash chat.sh
 API example using Python Flask: [api_like_OAI.py](api_like_OAI.py)
 This example must be used with server.cpp
 
-```sh
+```cpp
 python api_like_OAI.py
 ```
 
 After running the API server, you can use it in Python by setting the API base URL.
-```python
+```cpp
 openai.api_base = "http://<Your api-server IP>:port"
 ```
 
@@ -300,7 +300,7 @@ Read the documentation in `/completion.js` to see convenient ways to access llam
 
 A simple example is below:
 
-```html
+```cpp
 <html>
   <body>
     <pre>

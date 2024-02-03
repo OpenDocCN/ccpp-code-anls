@@ -1,6 +1,6 @@
 # `nmap\nse_zlib.h`
 
-```
+```cpp
 # 如果未定义 ZLIB，则定义 ZLIB
 #ifndef ZLIB
 # 定义 NSE_ZLIBNAME 为 "zlib"

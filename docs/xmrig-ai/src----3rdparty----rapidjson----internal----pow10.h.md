@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\pow10.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_POW10_
 #define RAPIDJSON_POW10_
 

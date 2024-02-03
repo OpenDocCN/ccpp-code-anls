@@ -1,6 +1,6 @@
 # `PowerInfer\examples\server\server.cpp`
 
-```
+```cpp
 #include "common.h"
 #include "llama.h"
 #include "grammar-parser.h"

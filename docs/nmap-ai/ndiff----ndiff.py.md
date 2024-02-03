@@ -1,6 +1,6 @@
 # `nmap\ndiff\ndiff.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 
 # Ndiff

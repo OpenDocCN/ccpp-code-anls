@@ -26,7 +26,7 @@ Fields, including arrays, are written sequentially without alignment unless othe
 
 Models are little-endian by default. They can also come in big-endian for use with big-endian computers; in this case, all values (including metadata values and tensors) will also be big-endian. At the time of writing, there is no way to determine if a model is big-endian; this may be rectified in future versions. If no additional information is provided, assume the model is little-endian.
 
-```c
+```cpp
 enum ggml_type: uint32_t {
     GGML_TYPE_F32  = 0,
     GGML_TYPE_F16  = 1,
@@ -339,7 +339,7 @@ The following sections describe the metadata for each model architecture. Each k
 - `llama.attention.head_count_kv`
 - `llama.tensor_data_layout`:
   - `Meta AI original pth`:
-    ```python
+    ```cpp
     def permute(weights: NDArray, n_head: int) -> NDArray:
         return (weights.reshape(n_head, 2, weights.shape[0] // n_head // 2, *weights.shape[1:])
                     .swapaxes(1, 2)
@@ -418,7 +418,7 @@ The following sections describe the metadata for each model architecture. Each k
 
   - `jploski` (author of the original GGML implementation of Falcon):
 
-    ```python
+    ```cpp
     # The original query_key_value tensor contains n_head_kv "kv groups",
     # each consisting of n_head/n_head_kv query weights followed by one key
     # and one value weight (shared by all query heads in the kv group).

@@ -1,6 +1,6 @@
 # `nmap\nmap_winconfig.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NMAP_WINCONFIG_H

@@ -1,6 +1,6 @@
 # `ggml\include\ggml\ggml-alloc.h`
 
-```
+```cpp
 #pragma once
 
 #include "ggml.h"

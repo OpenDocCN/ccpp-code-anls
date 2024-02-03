@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_jit_compile.c`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

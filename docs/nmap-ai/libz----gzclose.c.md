@@ -1,6 +1,6 @@
 # `nmap\libz\gzclose.c`
 
-```
+```cpp
 /* gzclose.c -- zlib gzclose() function
  * zlib gzclose()函数的实现
  * 版权所有 (C) 2004, 2010 Mark Adler

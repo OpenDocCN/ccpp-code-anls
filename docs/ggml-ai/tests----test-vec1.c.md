@@ -1,6 +1,6 @@
 # `ggml\tests\test-vec1.c`
 
-```
+```cpp
 #include <stdint.h>  // 包含标准整数类型的头文件
 #include <stdio.h>   // 包含标准输入输出的头文件
 #include <assert.h>  // 包含断言的头文件

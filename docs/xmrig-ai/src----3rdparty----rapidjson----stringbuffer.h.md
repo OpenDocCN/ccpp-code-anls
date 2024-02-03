@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\stringbuffer.h`
 
-```
+```cpp
 // 定义了一个名为 GenericStringBuffer 的模板类，表示一个内存中的输出流
 /*!
     \tparam Encoding 流的编码类型

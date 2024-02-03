@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\biginteger.h`
 
-```
+```cpp
 // 定义了一个名为 BigInteger 的类，用于处理大整数
 #ifndef RAPIDJSON_BIGINTEGER_H_
 #define RAPIDJSON_BIGINTEGER_H_

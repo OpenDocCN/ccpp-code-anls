@@ -1,6 +1,6 @@
 # `ggml\tests\test-xpos.c`
 
-```
+```cpp
 #include "ggml/ggml.h"
 
 #include <math.h>

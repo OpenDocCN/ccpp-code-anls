@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-2\main-ctx.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"  // 引入 ggml 库的头文件
 
 #include "common.h"  // 引入 common.h 头文件

@@ -1,6 +1,6 @@
 # `nmap\ncat\test\test-cmdline-split.c`
 
-```
+```cpp
 #include <errno.h>  // 包含错误码定义
 #include <stdio.h>  // 包含标准输入输出函数
 #include <stdlib.h>  // 包含标准库函数

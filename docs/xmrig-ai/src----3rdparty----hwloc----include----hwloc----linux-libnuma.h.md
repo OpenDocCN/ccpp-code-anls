@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\linux-libnuma.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2009 CNRS
  * 版权所有 © 2009-2017 Inria。保留所有权利。

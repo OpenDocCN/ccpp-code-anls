@@ -1,6 +1,6 @@
 # `nmap\libpcap\missing\getopt.h`
 
-```
+```cpp
 /*
  * 如果平台没有提供 getopt() 函数，我们提供的 getopt() 函数的头文件
  */

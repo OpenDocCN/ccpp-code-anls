@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\icmpv6.h`
 
-```
+```cpp
 /*
  * icmpv6.h
  *

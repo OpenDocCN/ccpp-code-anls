@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-dos.c`
 
-```
+```cpp
 /*
  *  This file is part of DOS-libpcap
  *  Ported to DOS/DOSX by G. Vanem <gvanem@yahoo.no>

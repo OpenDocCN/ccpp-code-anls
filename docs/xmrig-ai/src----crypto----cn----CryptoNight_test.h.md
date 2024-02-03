@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\CryptoNight_test.h`
 
-```
+```cpp
 /* XMRig
  * 版权 2010      Jeff Garzik <jgarzik@pobox.com>
  * 版权 2012-2014 pooler      <pooler@litecoinpool.org>

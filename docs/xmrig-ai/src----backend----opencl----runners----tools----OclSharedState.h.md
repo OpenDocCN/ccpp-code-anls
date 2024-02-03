@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\runners\tools\OclSharedState.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 2010      Jeff Garzik <jgarzik@pobox.com>

@@ -1,6 +1,6 @@
 # `xmrig\src\base\tools\cryptonote\Signatures.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有 2012-2013 The Cryptonote developers
  * 版权所有 2014-2021 The Monero Project

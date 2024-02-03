@@ -1,6 +1,6 @@
 # `nmap\scan_engine.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef SCAN_ENGINE_H

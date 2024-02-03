@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\gl.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2012 Blue Brain Project, EPFL.
  * 版权所有 © 2012-2021 Inria.

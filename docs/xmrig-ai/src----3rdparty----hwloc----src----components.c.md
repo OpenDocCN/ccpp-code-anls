@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\components.c`
 
-```
+```cpp
 /*
  * 版权声明，版权归 Inria 所有
  * 版权声明，版权归 2012 年 Université Bordeaux 所有

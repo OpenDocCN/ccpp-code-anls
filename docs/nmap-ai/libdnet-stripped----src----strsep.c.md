@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\strsep.c`
 
-```
+```cpp
 /*    $OpenBSD: strsep.c,v 1.3 1997/08/20 04:28:14 millert Exp $    */
 /*-
  * 版权所有（c）1990, 1993

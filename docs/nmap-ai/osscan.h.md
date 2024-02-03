@@ -1,6 +1,6 @@
 # `nmap\osscan.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef OSSCAN_H

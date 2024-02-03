@@ -1,6 +1,6 @@
 # `PowerInfer\examples\server\public\index.js`
 
-```
+```cpp
 # 定义一个名为calculate_area的函数，用于计算矩形的面积
 def calculate_area(length, width):
     # 计算矩形的面积

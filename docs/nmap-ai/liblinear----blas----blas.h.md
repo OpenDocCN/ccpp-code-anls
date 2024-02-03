@@ -1,6 +1,6 @@
 # `nmap\liblinear\blas\blas.h`
 
-```
+```cpp
 /* blas.h  --  C header file for BLAS                         Ver 1.0 */
 /* Jesse Bennett                                       March 23, 2000 */
 

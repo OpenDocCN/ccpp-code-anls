@@ -1,6 +1,6 @@
 # `xmrig\src\base\api\interfaces\IApiRequest.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 2018-2021 SChernykh   <https://github.com/SChernykh>

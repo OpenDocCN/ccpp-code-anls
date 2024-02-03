@@ -1,6 +1,6 @@
 # `nmap\lpeg.c`
 
-```
+```cpp
 /*
 ** $Id: lptypes.h,v 1.8 2013/04/12 16:26:38 roberto Exp $
 ** LPeg - PEG pattern matching for Lua

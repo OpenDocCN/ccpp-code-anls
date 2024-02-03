@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\kawpow\kawpow_dag_cl.h`
 
-```
+```cpp
 #pragma once
 
 namespace xmrig {

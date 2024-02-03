@@ -1,6 +1,6 @@
 # `nmap\libpcap\sockutils.c`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  * NetGroup, 意大利都灵理工大学（2002-2003）

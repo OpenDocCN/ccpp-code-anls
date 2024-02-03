@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-opencl.h`
 
-```
+```cpp
 #pragma once
 
 #include "ggml.h"

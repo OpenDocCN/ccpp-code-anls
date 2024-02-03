@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_pcap.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock.h"  // 包含 nsock 头文件

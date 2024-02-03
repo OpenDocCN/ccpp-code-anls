@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\rx\randomx_run_gfx803.h`
 
-```
+```cpp
 /*
 这个文件是从 randomx_run_gfx803.asm 自动生成的：
 

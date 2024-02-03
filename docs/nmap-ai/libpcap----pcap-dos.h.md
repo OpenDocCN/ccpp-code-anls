@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-dos.h`
 
-```
+```cpp
 /*
  * 内部细节，用于在 DOS 上使用 libpcap。
  * 32 位目标：djgpp、Pharlap 或 DOS4GW。

@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\ioapi.c`
 
-```
+```cpp
 /* ioapi.h -- IO base function header for compress/uncompress .zip
    part of the MiniZip project - ( http://www.winimage.com/zLibDll/minizip.html )
 

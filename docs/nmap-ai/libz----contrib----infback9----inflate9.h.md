@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\infback9\inflate9.h`
 
-```
+```cpp
 /* inflate9.h -- internal inflate state definition
  * 声明内部解压缩状态的定义
  * 版权所有 (C) 1995-2003 Mark Adler

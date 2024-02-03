@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llava\clip.cpp`
 
-```
+```cpp
 // NOTE: This is modified from clip.cpp only for LLaVA,
 // so there might be still unnecessary artifacts hanging around
 // I'll gradually clean and extend it

@@ -1,6 +1,6 @@
 # `nmap\NmapOutputTable.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NMAPOUTPUTTABLE_H

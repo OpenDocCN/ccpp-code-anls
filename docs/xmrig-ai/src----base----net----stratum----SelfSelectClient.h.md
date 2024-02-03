@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\SelfSelectClient.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有（c）2019       jtgrassie       <https://github.com/jtgrassie>
  * 版权所有（c）2021       Hansie Odendaal <https://github.com/hansieodendaal>

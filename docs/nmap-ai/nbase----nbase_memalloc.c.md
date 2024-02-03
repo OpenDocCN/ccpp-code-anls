@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_memalloc.c`
 
-```
+```cpp
 /* $Id$ */
 // 包含头文件 nbase.h 和标准输入输出头文件
 #include "nbase.h"

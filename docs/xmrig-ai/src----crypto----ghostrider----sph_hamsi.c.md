@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_hamsi.c`
 
-```
+```cpp
 /* $Id: hamsi.c 251 2010-10-19 14:31:51Z tp $ */
 /* 
  * Hamsi implementation.

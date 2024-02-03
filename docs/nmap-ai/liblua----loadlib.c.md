@@ -1,6 +1,6 @@
 # `nmap\liblua\loadlib.c`
 
-```
+```cpp
 /*
 ** $Id: loadlib.c $
 ** Dynamic library loader for Lua

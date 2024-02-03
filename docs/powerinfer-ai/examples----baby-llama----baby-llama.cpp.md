@@ -1,6 +1,6 @@
 # `PowerInfer\examples\baby-llama\baby-llama.cpp`
 
-```
+```cpp
 // 包含头文件 ggml.h 和 train.h
 #include "ggml.h"
 #include "train.h"

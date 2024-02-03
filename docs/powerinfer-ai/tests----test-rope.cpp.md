@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-rope.cpp`
 
-```
+```cpp
 // 包含 ggml.h 头文件
 #include "ggml.h"
 

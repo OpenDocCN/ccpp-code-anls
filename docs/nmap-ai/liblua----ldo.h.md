@@ -1,6 +1,6 @@
 # `nmap\liblua\ldo.h`
 
-```
+```cpp
 /*
 ** $Id: ldo.h $
 ** Lua的堆栈和调用结构

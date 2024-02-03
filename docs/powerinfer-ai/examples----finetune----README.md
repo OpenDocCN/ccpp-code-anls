@@ -2,7 +2,7 @@
 
 Basic usage instructions:
 
-```bash
+```cpp
 # get training data
 wget https://raw.githubusercontent.com/brunoklein99/deep-learning-notes/master/shakespeare.txt
 
@@ -44,7 +44,7 @@ In `main` you can also load multiple LORA adapters, which will then be mixed tog
 
 For example if you have two LORA adapters `lora-open-llama-3b-v2-q8_0-shakespeare-LATEST.bin` and `lora-open-llama-3b-v2-q8_0-bible-LATEST.bin`, you can mix them together like this:
 
-```bash
+```cpp
 ./bin/main -m open-llama-3b-v2-q8_0.gguf \
   --lora lora-open-llama-3b-v2-q8_0-shakespeare-LATEST.bin \
   --lora lora-open-llama-3b-v2-q8_0-bible-LATEST.bin
@@ -54,7 +54,7 @@ You can change how strong each LORA adapter is applied to the base model by usin
 
 For example to apply 40% of the 'shakespeare' LORA adapter, 80% of the 'bible' LORA adapter and 100% of yet another one:
 
-```bash
+```cpp
 ./bin/main -m open-llama-3b-v2-q8_0.gguf \
   --lora-scaled lora-open-llama-3b-v2-q8_0-shakespeare-LATEST.bin 0.4 \
   --lora-scaled lora-open-llama-3b-v2-q8_0-bible-LATEST.bin 0.8 \
@@ -69,7 +69,7 @@ If you have enough RAM, you can make finetuning a bit faster by disabling checkp
 The default LORA rank can be specified with `--lora-r N`.
 The LORA rank can be configured for each model tensor type separately with these command line options:
 
-```bash
+```cpp
   --lora-r N                 LORA r: default rank. Also specifies resulting scaling together with lora-alpha. (default 4)
   --rank-att-norm N          LORA rank for attention norm tensor (default 1)
   --rank-ffn-norm N          LORA rank for feed-forward norm tensor (default 1)

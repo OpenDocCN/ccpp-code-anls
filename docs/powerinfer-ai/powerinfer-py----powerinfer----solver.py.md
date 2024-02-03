@@ -1,6 +1,6 @@
 # `PowerInfer\powerinfer-py\powerinfer\solver.py`
 
-```
+```cpp
 #!/usr/bin/env python
 # coding=utf-8
 # 导入必要的库

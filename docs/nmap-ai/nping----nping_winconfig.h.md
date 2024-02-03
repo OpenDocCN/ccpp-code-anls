@@ -1,6 +1,6 @@
 # `nmap\nping\nping_winconfig.h`
 
-```
+```cpp
 /* $Id: nmap_winconfig.h 12955 2009-04-15 00:37:03Z fyodor $ */
 // 定义了 nmap_winconfig.h 文件的版本信息
 

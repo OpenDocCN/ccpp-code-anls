@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\reciprocal.h`
 
-```
+```cpp
 /*
 版权声明，禁止再分发和使用，以及免责声明
 */

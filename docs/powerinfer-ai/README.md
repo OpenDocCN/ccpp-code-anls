@@ -93,7 +93,7 @@ PowerInfer requires the following dependencies:
 
 ### Get the Code
 
-```bash
+```cpp
 git clone https://github.com/SJTU-IPADS/PowerInfer
 cd PowerInfer
 pip install -r requirements.txt # install Python helpers' dependencies
@@ -103,12 +103,12 @@ In order to build PowerInfer you have two different options. These commands are 
 
 Using `CMake`(3.13+) on Linux or macOS:
 * If you have an NVIDIA GPU:
-```bash
+```cpp
 cmake -S . -B build -DLLAMA_CUBLAS=ON
 cmake --build build --config Release
 ```
 * If you have just CPU:
-```bash
+```cpp
 cmake -S . -B build
 cmake --build build --config Release
 ```
@@ -129,7 +129,7 @@ You can obtain PowerInfer GGUF weights at `*.powerinfer.gguf` as well as profile
 | LLaMA(ReLU)-2-70B    | [PowerInfer/ReluLLaMA-70B-PowerInfer-GGUF](https://huggingface.co/PowerInfer/ReluLLaMA-70B-PowerInfer-GGUF)    |
 
 We suggest downloading/cloning the whole repo so PowerInfer can automatically make use of such directory structure for feature-complete model offloading:
-```
+```cpp
 .
 ├── *.powerinfer.gguf (Unquantized PowerInfer model)
 ├── *.q4.powerinfer.gguf (INT4 quantized PowerInfer model, if available)
@@ -151,7 +151,7 @@ Hugging Face limits single model weight to 50GiB. For unquantized models >= 40B,
 | LLaMA(ReLU)-2-70B    | [SparseLLM/ReluLLaMA-70B](https://huggingface.co/SparseLLM/ReluLLaMA-70B)      |  [PowerInfer/ReluLLaMA-70B-Predictor](https://huggingface.co/PowerInfer/ReluLLaMA-70B-Predictor)
 
 You can use the following command to convert the original model weights and predictor weights to PowerInfer GGUF:
-```bash
+```cpp
 # make sure that you have done `pip install -r requirements.txt`
 python convert.py --outfile /PATH/TO/POWERINFER/GGUF/REPO/MODELNAME.powerinfer.gguf /PATH/TO/ORIGINAL/MODEL /PATH/TO/PREDICTOR
 # python convert.py --outfile ./ReluLLaMA-70B-PowerInfer-GGUF/llama-70b-relu.powerinfer.gguf ./SparseLLM/ReluLLaMA-70B ./PowerInfer/ReluLLaMA-70B-Predictor
@@ -162,13 +162,13 @@ For the same reason, we suggest keeping the same directory structure as PowerInf
 ## Inference
 
 For CPU-only and CPU-GPU hybrid inference with all available VRAM, you can use the following instructions to run PowerInfer:
-```bash
+```cpp
 ./build/bin/main -m /PATH/TO/MODEL -n $output_token_count -t $thread_num -p $prompt
 # ./build/bin/main -m ./ReluFalcon-40B-PowerInfer-GGUF/falcon-40b-relu.q4.powerinfer.gguf -n 128 -t 8 -p "Once upon a time"
 ```
 
 If you want to limit the VRAM usage of GPU:
-```bash
+```cpp
 ./build/bin/main -m /PATH/TO/MODEL -n $output_token_count -t $thread_num -p $prompt --vram-budget $vram_gb
 # ./build/bin/main -m ./ReluLLaMA-7B-PowerInfer-GGUF/llama-7b-relu.powerinfer.gguf -n 128 -t 8 -p "Once upon a time" --vram-budget 8
 ```
@@ -177,7 +177,7 @@ Under CPU-GPU hybrid inference, PowerInfer will automatically offload all dense 
 ## Quantization
 
 PowerInfer has optimized quantization support for INT4(`Q4_0`) models. You can use the following instructions to quantize PowerInfer GGUF model:
-```bash
+```cpp
 ./build/bin/quantize /PATH/TO/MODEL /PATH/TO/OUTPUT/QUANTIZED/MODEL Q4_0
 # ./build/bin/quantize ./ReluFalcon-40B-PowerInfer-GGUF/falcon-40b-relu.powerinfer.gguf ./ReluFalcon-40B-PowerInfer-GGUF/falcon-40b-relu.q4.powerinfer.gguf Q4_0
 ```
@@ -230,7 +230,7 @@ More technical details can be found in our [paper](https://ipads.se.sjtu.edu.cn/
 
 If you find PowerInfer useful or relevant to your project and research, please kindly cite our paper:
 
-```bibtex
+```cpp
 @misc{song2023powerinfer,
       title={PowerInfer: Fast Large Language Model Serving with a Consumer-grade GPU}, 
       author={Yixin Song and Zeyu Mi and Haotong Xie and Haibo Chen},

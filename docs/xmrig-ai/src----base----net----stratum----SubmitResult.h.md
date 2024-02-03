@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\SubmitResult.h`
 
-```
+```cpp
 #ifndef XMRIG_SUBMITRESULT_H
 #define XMRIG_SUBMITRESULT_H
 

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\os.h`
 
-```
+```cpp
 // C++格式化库的操作系统特定功能
 //
 // 版权所有，Victor Zverovich，2012年至今

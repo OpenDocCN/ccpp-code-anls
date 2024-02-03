@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\CryptoNight.h`
 
-```
+```cpp
 // 定义 XMRig 的版权声明
 /* XMRig
  * Copyright 2010      Jeff Garzik <jgarzik@pobox.com>

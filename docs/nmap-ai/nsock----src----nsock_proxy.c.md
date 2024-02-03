@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_proxy.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock.h"  // 包含自定义的头文件 nsock.h

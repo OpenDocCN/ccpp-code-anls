@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_time.c`
 
-```
+```cpp
 /* $Id$ */
 // 包含必要的头文件
 #include "nbase.h"

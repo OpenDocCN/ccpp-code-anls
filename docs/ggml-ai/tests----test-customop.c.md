@@ -1,6 +1,6 @@
 # `ggml\tests\test-customop.c`
 
-```
+```cpp
 #include "ggml/ggml.h"  // 包含 ggml 库的头文件
 #include <string.h>  // 包含字符串处理函数的头文件
 #include <stdio.h>  // 包含标准输入输出函数的头文件

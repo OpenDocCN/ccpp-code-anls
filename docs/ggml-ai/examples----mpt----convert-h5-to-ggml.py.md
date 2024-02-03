@@ -1,6 +1,6 @@
 # `ggml\examples\mpt\convert-h5-to-ggml.py`
 
-```
+```cpp
 import os  # 导入操作系统模块
 import struct  # 导入 struct 模块
 import sys  # 导入系统模块

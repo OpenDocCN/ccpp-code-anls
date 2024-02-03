@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\topology.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 版权所有 © 2009 CNRS

@@ -1,6 +1,6 @@
 # `ggml\examples\starcoder\main.cpp`
 
-```
+```cpp
 // 包含头文件 ggml/ggml.h
 #include "ggml/ggml.h"
 

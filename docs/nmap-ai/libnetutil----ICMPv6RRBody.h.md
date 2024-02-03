@@ -1,6 +1,6 @@
 # `nmap\libnetutil\ICMPv6RRBody.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 
 #ifndef ICMPv6RRBODY_H

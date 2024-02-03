@@ -1,6 +1,6 @@
 # `nmap\liblua\lua.c`
 
-```
+```cpp
 /*
 ** $Id: lua.c $
 ** Lua stand-alone interpreter

@@ -1,6 +1,6 @@
 # `nmap\liblua\lctype.c`
 
-```
+```cpp
 /*
 ** $Id: lctype.c $
 ** 'ctype' functions for Lua

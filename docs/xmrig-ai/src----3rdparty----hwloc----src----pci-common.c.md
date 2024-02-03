@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\pci-common.c`
 
-```
+```cpp
 /*
  * 版权所有 © 2009-2022 Inria。
  * 保留所有权利。请参阅顶层目录中的 COPYING 文件。

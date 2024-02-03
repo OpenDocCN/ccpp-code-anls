@@ -1,6 +1,6 @@
 # `nmap\nping\global_structures.h`
 
-```
+```cpp
 #ifndef GLOBAL_STRUCTURES_H
 #define GLOBAL_STRUCTURES_H
 

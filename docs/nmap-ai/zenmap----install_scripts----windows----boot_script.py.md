@@ -1,6 +1,6 @@
 # `nmap\zenmap\install_scripts\windows\boot_script.py`
 
-```
+```cpp
 # 自定义 py2exe 启动脚本
 
 # 这个脚本在 py2exe 的 boot_common.py 之后运行。该文件覆盖了 sys.stderr 和 sys.stdout，将它们分别写入日志文件和黑洞。然而，stderr 日志文件的位置是 sys.executable + '.log'，通常是不可写的。我们将在这里更改它，以便写入其他可写路径。

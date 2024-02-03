@@ -1,6 +1,6 @@
 # `nmap\liblinear\blas\dnrm2.c`
 
-```
+```cpp
 #include <math.h>  /* Needed for fabs() and sqrt() */
 #include "blas.h"
 

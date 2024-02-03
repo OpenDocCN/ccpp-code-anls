@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\wrappers\AdlLib_linux.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 (c) 2008-2018 高级微处理器公司

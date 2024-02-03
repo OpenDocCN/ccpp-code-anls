@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\src\test-feature-sse2.c`
 
-```
+```cpp
 # 包含 x86 平台的 SSE2 指令集头文件
 #include <x86intrin.h>
 

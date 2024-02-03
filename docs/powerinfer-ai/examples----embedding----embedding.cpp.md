@@ -1,6 +1,6 @@
 # `PowerInfer\examples\embedding\embedding.cpp`
 
-```
+```cpp
 #include "common.h"
 #include "llama.h"
 

@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_lua.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "ncat.h"

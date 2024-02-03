@@ -1,6 +1,6 @@
 # `ggml\tests\test-pool.c`
 
-```
+```cpp
 #include "ggml/ggml.h"
 
 #include <string.h>

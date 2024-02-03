@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_hamsi_helper.c`
 
-```
+```cpp
 /* $Id: hamsi_helper.c 202 2010-05-31 15:46:48Z tp $ */
 /* 
  * Helper code for Hamsi (input block expansion). This code is

@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-sita.c`
 
-```
+```cpp
 /*
  *  pcap-sita.c: SITA ACN 设备的数据包捕获接口补充
  *

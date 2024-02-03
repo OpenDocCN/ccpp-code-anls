@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2\blamka-round-ref.h`
 
-```
+```cpp
 # 版权声明
 # 本代码的版权归 tevador <tevador@gmail.com> 所有
 # 禁止未经许可的修改、分发和使用

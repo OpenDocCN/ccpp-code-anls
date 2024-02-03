@@ -2,7 +2,7 @@
 
 Apply LORA adapters to base model and export the resulting model.
 
-```
+```cpp
 usage: export-lora [options]
 
 options:
@@ -16,7 +16,7 @@ options:
 
 For example:
 
-```bash
+```cpp
 ./bin/export-lora \
     -m open-llama-3b-v2-q8_0.gguf \
     -o open-llama-3b-v2-q8_0-english2tokipona-chat.gguf \

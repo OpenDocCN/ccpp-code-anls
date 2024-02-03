@@ -1,6 +1,6 @@
 # `nmap\libz\uncompr.c`
 
-```
+```cpp
 # 定义了一个内部函数 uncompress2，用于将源缓冲区解压缩到目标缓冲区
 # destLen 是目标缓冲区的总大小，必须足够大以容纳整个解压缩的数据
 # sourceLen 是源缓冲区的字节长度

@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-septel.h`
 
-```
+```cpp
 /*
  * pcap-septel.c: 用于 Intel Septel 卡的数据包捕获接口
  *

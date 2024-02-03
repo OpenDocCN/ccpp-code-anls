@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\ipnet.h`
 
-```
+```cpp
 # 定义 IP 地址的协议簇为 AF_INET，对应的数值为 2，与 Solaris 的 AF_INET 匹配
 #define    IPH_AF_INET    2        /* Matches Solaris's AF_INET */
 

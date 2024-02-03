@@ -1,6 +1,6 @@
 # `nmap\liblua\ljumptab.h`
 
-```
+```cpp
 // 取消宏定义 vmdispatch
 #undef vmdispatch
 // 取消宏定义 vmcase

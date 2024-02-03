@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\bpf.h`
 
-```
+```cpp
 /*
  * 版权声明，版权归加利福尼亚大学校董会所有
  * 本代码源自Stanford/CMU enet数据包过滤器(net/enet.c)，作为4.3BSD的一部分进行分发，并由Steven McCanne和Van Jacobson在劳伦斯伯克利实验室贡献代码给伯克利。

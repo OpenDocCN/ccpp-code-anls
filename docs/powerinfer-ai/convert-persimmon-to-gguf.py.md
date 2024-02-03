@@ -1,6 +1,6 @@
 # `PowerInfer\convert-persimmon-to-gguf.py`
 
-```
+```cpp
 # 导入 torch 库
 import torch
 # 导入 os 库

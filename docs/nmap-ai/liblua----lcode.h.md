@@ -1,6 +1,6 @@
 # `nmap\liblua\lcode.h`
 
-```
+```cpp
 /*
 ** $Id: lcode.h $
 ** Code generator for Lua

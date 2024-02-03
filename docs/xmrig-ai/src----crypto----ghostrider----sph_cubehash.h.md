@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_cubehash.h`
 
-```
+```cpp
 /* $Id: sph_cubehash.h 180 2010-05-08 02:29:25Z tp $ */
 /**
  * CubeHash interface. CubeHash is a family of functions which differ by

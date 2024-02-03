@@ -1,6 +1,6 @@
 # `nmap\nsock\src\error.h`
 
-```
+```cpp
 /* $Id$ */
 
 // 如果 ERROR_H 未定义，则定义 ERROR_H

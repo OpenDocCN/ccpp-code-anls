@@ -1,6 +1,6 @@
 # `nmap\zenmap\share\zenmap\locale\xgettext-profile_editor.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 
 # This program acts like xgettext, specialized to extract strings from Zenmap's

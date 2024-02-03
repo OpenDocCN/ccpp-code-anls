@@ -1,6 +1,6 @@
 # `ggml\examples\whisper\whisper.cpp`
 
-```
+```cpp
 #include "whisper.h"
 
 #ifdef WHISPER_USE_COREML

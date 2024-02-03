@@ -1,6 +1,6 @@
 # `nmap\charpool.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef CHARPOOL_H

@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\argon2\Impl.cpp`
 
-```
+```cpp
 /*
  * 以下是 XMRig 的版权声明，列出了各个作者的版权信息
  * 程序遵循 GNU 通用公共许可证发布，允许自由传播和修改

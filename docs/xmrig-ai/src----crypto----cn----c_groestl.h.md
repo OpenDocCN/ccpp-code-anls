@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\c_groestl.h`
 
-```
+```cpp
 #ifndef __hash_h
 #define __hash_h
 /*

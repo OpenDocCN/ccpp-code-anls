@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\blowfish.c`
 
-```
+```cpp
 /*
  * $OpenBSD: blowfish.c,v 1.18 2004/11/02 17:23:26 hshoexer Exp $
  * 版本信息和修改记录

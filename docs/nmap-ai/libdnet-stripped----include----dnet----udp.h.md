@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\udp.h`
 
-```
+```cpp
 /*
  * udp.h
  *

@@ -1,6 +1,6 @@
 # `PowerInfer\llama.cpp`
 
-```
+```cpp
 #define LLAMA_API_INTERNAL
 #include "llama.h"
 

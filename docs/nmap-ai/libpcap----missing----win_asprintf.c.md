@@ -1,6 +1,6 @@
 # `nmap\libpcap\missing\win_asprintf.c`
 
-```
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <stdarg.h>

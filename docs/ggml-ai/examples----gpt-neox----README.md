@@ -6,7 +6,7 @@ Ref: https://github.com/stability-AI/stableLM/#stablelm-alpha
 
 ## Usage
 
-```bash
+```cpp
 # get the repo and build it
 git clone https://github.com/ggerganov/ggml
 cd ggml
@@ -61,7 +61,7 @@ main:    total time =  6911.26 ms
 
 ## 5-bit integer quantization mode
 
-```bash
+```cpp
 # quantize the model to 5-bits using Q5_0 quantization
 ./bin/gpt-neox-quantize ./stablelm-base-alpha-3b/ggml-model-f16.bin ./stablelm-base-alpha-3b/ggml-model-q5_0.bin q5_0
 

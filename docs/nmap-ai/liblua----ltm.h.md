@@ -1,6 +1,6 @@
 # `nmap\liblua\ltm.h`
 
-```
+```cpp
 /*
 ** $Id: ltm.h $
 ** Tag methods

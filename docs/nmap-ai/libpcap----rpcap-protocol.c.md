@@ -1,6 +1,6 @@
 # `nmap\libpcap\rpcap-protocol.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 2002年至2005年，NetGroup，意大利都灵理工大学（Politecnico di Torino）保留所有权利

@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\tun-bsd.c`
 
-```
+```cpp
 /*
  * tun-bsd.c
  *

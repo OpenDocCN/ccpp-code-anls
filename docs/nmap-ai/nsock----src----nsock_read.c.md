@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_read.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock_internal.h"  // 包含内部网络套接字库的头文件

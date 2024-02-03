@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_crc32ct.h`
 
-```
+```cpp
 // 定义 CRC32C_POLY 常量
 #define CRC32C_POLY 0x1EDC6F41
 // 定义 CRC32C 宏，用于计算 CRC32C 值

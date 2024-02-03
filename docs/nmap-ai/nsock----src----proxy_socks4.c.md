@@ -1,6 +1,6 @@
 # `nmap\nsock\src\proxy_socks4.c`
 
-```
+```cpp
 /* $Id $ */
 
 #define _GNU_SOURCE

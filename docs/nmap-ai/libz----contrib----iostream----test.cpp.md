@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\iostream\test.cpp`
 
-```
+```cpp
 #include "zfstream.h"
 
 int main() {

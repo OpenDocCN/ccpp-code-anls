@@ -1,6 +1,6 @@
 # `nmap\FPModel.h`
 
-```
+```cpp
 // 如果 _FPMODEL_H_ 未定义，则定义 _FPMODEL_H_
 #ifndef _FPMODEL_H_
 #define _FPMODEL_H_

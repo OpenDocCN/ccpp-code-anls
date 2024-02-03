@@ -1,6 +1,6 @@
 # `nmap\libnetutil\DestOptsHeader.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 
 #ifndef __DESTOPTS_HEADER_H__

@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\common\VirtualMemory_unix.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2018-2020 tevador     <tevador@gmail.com>
  * 版权所有 (c) 2018-2023 SChernykh   <https://github.com/SChernykh>

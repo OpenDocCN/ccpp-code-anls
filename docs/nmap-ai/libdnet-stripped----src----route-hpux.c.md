@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\route-hpux.c`
 
-```
+```cpp
 /*
  * route-hpux.c
  *

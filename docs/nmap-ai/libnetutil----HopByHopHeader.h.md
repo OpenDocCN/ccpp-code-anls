@@ -1,6 +1,6 @@
 # `nmap\libnetutil\HopByHopHeader.h`
 
-```
+```cpp
 #ifndef __HOP_BY_HOP_HEADER_H__
 #define __HOP_BY_HOP_HEADER_H__ 1
 

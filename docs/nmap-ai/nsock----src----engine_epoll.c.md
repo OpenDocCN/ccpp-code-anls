@@ -1,6 +1,6 @@
 # `nmap\nsock\src\engine_epoll.c`
 
-```
+```cpp
 /* $Id$ */
 
 #ifdef HAVE_CONFIG_H

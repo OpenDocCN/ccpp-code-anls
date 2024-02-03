@@ -1,6 +1,6 @@
 # `nmap\libpcap\atmuni31.h`
 
-```
+```cpp
 /*
  * 版权所有（c）1997年Yen Yen Lim和北达科他州立大学
  * 保留所有权利。

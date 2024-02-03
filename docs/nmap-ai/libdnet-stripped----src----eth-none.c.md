@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\eth-none.c`
 
-```
+```cpp
 /*
  * eth-none.c
  *

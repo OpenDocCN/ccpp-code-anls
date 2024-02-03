@@ -1,6 +1,6 @@
 # `nmap\liblua\lctype.h`
 
-```
+```cpp
 # 定义了一个头文件保护宏，避免重复包含
 #ifndef lctype_h
 #define lctype_h

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\CL\opencl.h`
 
-```
+```cpp
 /*
  * 版权声明，允许在特定条件下使用和修改材料
  */

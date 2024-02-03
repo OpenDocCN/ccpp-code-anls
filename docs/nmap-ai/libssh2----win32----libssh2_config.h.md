@@ -1,6 +1,6 @@
 # `nmap\libssh2\win32\libssh2_config.h`
 
-```
+```cpp
 #ifndef LIBSSH2_CONFIG_H
 #define LIBSSH2_CONFIG_H
 // 如果 LIBSSH2_CONFIG_H 未定义，则定义 LIBSSH2_CONFIG_H

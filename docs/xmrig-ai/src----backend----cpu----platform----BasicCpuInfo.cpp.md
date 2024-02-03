@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cpu\platform\BasicCpuInfo.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权声明
  */

@@ -1,6 +1,6 @@
 # `nmap\liblua\ltable.h`
 
-```
+```cpp
 /*
 ** $Id: ltable.h $
 ** Lua tables (hash)

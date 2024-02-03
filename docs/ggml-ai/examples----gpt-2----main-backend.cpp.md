@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-2\main-backend.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"
 #include "ggml/ggml-alloc.h"
 #include "ggml/ggml-backend.h"

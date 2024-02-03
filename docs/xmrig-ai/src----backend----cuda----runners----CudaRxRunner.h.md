@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cuda\runners\CudaRxRunner.h`
 
-```
+```cpp
 /* XMRig
  * 版权声明，列出了程序的各个作者和他们的联系方式
  */

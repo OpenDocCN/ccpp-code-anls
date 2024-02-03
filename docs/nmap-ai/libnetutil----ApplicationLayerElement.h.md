@@ -1,6 +1,6 @@
 # `nmap\libnetutil\ApplicationLayerElement.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 // 定义了一个宏，用于防止头文件的重复包含
 #ifndef APPLICATIONLAYERELEMENT_H

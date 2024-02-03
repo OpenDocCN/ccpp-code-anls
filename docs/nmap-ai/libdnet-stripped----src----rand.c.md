@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\rand.c`
 
-```
+```cpp
 /*
  * rand.c
  *

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\autogen\config.h`
 
-```
+```cpp
 /* 版权声明，版权归 CNRS、Inria、Université Bordeaux 和 Cisco Systems, Inc. 所有，保留所有权利 */
 /* 配置文件 */
 

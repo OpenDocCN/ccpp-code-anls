@@ -1,6 +1,6 @@
 # `nmap\nping\utils.h`
 
-```
+```cpp
 #ifndef UTILS_H
 #define UTILS_H 1
 

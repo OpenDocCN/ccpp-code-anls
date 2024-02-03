@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-quants.c`
 
-```
+```cpp
 // 包含自定义的头文件 ggml-quants.h 和 ggml-impl.h
 #include "ggml-quants.h"
 #include "ggml-impl.h"

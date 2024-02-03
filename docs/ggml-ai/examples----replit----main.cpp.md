@@ -1,6 +1,6 @@
 # `ggml\examples\replit\main.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"  // 引入 ggml 库的头文件
 
 #include "common-ggml.h"  // 引入通用 ggml 头文件

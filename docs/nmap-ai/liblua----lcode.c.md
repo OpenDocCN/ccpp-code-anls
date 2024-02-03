@@ -1,6 +1,6 @@
 # `nmap\liblua\lcode.c`
 
-```
+```cpp
 /*
 ** $Id: lcode.c $
 ** Lua的代码生成器

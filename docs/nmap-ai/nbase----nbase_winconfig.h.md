@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_winconfig.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NBASE_WINCONFIG_H

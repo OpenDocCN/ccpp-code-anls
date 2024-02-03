@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\compiler-tests.h`
 
-```
+```cpp
 /*
  * 设置 C 语言的编辑模式和缩进格式
  */

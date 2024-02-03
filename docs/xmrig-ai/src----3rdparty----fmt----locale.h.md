@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\locale.h`
 
-```
+```cpp
 // 包含 C++ 的 locale 库
 #include <locale>
 // 包含自定义的 format.h 头文件

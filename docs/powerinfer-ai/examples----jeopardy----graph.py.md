@@ -1,6 +1,6 @@
 # `PowerInfer\examples\jeopardy\graph.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 # 指定脚本解释器为 Python 3
 

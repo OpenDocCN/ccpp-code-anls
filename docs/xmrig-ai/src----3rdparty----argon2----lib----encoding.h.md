@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\encoding.h`
 
-```
+```cpp
 #ifndef ENCODING_H
 #define ENCODING_H
 #include "3rdparty/argon2.h"

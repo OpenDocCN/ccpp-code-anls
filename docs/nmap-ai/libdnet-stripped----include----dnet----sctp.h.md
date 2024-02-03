@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\sctp.h`
 
-```
+```cpp
 /*
  * sctp.h
  *

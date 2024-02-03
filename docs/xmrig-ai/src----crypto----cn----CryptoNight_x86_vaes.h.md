@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\CryptoNight_x86_vaes.h`
 
-```
+```cpp
 // 包含版权声明和许可信息
 /* XMRig
  * 版权声明

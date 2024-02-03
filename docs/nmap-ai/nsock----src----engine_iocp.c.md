@@ -1,6 +1,6 @@
 # `nmap\nsock\src\engine_iocp.c`
 
-```
+```cpp
 /* $Id$ */
 # 定义代码版本信息
 

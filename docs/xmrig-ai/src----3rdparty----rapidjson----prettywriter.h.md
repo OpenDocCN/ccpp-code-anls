@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\prettywriter.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_PRETTYWRITER_H_
 #define RAPIDJSON_PRETTYWRITER_H_
 

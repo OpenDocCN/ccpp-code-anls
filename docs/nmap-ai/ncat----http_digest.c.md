@@ -1,6 +1,6 @@
 # `nmap\ncat\http_digest.c`
 
-```
+```cpp
 /* $Id$ */
 /* 定义了一个标识符 */
 

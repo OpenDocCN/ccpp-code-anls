@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\funcattrs.h`
 
-```
+```cpp
 /*
  * 以下是版权声明和许可条款
  * 版权归加利福尼亚大学理事会所有

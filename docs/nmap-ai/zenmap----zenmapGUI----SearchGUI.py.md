@@ -1,6 +1,6 @@
 # `nmap\zenmap\zenmapGUI\SearchGUI.py`
 
-```
+```cpp
 # 指定脚本解释器为 Python 3
 #!/usr/bin/env python3
 

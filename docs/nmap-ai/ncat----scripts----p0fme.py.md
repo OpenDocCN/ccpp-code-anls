@@ -1,6 +1,6 @@
 # `nmap\ncat\scripts\p0fme.py`
 
-```
+```cpp
 #!/usr/bin/python
 
 from __future__ import print_function  # logging, python2-only.

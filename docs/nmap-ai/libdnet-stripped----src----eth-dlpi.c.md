@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\eth-dlpi.c`
 
-```
+```cpp
 /*
  * eth-dlpi.c
  *

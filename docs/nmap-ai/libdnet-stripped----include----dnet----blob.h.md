@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\blob.h`
 
-```
+```cpp
 /*
  * blob.h
  *

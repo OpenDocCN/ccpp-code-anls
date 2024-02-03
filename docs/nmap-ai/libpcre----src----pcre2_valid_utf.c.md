@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_valid_utf.c`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

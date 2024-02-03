@@ -1,6 +1,6 @@
 # `xmrig\src\base\tools\bswap_64.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2018-2021 SChernykh   <https://github.com/SChernykh>

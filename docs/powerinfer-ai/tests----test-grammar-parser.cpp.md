@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-grammar-parser.cpp`
 
-```
+```cpp
 #ifdef NDEBUG
 #undef NDEBUG
 #endif

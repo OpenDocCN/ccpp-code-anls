@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\channel.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_CHANNEL_H
 #define __LIBSSH2_CHANNEL_H
 /* 定义 LIBSSH2_CHANNEL_H 宏，用于条件编译，避免重复包含 */

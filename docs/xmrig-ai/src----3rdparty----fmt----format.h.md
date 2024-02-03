@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\format.h`
 
-```
+```cpp
 /*
  C++的格式化库
  版权所有（c）2012 - 现在，Victor Zverovich

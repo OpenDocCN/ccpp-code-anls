@@ -1,6 +1,6 @@
 # `nmap\nbase\getaddrinfo.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nbase.h"

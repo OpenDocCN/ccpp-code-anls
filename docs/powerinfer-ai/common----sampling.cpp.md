@@ -1,6 +1,6 @@
 # `PowerInfer\common\sampling.cpp`
 
-```
+```cpp
 // 初始化采样上下文，根据参数创建新的上下文对象
 struct llama_sampling_context * llama_sampling_init(const struct llama_sampling_params & params) {
     // 分配内存创建新的上下文对象

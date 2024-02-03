@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llava\convert-image-encoder-to-gguf.py`
 
-```
+```cpp
 # 导入必要的库
 import argparse  # 用于解析命令行参数
 import os  # 用于操作系统相关的功能

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\llhttp\http.c`
 
-```
+```cpp
 #include <stdio.h>
 #ifndef LLHTTP__TEST
 # include "llhttp.h"

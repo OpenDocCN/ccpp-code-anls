@@ -4,7 +4,7 @@ This example shows how to implement YOLO object detection with ggml using pretra
 
 Download the model weights:
 
-```bash
+```cpp
 $ wget https://pjreddie.com/media/files/yolov3-tiny.weights
 $ sha1sum yolov3-tiny.weights 
 40f3c11883bef62fd850213bc14266632ed4414f  yolov3-tiny.weights
@@ -12,14 +12,14 @@ $ sha1sum yolov3-tiny.weights
 
 Convert the weights to GGUF format:
 
-```bash
+```cpp
 $ ./convert-yolov3-tiny.py yolov3-tiny.weights
 yolov3-tiny.weights converted to yolov3-tiny.gguf
 ```
 
 Object detection:
 
-```bash
+```cpp
 $ wget https://raw.githubusercontent.com/pjreddie/darknet/master/data/dog.jpg
 $ ./yolov3-tiny -m yolov3-tiny.gguf -i dog.jpg
 Layer  0 output shape:  416 x 416 x   16 x   1

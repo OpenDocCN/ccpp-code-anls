@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\ostream.h`
 
-```
+```cpp
 // C++格式化库的std::ostream支持
 //
 // 版权所有 (c) 2012 - 现在，Victor Zverovich

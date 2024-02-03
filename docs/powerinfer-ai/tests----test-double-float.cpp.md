@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-double-float.cpp`
 
-```
+```cpp
 // 这些测试可能需要很长时间！
 // 它们旨在证明 ggml.c 中各种函数的 double 到 float 转换不会影响结果。
 // 这是通过检查所有有限（非 NaN，非无穷大）的浮点数来实现的。

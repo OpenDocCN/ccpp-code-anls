@@ -1,6 +1,6 @@
 # `nmap\libnetutil\npacket.h`
 
-```
+```cpp
 /* $Id: npacket.h 18098 2010-06-14 11:50:12Z luis $ */
 // 定义了一个宏，用于标识版本信息
 

@@ -1,6 +1,6 @@
 # `nmap\liblua\lstate.c`
 
-```
+```cpp
 /*
 ** $Id: lstate.c $
 ** 全局状态

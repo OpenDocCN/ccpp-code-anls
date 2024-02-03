@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\rx\randomx_constants_wow.h`
 
-```
+```cpp
 //Dataset base size in bytes. Must be a power of 2.
 #define RANDOMX_DATASET_BASE_SIZE  2147483648
 

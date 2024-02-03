@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\base32\base32.h`
 
-```
+```cpp
 // 定义了一个名为 base32_encode 的函数，用于将数据进行 base32 编码
 // 参数 data: 要编码的数据
 // 参数 length: 数据的长度

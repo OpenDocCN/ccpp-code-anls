@@ -1,6 +1,6 @@
 # `ggml\src\ggml-cuda.h`
 
-```
+```cpp
 #pragma once
 
 #include "ggml.h"  // 包含 ggml 库的头文件

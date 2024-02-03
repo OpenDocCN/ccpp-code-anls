@@ -1,6 +1,6 @@
 # `nmap\liblua\luac.c`
 
-```
+```cpp
 /*
 ** $Id: luac.c $
 ** Lua compiler (saves bytecodes to files; also lists bytecodes)

@@ -1,6 +1,6 @@
 # `PowerInfer\examples\quantize-stats\quantize-stats.cpp`
 
-```
+```cpp
 // 定义 LLAMA_API_INTERNAL 宏
 #define LLAMA_API_INTERNAL
 // 引入头文件 common.h

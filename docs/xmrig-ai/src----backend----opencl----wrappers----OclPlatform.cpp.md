@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\wrappers\OclPlatform.cpp`
 
-```
+```cpp
 // 包含一系列版权声明
 // 包含 GNU 通用公共许可证的条款
 // 定义了一些头文件

@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\tools\Storage.h`
 
-```
+```cpp
 /* XMRig
  * Copyright 2018-2023 SChernykh   <https://github.com/SChernykh>
  * Copyright 2016-2023 XMRig       <https://github.com/xmrig>, <support@xmrig.com>

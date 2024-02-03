@@ -1,6 +1,6 @@
 # `ggml\examples\whisper\quantize.cpp`
 
-```
+```cpp
 #include "ggml.h"
 
 #include "common.h"

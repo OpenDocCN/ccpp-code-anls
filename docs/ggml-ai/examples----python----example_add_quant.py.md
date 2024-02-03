@@ -1,6 +1,6 @@
 # `ggml\examples\python\example_add_quant.py`
 
-```
+```cpp
 # 从 ggml 库中导入 lib 和 ffi 模块
 from ggml import lib, ffi
 # 从 ggml.utils 模块中导入 init, copy, numpy 函数，并导入 numpy 库的别名 np

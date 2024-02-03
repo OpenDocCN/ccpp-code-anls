@@ -1,6 +1,6 @@
 # `nmap\string_pool.h`
 
-```
+```cpp
 #ifndef STRING_POOL_H
 #define STRING_POOL_H
 

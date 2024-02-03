@@ -1,6 +1,6 @@
 # `nmap\liblua\lfunc.h`
 
-```
+```cpp
 /*
 ** $Id: lfunc.h $
 ** 辅助函数，用于操作原型和闭包

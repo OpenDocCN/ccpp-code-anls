@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_auto_possess.c`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

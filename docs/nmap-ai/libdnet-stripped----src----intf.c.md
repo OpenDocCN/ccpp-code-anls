@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\intf.c`
 
-```
+```cpp
 /*
  * intf.c
  *

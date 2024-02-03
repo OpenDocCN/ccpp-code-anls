@@ -1,6 +1,6 @@
 # `nmap\ncat\test\test-uri.c`
 
-```
+```cpp
 #include <errno.h>
 #include <stdio.h>
 #include <stdlib.h>

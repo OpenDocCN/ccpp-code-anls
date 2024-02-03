@@ -1,6 +1,6 @@
 # `nmap\ndiff\setup.py`
 
-```
+```cpp
 #!/usr/bin/env python
 # 指定脚本的解释器为 Python
 

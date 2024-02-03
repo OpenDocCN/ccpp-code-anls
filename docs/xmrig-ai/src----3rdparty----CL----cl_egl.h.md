@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\CL\cl_egl.h`
 
-```
+```cpp
 /*
  * 版权声明
  * 2008-2019年，The Khronos Group Inc. 版权所有

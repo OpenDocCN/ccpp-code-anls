@@ -1,6 +1,6 @@
 # `nmap\libpcap\ppp.h`
 
-```
+```cpp
 /*
  * Point to Point Protocol (PPP) RFC1331
  *

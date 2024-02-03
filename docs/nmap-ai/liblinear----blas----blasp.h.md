@@ -1,6 +1,6 @@
 # `nmap\liblinear\blas\blasp.h`
 
-```
+```cpp
 #ifdef F2C_COMPAT
 // 如果定义了 F2C_COMPAT，则使用以下函数原型
 void cdotc_(fcomplex *dotval, int *n, fcomplex *cx, int *incx,

@@ -1,6 +1,6 @@
 # `nmap\libpcap\scanner.c`
 
-```
+```cpp
 #line 2 "scanner.c"
 /* Must come first for _LARGE_FILE_API on AIX. */
 #ifdef HAVE_CONFIG_H

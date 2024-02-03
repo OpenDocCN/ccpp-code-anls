@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_winunix.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NBASE_WINUNIX_H

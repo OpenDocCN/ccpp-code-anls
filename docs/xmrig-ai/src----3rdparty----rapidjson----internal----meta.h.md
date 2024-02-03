@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\meta.h`
 
-```
+```cpp
 // 定义了一个条件为真的布尔类型
 template <bool Cond> struct BoolType {
     static const bool Value = Cond;  // 存储条件值

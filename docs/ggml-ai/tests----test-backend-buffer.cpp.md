@@ -1,6 +1,6 @@
 # `ggml\tests\test-backend-buffer.cpp`
 
-```
+```cpp
 #include <cstring>  // 包含 C 字符串操作函数的头文件
 #include <ggml.h>  // 包含 GGML 库的头文件
 #include <ggml-alloc.h>  // 包含 GGML 内存分配相关的头文件

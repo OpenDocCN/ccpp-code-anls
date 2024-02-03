@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\c_jh.c`
 
-```
+```cpp
 /*This program gives the 64-bit optimized bitslice implementation of JH using ANSI C
    --------------------------------
    Performance

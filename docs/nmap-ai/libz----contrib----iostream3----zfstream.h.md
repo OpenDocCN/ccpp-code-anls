@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\iostream3\zfstream.h`
 
-```
+```cpp
 /*
  * A C++ I/O streams interface to the zlib gz* functions
  *

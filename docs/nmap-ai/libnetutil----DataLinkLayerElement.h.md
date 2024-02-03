@@ -1,6 +1,6 @@
 # `nmap\libnetutil\DataLinkLayerElement.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 // 这段代码最初是 Nping 工具的一部分。
 

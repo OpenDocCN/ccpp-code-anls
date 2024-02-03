@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\zip.c`
 
-```
+```cpp
 /* zip.c -- IO on .zip files using zlib
    Version 1.1, February 14h, 2010
    part of the MiniZip project - ( http://www.winimage.com/zLibDll/minizip.html )

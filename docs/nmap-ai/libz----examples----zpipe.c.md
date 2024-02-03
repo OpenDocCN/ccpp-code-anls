@@ -1,6 +1,6 @@
 # `nmap\libz\examples\zpipe.c`
 
-```
+```cpp
 /* zpipe.c: zlib的inflate()和deflate()的正确使用示例
    不受版权保护 -- 提供给公众领域
    版本 1.4  2005年12月11日  Mark Adler */

@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llava\llava.cpp`
 
-```
+```cpp
 // 使用 clip.h 头文件
 #include "clip.h"
 // 使用 common.h 头文件

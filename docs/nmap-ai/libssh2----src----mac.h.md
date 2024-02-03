@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\mac.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_MAC_H
 #define __LIBSSH2_MAC_H
 /* 定义宏，避免重复包含该文件 */

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\inlines.h`
 
-```
+```cpp
 /*
  * 版权声明
  */

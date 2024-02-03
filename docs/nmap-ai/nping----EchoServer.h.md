@@ -1,6 +1,6 @@
 # `nmap\nping\EchoServer.h`
 
-```
+```cpp
 #ifndef __ECHOSERVER_H__
 #define __ECHOSERVER_H__ 1
 

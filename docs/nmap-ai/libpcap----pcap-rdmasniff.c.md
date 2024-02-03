@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-rdmasniff.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 本软件的再发布和使用需要满足以下条件：

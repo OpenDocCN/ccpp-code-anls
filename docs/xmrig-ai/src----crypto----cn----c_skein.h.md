@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\c_skein.h`
 
-```
+```cpp
 #ifndef _SKEIN_H_
 #define _SKEIN_H_     1
 /**************************************************************************

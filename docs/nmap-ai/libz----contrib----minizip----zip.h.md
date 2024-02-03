@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\zip.h`
 
-```
+```cpp
 # 包含有关 .zip 文件的 IO 操作的头文件，使用 zlib 库
 # 版本信息和版权声明
 # 条款和条件

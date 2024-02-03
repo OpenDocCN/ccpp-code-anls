@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\arp-win32.c`
 
-```
+```cpp
 /*
  * arp-win32.c
  *

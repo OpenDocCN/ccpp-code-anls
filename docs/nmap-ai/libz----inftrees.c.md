@@ -1,6 +1,6 @@
 # `nmap\libz\inftrees.c`
 
-```
+```cpp
 # 生成用于高效解码的哈夫曼树
 # 版权声明
 /* inftrees.c -- generate Huffman trees for efficient decoding

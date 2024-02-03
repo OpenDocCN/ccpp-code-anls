@@ -1,6 +1,6 @@
 # `xmrig\src\donate.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2018-2022 SChernykh   <https://github.com/SChernykh>

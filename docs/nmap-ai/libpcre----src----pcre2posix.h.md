@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2posix.h`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

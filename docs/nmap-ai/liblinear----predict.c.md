@@ -1,6 +1,6 @@
 # `nmap\liblinear\predict.c`
 
-```
+```cpp
 #include <stdio.h>  // 包含标准输入输出头文件
 #include <ctype.h>  // 包含字符处理头文件
 #include <stdlib.h>  // 包含标准库头文件

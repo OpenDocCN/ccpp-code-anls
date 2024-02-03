@@ -1,6 +1,6 @@
 # `nmap\liblinear\train.c`
 
-```
+```cpp
 #include <stdio.h>  // 包含标准输入输出库
 #include <math.h>   // 包含数学函数库
 #include <stdlib.h> // 包含标准库函数

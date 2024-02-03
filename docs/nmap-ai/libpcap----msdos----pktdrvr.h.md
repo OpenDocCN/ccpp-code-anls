@@ -1,6 +1,6 @@
 # `nmap\libpcap\msdos\pktdrvr.h`
 
-```
+```cpp
 #ifndef __PKTDRVR_H
 #define __PKTDRVR_H
 

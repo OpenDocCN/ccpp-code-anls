@@ -1,6 +1,6 @@
 # `ggml\tests\test-svd0.c`
 
-```
+```cpp
 // SVD dimensionality reduction
 
 #include <float.h>  // 包含浮点数常量的定义

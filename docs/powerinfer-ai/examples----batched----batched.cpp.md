@@ -1,6 +1,6 @@
 # `PowerInfer\examples\batched\batched.cpp`
 
-```
+```cpp
 #include "common.h"
 #include "llama.h"
 

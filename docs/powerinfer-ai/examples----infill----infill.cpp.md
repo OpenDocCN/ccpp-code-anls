@@ -1,6 +1,6 @@
 # `PowerInfer\examples\infill\infill.cpp`
 
-```
+```cpp
 #include "common.h"  // 包含自定义的 common.h 头文件
 
 #include "console.h"  // 包含自定义的 console.h 头文件

@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\kernels\rx\FillAesKernel.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 2010      Jeff Garzik <jgarzik@pobox.com>

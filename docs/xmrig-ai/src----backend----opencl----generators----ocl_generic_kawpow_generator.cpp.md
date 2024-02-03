@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\generators\ocl_generic_kawpow_generator.cpp`
 
-```
+```cpp
 /*
  * 该部分代码是XMRig挖矿程序的一部分，包含了多位开发者的版权声明
  * 该程序是自由软件，你可以根据GNU通用公共许可证的条款重新分发和修改它

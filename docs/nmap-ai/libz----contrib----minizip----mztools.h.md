@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\mztools.h`
 
-```
+```cpp
 /*
   为Minizip提供额外的工具
   作者：Xavier Roche '2004

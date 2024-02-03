@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-haiku.cpp`
 
-```
+```cpp
 /*
  * 版权声明
  * 作者

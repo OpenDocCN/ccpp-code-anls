@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\itoa.h`
 
-```
+```cpp
 // 定义了一个宏，用于防止头文件被重复包含
 #ifndef RAPIDJSON_ITOA_
 

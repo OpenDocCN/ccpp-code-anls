@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2\blake2b-round.h`
 
-```
+```cpp
 /*
    BLAKE2 reference source code package - optimized C implementations
 

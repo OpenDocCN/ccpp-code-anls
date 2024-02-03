@@ -1,6 +1,6 @@
 # `xmrig\src\base\crypto\sha3.cpp`
 
-```
+```cpp
 /*
  * Works when compiled for either 32-bit or 64-bit targets, optimized for
  * 64 bit.

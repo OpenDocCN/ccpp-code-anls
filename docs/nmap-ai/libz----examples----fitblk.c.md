@@ -1,6 +1,6 @@
 # `nmap\libz\examples\fitblk.c`
 
-```
+```cpp
 /* fitblk.c: 压缩输出以适应指定大小的示例
    无版权 -- 提供给公众领域
    版本 1.1  2004年11月25日  Mark Adler */

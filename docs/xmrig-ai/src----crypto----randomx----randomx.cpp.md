@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\randomx.cpp`
 
-```
+```cpp
 /*
 版权所有 (c) 2018-2019, tevador <tevador@gmail.com>
 

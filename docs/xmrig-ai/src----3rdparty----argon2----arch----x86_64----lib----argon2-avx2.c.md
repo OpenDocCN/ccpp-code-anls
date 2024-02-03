@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-avx2.c`
 
-```
+```cpp
 #include "argon2-avx2.h"
 // 包含 argon2-avx2.h 头文件
 

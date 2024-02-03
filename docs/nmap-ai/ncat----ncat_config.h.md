@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_config.h`
 
-```
+```cpp
 # 如果存在 config.h 文件，则包含 config.h 文件
 #include "config.h"
 # 如果不存在 config.h 文件，但是 WIN32 宏定义存在，则包含 config_win.h 文件

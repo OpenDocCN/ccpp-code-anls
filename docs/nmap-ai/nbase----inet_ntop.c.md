@@ -1,6 +1,6 @@
 # `nmap\nbase\inet_ntop.c`
 
-```
+```cpp
 /*
  * 1996年由Internet Software Consortium版权所有。
  * 

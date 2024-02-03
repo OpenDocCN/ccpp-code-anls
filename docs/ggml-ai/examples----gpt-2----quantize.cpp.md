@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-2\quantize.cpp`
 
-```
+```cpp
 // 包含头文件 ggml/ggml.h
 #include "ggml/ggml.h"
 

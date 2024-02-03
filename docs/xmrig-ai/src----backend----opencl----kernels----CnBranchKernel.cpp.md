@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\kernels\CnBranchKernel.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权声明，列出了程序的各个作者和版权信息
  */

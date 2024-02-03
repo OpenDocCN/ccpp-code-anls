@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cpu\interfaces\ICpuInfo.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2018-2023 SChernykh   <https://github.com/SChernykh>
  * 版权所有 (c) 2016-2023 XMRig       <support@xmrig.com>

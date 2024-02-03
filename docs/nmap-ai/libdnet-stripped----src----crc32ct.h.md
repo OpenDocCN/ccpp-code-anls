@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\crc32ct.h`
 
-```
+```cpp
 #ifndef CRC32CT_H
 #define CRC32CT_H
 

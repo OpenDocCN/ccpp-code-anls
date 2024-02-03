@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\transport.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_TRANSPORT_H
 #define __LIBSSH2_TRANSPORT_H
 /* 定义宏，用于避免重复包含该头文件 */

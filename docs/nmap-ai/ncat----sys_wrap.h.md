@@ -1,6 +1,6 @@
 # `nmap\ncat\sys_wrap.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef SYS_WRAP_H

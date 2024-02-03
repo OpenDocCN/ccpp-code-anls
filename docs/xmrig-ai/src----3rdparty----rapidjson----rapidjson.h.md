@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\rapidjson.h`
 
-```
+```cpp
 // 定义了 RapidJSON 的版本信息和许可证信息
 // Tencent 公司和 Milo Yip 版权所有，遵循 MIT 许可证
 // 可以在遵守许可证的情况下使用该文件

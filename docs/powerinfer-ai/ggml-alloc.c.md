@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-alloc.c`
 
-```
+```cpp
 #include "ggml-alloc.h"
 #include "ggml-backend-impl.h"
 #include "ggml.h"

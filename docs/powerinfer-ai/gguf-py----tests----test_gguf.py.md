@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\tests\test_gguf.py`
 
-```
+```cpp
 # 导入 gguf 模块，禁止 Flake8 报错 F401（未使用的导入）
 import gguf  # noqa: F401
 

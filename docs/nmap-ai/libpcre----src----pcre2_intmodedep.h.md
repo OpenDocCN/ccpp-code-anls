@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_intmodedep.h`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

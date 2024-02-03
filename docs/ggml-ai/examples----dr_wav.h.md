@@ -1,6 +1,6 @@
 # `ggml\examples\dr_wav.h`
 
-```
+```cpp
 /*
 WAV音频加载器和写入器。选择公共领域或MIT-0。请参阅本文件末尾的许可声明。
 dr_wav - v0.12.16 - 2020-12-02
@@ -33,7 +33,7 @@ dr_wav支持在遇到块时触发回调（除了WAVE和FMT块）。回调已更�
     ```c
     #define DR_WAV_IMPLEMENTATION
     #include "dr_wav.h"
-    ```
+    ```cpp
 
 然后，您可以像使用任何其他头文件一样，在程序的其他部分中#include此文件。要读取音频数据，请执行以下操作：
 

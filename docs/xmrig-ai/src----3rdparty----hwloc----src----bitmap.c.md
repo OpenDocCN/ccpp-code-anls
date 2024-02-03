@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\bitmap.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 2009年CNRS 版权所有

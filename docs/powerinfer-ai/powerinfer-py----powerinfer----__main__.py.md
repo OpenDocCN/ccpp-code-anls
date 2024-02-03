@@ -1,6 +1,6 @@
 # `PowerInfer\powerinfer-py\powerinfer\__main__.py`
 
-```
+```cpp
 # 导入命令行参数解析模块
 import argparse
 

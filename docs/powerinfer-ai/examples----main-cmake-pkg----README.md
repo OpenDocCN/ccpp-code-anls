@@ -14,7 +14,7 @@ When hardware acceleration libraries are used (e.g. CUBlas, Metal, CLBlast, etc.
 
 In this case, CLBlast was already installed so the CMake package is referenced in `CMAKE_PREFIX_PATH`.
 
-```cmd
+```cpp
 git clone https://github.com/ggerganov/llama.cpp
 cd llama.cpp
 mkdir build
@@ -27,7 +27,7 @@ cmake --install . --prefix C:/LlamaCPP
 ### Build main-cmake-pkg
 
 
-```cmd
+```cpp
 cd ..\examples\main-cmake-pkg
 mkdir build
 cd build

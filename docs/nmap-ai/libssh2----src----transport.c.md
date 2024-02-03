@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\transport.c`
 
-```
+```cpp
 /*
  * 以下是版权声明和许可条款
  * 作者：Daniel Stenberg <daniel@haxx.se>

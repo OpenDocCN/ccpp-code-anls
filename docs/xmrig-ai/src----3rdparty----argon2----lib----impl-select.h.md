@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\impl-select.h`
 
-```
+```cpp
 #ifndef ARGON2_IMPL_SELECT_H
 #define ARGON2_IMPL_SELECT_H
 // 如果 ARGON2_IMPL_SELECT_H 未定义，则定义 ARGON2_IMPL_SELECT_H

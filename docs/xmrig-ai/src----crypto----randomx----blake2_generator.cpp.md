@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2_generator.cpp`
 
-```
+```cpp
 /*
 版权声明，版权所有，保留所有权利
 在源代码和二进制形式下重新分发和使用，无论是否经过修改，都必须满足以下条件：

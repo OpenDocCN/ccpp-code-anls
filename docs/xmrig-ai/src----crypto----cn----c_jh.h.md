@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\c_jh.h`
 
-```
+```cpp
 /*This program gives the 64-bit optimized bitslice implementation of JH using ANSI C
    该程序使用 ANSI C 提供了 JH 的 64 位优化比特切片实现
 

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\clzll.h`
 
-```
+```cpp
 // 定义了一个宏，用于获取64位整数的前导零的数量
 #ifndef RAPIDJSON_CLZLL_H_
 #define RAPIDJSON_CLZLL_H_

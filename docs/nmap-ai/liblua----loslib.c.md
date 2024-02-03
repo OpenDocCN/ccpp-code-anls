@@ -1,6 +1,6 @@
 # `nmap\liblua\loslib.c`
 
-```
+```cpp
 /*
 ** $Id: loslib.c $
 ** Standard Operating System library

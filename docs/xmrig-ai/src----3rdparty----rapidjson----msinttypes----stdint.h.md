@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\msinttypes\stdint.h`
 
-```
+```cpp
 // 如果不是 Microsoft Visual Studio 编译器，则执行以下代码
 #ifndef _MSC_VER // [
 #error "Use this header only with Microsoft Visual C++ compilers!"

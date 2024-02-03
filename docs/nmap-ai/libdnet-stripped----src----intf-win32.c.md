@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\intf-win32.c`
 
-```
+```cpp
 /*
  * intf-win32.c
  *

@@ -1,6 +1,6 @@
 # `nmap\nsock\src\engine_poll.c`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef WIN32

@@ -1,6 +1,6 @@
 # `nmap\liblua\lobject.c`
 
-```
+```cpp
 /*
 ** $Id: lobject.c $
 ** Some generic functions over Lua objects

@@ -1,6 +1,6 @@
 # `nmap\liblua\lcorolib.c`
 
-```
+```cpp
 /*
 ** $Id: lcorolib.c $
 ** Coroutine Library

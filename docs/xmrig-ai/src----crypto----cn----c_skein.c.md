@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\c_skein.c`
 
-```
+```cpp
 /***********************************************************************
 **
 ** Implementation of the Skein hash function.

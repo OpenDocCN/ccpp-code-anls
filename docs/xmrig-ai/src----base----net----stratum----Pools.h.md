@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\Pools.h`
 
-```
+```cpp
 /* XMRig
  * 版权声明
  */

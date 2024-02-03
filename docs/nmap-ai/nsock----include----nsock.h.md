@@ -1,6 +1,6 @@
 # `nmap\nsock\include\nsock.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NSOCK_H

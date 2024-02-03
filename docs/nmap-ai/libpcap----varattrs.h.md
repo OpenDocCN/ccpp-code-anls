@@ -1,6 +1,6 @@
 # `nmap\libpcap\varattrs.h`
 
-```
+```cpp
 /*
  * 声明代码的版权信息和许可条件
  */

@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_win.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nbase.h"

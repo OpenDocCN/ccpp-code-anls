@@ -1,6 +1,6 @@
 # `nmap\nsock\src\netutils.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "netutils.h"  // 包含自定义的网络工具头文件

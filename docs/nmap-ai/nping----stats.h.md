@@ -1,6 +1,6 @@
 # `nmap\nping\stats.h`
 
-```
+```cpp
 #ifndef __STATS_H__
 #define __STATS_H__ 1
 

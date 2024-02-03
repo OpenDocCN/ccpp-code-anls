@@ -1,6 +1,6 @@
 # `nmap\liblua\lparser.c`
 
-```
+```cpp
 /*
 ** $Id: lparser.c $
 ** Lua Parser

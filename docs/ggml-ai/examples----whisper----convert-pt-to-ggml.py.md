@@ -1,6 +1,6 @@
 # `ggml\examples\whisper\convert-pt-to-ggml.py`
 
-```
+```cpp
 # 将Whisper转换器模型从PyTorch转换为ggml格式
 #
 # 用法：python convert-pt-to-ggml.py ~/.cache/whisper/medium.pt ~/path/to/repo/whisper/ ./models/whisper-medium

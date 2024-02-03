@@ -1,6 +1,6 @@
 # `nmap\libpcap\dlpisubs.c`
 
-```
+```cpp
 /*
  * This code is derived from code formerly in pcap-dlpi.c, originally
  * contributed by Atanu Ghosh (atanu@cs.ucl.ac.uk), University College

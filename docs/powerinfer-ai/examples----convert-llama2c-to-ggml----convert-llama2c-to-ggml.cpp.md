@@ -1,6 +1,6 @@
 # `PowerInfer\examples\convert-llama2c-to-ggml\convert-llama2c-to-ggml.cpp`
 
-```
+```cpp
 // 引入所需的头文件
 #include "ggml.h"
 #include "llama.h"

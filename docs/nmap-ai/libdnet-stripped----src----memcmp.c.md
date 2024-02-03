@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\memcmp.c`
 
-```
+```cpp
 /*
  * 版权声明，版权归加利福尼亚大学理事会所有
  * 本代码基于 Chris Torek 贡献的软件修改而来

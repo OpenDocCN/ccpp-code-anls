@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\diyfp.h`
 
-```
+```cpp
 // 包含版权声明和许可信息
 // 定义了RapidJSON命名空间内部的DiyFp结构体
 #ifndef RAPIDJSON_DIYFP_H_

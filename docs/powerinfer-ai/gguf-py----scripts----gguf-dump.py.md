@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\scripts\gguf-dump.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 # 指定脚本使用的 Python 解释器
 

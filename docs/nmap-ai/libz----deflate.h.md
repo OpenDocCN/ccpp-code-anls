@@ -1,6 +1,6 @@
 # `nmap\libz\deflate.h`
 
-```
+```cpp
 /* deflate.h -- internal compression state
  * 压缩状态的内部定义
  * 版权所有 (C) 1995-2018 Jean-loup Gailly

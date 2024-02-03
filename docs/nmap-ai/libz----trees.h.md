@@ -1,6 +1,6 @@
 # `nmap\libz\trees.h`
 
-```
+```cpp
 /* header created automatically with -DGEN_TREES_H */
 
 // 定义静态的长度为 L_CODES+2 的 ct_data 类型的数组 static_ltree

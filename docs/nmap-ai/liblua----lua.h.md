@@ -1,6 +1,6 @@
 # `nmap\liblua\lua.h`
 
-```
+```cpp
 /*
 ** $Id: lua.h $
 ** Lua - A Scripting Language

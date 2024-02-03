@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-util.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 本代码版权归加利福尼亚大学所有

@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\iostream\zfstream.h`
 
-```
+```cpp
 #ifndef zfstream_h
 #define zfstream_h
 

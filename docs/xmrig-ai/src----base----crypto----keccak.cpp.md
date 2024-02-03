@@ -1,6 +1,6 @@
 # `xmrig\src\base\crypto\keccak.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权声明
  */

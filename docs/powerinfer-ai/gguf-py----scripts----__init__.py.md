@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\scripts\__init__.py`
 
-```
+```cpp
 # 导入操作系统模块
 import os
 

@@ -1,6 +1,6 @@
 # `ggml\examples\dolly-v2\convert-h5-to-ggml.py`
 
-```
+```cpp
 # 导入必要的库
 import sys
 import struct

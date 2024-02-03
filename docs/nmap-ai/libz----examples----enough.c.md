@@ -1,6 +1,6 @@
 # `nmap\libz\examples\enough.c`
 
-```
+```cpp
 /* enough.c -- determine the maximum size of inflate's Huffman code tables over
  * all possible valid and complete prefix codes, subject to a length limit.
  * Copyright (C) 2007, 2008, 2012, 2018 Mark Adler

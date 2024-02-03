@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llava\llava-cli.cpp`
 
-```
+```cpp
 // 包含头文件
 #include "ggml.h"
 #include "common.h"

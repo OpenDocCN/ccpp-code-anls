@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_log.h`
 
-```
+```cpp
 #ifndef NSOCK_LOG_H
 #define NSOCK_LOG_H
 

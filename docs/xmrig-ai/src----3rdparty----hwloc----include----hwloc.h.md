@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc.h`
 
-```
+```cpp
 /*
  * 版权 © 2009 CNRS
  * 版权 © 2009-2022 Inria。保留所有权利。

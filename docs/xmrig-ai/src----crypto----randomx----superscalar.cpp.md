@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\superscalar.cpp`
 
-```
+```cpp
 # 版权声明
 # 该代码是根据BSD许可证发布的，允许以源代码和二进制形式进行再分发和使用
 # 在满足以下条件的情况下：

@@ -1,6 +1,6 @@
 # `xmrig\src\hw\dmi\DmiMemory.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2000-2002 Alan Cox     <alan@redhat.com>
  * 版权所有 (c) 2005-2020 Jean Delvare <jdelvare@suse.de>

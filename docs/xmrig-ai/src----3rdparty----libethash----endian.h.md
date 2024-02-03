@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\libethash\endian.h`
 
-```
+```cpp
 #pragma once
 
 #include <stdint.h>

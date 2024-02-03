@@ -1,6 +1,6 @@
 # `nmap\libz\inftrees.h`
 
-```
+```cpp
 # inftrees.h -- 用于使用inftrees.c的头文件
 # 版权所有（C）1995-2005，2010 Mark Adler
 # 分发和使用条件，请参见zlib.h中的版权声明

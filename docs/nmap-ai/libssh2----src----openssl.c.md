@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\openssl.c`
 
-```
+```cpp
 /*
  * 版权声明和作者信息
  */

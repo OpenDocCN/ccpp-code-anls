@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\generators\ocl_generic_rx_generator.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 2010      Jeff Garzik <jgarzik@pobox.com>

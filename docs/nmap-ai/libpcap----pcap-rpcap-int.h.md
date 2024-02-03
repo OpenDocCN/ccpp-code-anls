@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-rpcap-int.h`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  */

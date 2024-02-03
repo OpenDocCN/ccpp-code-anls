@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-j\convert-h5-to-ggml.py`
 
-```
+```cpp
 # Convert GPT-J-6B h5 transformer model to ggml format
 #
 # Load the model using GPTJForCausalLM.

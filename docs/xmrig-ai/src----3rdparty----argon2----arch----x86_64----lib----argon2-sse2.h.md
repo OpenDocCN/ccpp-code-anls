@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-sse2.h`
 
-```
+```cpp
 // 如果未定义 ARGON2_SSE2_H，则定义 ARGON2_SSE2_H
 #ifndef ARGON2_SSE2_H
 #define ARGON2_SSE2_H

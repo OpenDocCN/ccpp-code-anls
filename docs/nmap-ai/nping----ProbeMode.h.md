@@ -1,6 +1,6 @@
 # `nmap\nping\ProbeMode.h`
 
-```
+```cpp
 // 如果未定义 __PROBEMODE_H__，则定义 __PROBEMODE_H__ 为 1
 #ifndef __PROBEMODE_H__
 #define __PROBEMODE_H__ 1

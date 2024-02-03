@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-dag.c`
 
-```
+```cpp
 /*
  * pcap-dag.c: Endace DAG 卡的数据包捕获接口。
  *

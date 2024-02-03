@@ -1,6 +1,6 @@
 # `ggml\examples\mnist\mnist-cnn.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 # 指定使用 Python3 解释器
 

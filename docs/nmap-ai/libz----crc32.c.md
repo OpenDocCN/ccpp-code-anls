@@ -1,6 +1,6 @@
 # `nmap\libz\crc32.c`
 
-```
+```cpp
 /* crc32.c -- compute the CRC-32 of a data stream
  * 计算数据流的 CRC-32
  * Copyright (C) 1995-2022 Mark Adler

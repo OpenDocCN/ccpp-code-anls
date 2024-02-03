@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\os.h`
 
-```
+```cpp
 /*
  * os.h
  *

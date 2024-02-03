@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cpu\platform\lscpu_arm.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有（C）2018      Riku Voipio <riku.voipio@iki.fi>
  * 版权所有（C）2018-2023 SChernykh   <https://github.com/SChernykh>

@@ -1,6 +1,6 @@
 # `xmrig\src\base\io\Async.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有（c）2015-2020 libuv 项目贡献者。
  * 版权所有（c）2020      cohcho      <https://github.com/cohcho>

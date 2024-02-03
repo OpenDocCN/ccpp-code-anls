@@ -1,6 +1,6 @@
 # `xmrig\src\net\strategies\DonateStrategy.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2018-2023 SChernykh   <https://github.com/SChernykh>
  * 版权所有 (c) 2016-2023 XMRig       <https://github.com/xmrig>, <support@xmrig.com>

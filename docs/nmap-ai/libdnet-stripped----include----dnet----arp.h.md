@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\arp.h`
 
-```
+```cpp
 /*
  * arp.h
  * 

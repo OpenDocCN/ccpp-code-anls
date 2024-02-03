@@ -1,6 +1,6 @@
 # `ggml\tests\test-grad0.cpp`
 
-```
+```cpp
 // 禁用 Windows 上荒谬的“不安全”警告
 #define _CRT_SECURE_NO_DEPRECATE 
 #include "ggml.h"

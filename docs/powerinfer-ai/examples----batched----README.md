@@ -2,7 +2,7 @@
 
 The example demonstrates batched generation from a given prompt
 
-```bash
+```cpp
 ./batched ./models/llama-7b-v2/ggml-model-f16.gguf "Hello my name is" 4
 
 ...

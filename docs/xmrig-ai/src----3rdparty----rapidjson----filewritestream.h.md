@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\filewritestream.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_FILEWRITESTREAM_H_
 #define RAPIDJSON_FILEWRITESTREAM_H_
 

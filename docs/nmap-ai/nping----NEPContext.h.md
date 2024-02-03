@@ -1,6 +1,6 @@
 # `nmap\nping\NEPContext.h`
 
-```
+```cpp
 #ifndef __NEPCONTEXT_H__  // 如果未定义__NEPCONTEXT_H__，则执行以下代码
 #define __NEPCONTEXT_H__ 1  // 定义__NEPCONTEXT_H__为1
 

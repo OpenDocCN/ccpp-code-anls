@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-quantize-fns.cpp`
 
-```
+```cpp
 // 为量化特定函数编写单元测试 - 量化、反量化和点积
 
 #include "ggml.h"  // 包含自定义的头文件 ggml.h

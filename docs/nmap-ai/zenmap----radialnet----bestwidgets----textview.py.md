@@ -1,6 +1,6 @@
 # `nmap\zenmap\radialnet\bestwidgets\textview.py`
 
-```
+```cpp
 # 设置文件编码为 UTF-8
 
 # ***********************IMPORTANT NMAP LICENSE TERMS************************

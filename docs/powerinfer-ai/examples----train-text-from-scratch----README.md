@@ -2,7 +2,7 @@
 
 Basic usage instructions:
 
-```bash
+```cpp
 # get training data
 wget https://raw.githubusercontent.com/brunoklein99/deep-learning-notes/master/shakespeare.txt
 

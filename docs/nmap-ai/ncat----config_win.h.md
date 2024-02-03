@@ -1,6 +1,6 @@
 # `nmap\ncat\config_win.h`
 
-```
+```cpp
 /* $Id: ncat.h 16595 2010-01-27 02:51:16Z fyodor $ */
 /* 这些是在 Windows 上生效的预处理器定义，因为没有 Autoconf 来创建 config.h。 */
 

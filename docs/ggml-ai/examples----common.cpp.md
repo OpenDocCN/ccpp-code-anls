@@ -1,6 +1,6 @@
 # `ggml\examples\common.cpp`
 
-```
+```cpp
 #define _USE_MATH_DEFINES // for M_PI
 
 #include "common.h"

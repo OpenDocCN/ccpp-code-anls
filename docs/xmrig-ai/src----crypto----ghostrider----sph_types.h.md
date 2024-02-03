@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_types.h`
 
-```
+```cpp
 /* $Id: sph_types.h 260 2011-07-21 01:02:38Z tp $ */
 #ifndef SPH_TYPES_H__
 #define SPH_TYPES_H__

@@ -1,6 +1,6 @@
 # `ggml\tests\test1.c`
 
-```
+```cpp
 #include "ggml/ggml.h"
 
 #include <stdio.h>

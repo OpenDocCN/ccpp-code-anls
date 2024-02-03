@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\CL\cl_dx9_media_sharing_intel.h`
 
-```
+```cpp
 # 版权声明，允许在遵循条件的情况下使用和修改材料
 /**********************************************************************************
  * Copyright (c) 2008-2019 The Khronos Group Inc.

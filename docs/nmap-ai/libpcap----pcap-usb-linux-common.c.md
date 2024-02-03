@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-usb-linux-common.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 1993年至1997年，加利福尼亚大学理事会保留所有权利

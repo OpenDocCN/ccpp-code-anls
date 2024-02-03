@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\llhttp\llhttp.h`
 
-```
+```cpp
 #ifndef INCLUDE_LLHTTP_H_
 #define INCLUDE_LLHTTP_H_
 

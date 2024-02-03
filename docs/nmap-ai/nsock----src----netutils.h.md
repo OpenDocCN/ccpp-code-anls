@@ -1,6 +1,6 @@
 # `nmap\nsock\src\netutils.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NETUTILS_H

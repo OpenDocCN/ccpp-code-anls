@@ -1,6 +1,6 @@
 # `nmap\liblua\lstring.c`
 
-```
+```cpp
 /*
 ** $Id: lstring.c $
 ** String table (keeps all strings handled by Lua)

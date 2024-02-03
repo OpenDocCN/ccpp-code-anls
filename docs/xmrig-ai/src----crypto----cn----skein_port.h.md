@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\skein_port.h`
 
-```
+```cpp
 #ifndef _SKEIN_PORT_H_
 #define _SKEIN_PORT_H_
 

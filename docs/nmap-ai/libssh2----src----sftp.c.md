@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\sftp.c`
 
-```
+```cpp
 /*
  * 作者声明和版权信息
  * 作者：Sara Golemon <sarag@libssh2.org>，Eli Fant <elifantu@mail.ru>，Daniel Stenberg

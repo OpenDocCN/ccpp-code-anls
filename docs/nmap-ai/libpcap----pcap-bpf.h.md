@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-bpf.h`
 
-```
+```cpp
 /*
  * 为了向后兼容。
  *

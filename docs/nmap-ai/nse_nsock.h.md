@@ -1,6 +1,6 @@
 # `nmap\nse_nsock.h`
 
-```
+```cpp
 # 如果未定义 NMAP_LUA_NSOCK_H，则定义 NMAP_LUA_NSOCK_H
 #ifndef NMAP_LUA_NSOCK_H
 # 定义 NMAP_LUA_NSOCK_H 包含 nse_lua.h 头文件

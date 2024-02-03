@@ -1,6 +1,6 @@
 # `ggml\src\ggml-opencl.cpp`
 
-```
+```cpp
 #include "ggml.h"  // 包含自定义的头文件 ggml.h
 #include "ggml-opencl.h"  // 包含自定义的头文件 ggml-opencl.h
 

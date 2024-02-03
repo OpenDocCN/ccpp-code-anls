@@ -1,6 +1,6 @@
 # `ggml\examples\python\example_test_all_quants.py`
 
-```
+```cpp
 # 从 ggml 模块中导入 ffi 和 lib
 from ggml import ffi, lib
 # 从 ggml.utils 模块中导入 init, numpy, copy

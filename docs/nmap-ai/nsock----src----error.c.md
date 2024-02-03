@@ -1,6 +1,6 @@
 # `nmap\nsock\src\error.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "error.h"

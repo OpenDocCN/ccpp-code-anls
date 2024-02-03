@@ -1,6 +1,6 @@
 # `nmap\probespec.h`
 
-```
+```cpp
 #ifndef PROBESPEC_H
 #define PROBESPEC_H
 #include <nbase.h>

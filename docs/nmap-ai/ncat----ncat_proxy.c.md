@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_proxy.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "base64.h"  // 包含 base64 相关的头文件

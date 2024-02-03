@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_ipv6.h`
 
-```
+```cpp
 #ifndef NBASE_IPV6_H
 #define NBASE_IPV6_H
 

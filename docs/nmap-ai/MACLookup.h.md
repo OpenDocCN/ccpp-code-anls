@@ -1,6 +1,6 @@
 # `nmap\MACLookup.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef MACLOOKUP_H

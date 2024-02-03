@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_luffa.c`
 
-```
+```cpp
 /* $Id: luffa.c 219 2010-06-08 17:24:41Z tp $ */
 # 版本信息和作者信息
 

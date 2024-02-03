@@ -1,7 +1,7 @@
 # Embedded benchmark
 
 You can run with XMRig with the following commands:
-```
+```cpp
 xmrig --bench=1M
 xmrig --bench=10M
 xmrig --bench=1M -a rx/wow
@@ -22,7 +22,7 @@ You can run benchmark with any configuration you want. Just start without comman
 # Stress test
 
 You can also run continuous stress-test that is as close to the real RandomX mining as possible and doesn't require any configuration:
-```
+```cpp
 xmrig --stress
 xmrig --stress -a rx/wow
 ```

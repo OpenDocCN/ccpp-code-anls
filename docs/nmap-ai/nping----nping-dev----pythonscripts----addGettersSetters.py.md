@@ -1,6 +1,6 @@
 # `nmap\nping\nping-dev\pythonscripts\addGettersSetters.py`
 
-```
+```cpp
 # 打开一个文件，以追加模式写入数据
 o = open("OutputGettersSetters.txt","a") 
 

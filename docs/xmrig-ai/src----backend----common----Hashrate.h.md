@@ -1,6 +1,6 @@
 # `xmrig\src\backend\common\Hashrate.h`
 
-```
+```cpp
 #ifndef XMRIG_HASHRATE_H
 #define XMRIG_HASHRATE_H
 

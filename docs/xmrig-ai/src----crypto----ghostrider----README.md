@@ -5,12 +5,12 @@
 No tuning is required - auto-config works well on most CPUs!
 
 ### Sample command line (non-SSL port)
-```
+```cpp
 xmrig -a gr -o raptoreumemporium.com:3008 -u WALLET_ADDRESS -p x
 ```
 
 ### Sample command line (SSL port)
-```
+```cpp
 xmrig -a gr -o rtm.suprnova.cc:4273 --tls -u WALLET_ADDRESS -p x
 ```
 

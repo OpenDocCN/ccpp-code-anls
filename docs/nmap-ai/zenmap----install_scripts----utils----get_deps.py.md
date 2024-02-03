@@ -1,6 +1,6 @@
 # `nmap\zenmap\install_scripts\utils\get_deps.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 
 # 导入模块

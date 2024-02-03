@@ -1,6 +1,6 @@
 # `nmap\libz\examples\gzappend.c`
 
-```
+```cpp
 /* gzappend -- command to append to a gzip file
    gzappend -- 用于向 gzip 文件追加内容的命令
 

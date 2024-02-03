@@ -1,6 +1,6 @@
 # `nmap\scan_lists.h`
 
-```
+```cpp
 #ifndef SCAN_LISTS_H
 #define SCAN_LISTS_H
 

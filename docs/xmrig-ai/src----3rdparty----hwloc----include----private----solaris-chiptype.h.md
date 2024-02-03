@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\private\solaris-chiptype.h`
 
-```
+```cpp
 /*
  * 版权声明，版权归 Oracle 及其关联公司所有
  *

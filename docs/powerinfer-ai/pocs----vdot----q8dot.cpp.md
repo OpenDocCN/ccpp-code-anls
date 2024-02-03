@@ -1,6 +1,6 @@
 # `PowerInfer\pocs\vdot\q8dot.cpp`
 
-```
+```cpp
 #include <cstdio>
 #include <type_traits>
 #include <vector>

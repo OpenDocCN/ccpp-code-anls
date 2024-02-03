@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_fugue.h`
 
-```
+```cpp
 #ifndef SPH_FUGUE_H__  // 如果未定义 SPH_FUGUE_H__，则包含以下内容
 #define SPH_FUGUE_H__  // 定义 SPH_FUGUE_H__
 

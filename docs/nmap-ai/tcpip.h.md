@@ -1,6 +1,6 @@
 # `nmap\tcpip.h`
 
-```
+```cpp
 /* $Id$ */
 
 // 如果 TCPIP_H 未定义，则定义 TCPIP_H

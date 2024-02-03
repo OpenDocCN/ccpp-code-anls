@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-neox\convert-h5-to-ggml.py`
 
-```
+```cpp
 import sys  # 导入 sys 模块，用于处理命令行参数
 import struct  # 导入 struct 模块，用于处理二进制数据的打包和解包
 import json  # 导入 json 模块，用于处理 JSON 格式的数据

@@ -1,6 +1,6 @@
 # `nmap\zenmap\radialnet\bestwidgets\boxes.py`
 
-```
+```cpp
 # 设置文件编码为 UTF-8
 # 重要提示：NMAP 许可证条款
 # Nmap 安全扫描器由 Nmap 软件有限责任公司（“Nmap 项目”）（C）1996-2023 年开发。Nmap 也是 Nmap 项目的注册商标。

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\writer.h`
 
-```
+```cpp
 // 定义了 RapidJSON 的写入器 Writer 类
 #ifndef RAPIDJSON_WRITER_H_
 #define RAPIDJSON_WRITER_H_

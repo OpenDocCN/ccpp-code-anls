@@ -1,6 +1,6 @@
 # `nmap\libssh2\os400\libssh2_config.h`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  * 2015年 Patrick Monnerat, D+H <patrick.monnerat@dh.com>

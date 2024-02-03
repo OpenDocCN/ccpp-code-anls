@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-backend.c`
 
-```
+```cpp
 // 包含所需的头文件
 #include "ggml-backend-impl.h"
 #include "ggml-alloc.h"

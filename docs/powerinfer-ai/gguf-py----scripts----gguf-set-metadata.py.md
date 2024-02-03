@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\scripts\gguf-set-metadata.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 import argparse  # 导入命令行参数解析模块
 import os  # 导入操作系统模块

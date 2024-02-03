@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\wrappers\AdlHealth.h`
 
-```
+```cpp
 // 定义了 XMRig_AdlHealth 结构体，包含了 GPU 的健康信息
 #ifndef XMRIG_ADLHEALTH_H
 #define XMRIG_ADLHEALTH_H

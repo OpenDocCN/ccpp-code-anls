@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_internal.h`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

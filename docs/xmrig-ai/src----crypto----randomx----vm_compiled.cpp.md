@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\vm_compiled.cpp`
 
-```
+```cpp
 /*
 版权声明，声明了对代码的使用和再分发的条件
 */

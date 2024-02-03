@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-mpi.h`
 
-```
+```cpp
 #pragma once
 
 struct ggml_context;

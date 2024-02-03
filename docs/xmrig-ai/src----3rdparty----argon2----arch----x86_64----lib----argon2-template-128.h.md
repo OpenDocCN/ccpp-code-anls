@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-template-128.h`
 
-```
+```cpp
 #include <string.h>  // 包含字符串处理函数的头文件
 
 #ifdef __GNUC__  // 如果是 GNU 编译器

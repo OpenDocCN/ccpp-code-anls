@@ -1,6 +1,6 @@
 # `PowerInfer\common\train.h`
 
-```
+```cpp
 // Various helper functions and utilities for training
 
 // 防止头文件重复包含

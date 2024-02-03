@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\generators\ocl_generic_cn_generator.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2017-2018 XMR-Stak <https://github.com/fireice-uk>, <https://github.com/psychocrypt>

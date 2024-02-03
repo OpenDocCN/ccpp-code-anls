@@ -1,6 +1,6 @@
 # `nmap\libssh2\nw\keepscreen.c`
 
-```
+```cpp
 /* Simple _NonAppStop() implementation which can be linked to your 
  * NLM in order to keep the screen open when the NLM terminates
  * (the good old clib behaviour).

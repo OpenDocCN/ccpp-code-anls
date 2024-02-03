@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\md_helper.c`
 
-```
+```cpp
 /* $Id: md_helper.c 216 2010-06-08 09:46:57Z tp $ */
 // 定义了一个版本信息的标识符
 

@@ -1,6 +1,6 @@
 # `nmap\libnetutil\ICMPHeader.h`
 
-```
+```cpp
 # 这段代码最初是 Nping 工具的一部分。
 
 # 防止头文件被重复包含

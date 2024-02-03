@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\argon2.c`
 
-```
+```cpp
 /*
  * Argon2源代码包
  *

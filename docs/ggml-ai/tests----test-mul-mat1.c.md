@@ -1,6 +1,6 @@
 # `ggml\tests\test-mul-mat1.c`
 
-```
+```cpp
 #include <stdint.h>
 #include <stdio.h>
 #include <assert.h>

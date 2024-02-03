@@ -1,6 +1,6 @@
 # `PowerInfer\examples\perplexity\perplexity.cpp`
 
-```
+```cpp
 #include "common.h"  // 引入 common.h 头文件
 #include "llama.h"    // 引入 llama.h 头文件
 

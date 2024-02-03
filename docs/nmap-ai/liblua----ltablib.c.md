@@ -1,6 +1,6 @@
 # `nmap\liblua\ltablib.c`
 
-```
+```cpp
 /*
 ** $Id: ltablib.c $
 ** Library for Table Manipulation

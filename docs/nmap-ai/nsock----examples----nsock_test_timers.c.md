@@ -1,6 +1,6 @@
 # `nmap\nsock\examples\nsock_test_timers.c`
 
-```
+```cpp
 #include "nsock.h"
 
 #include <stdio.h>

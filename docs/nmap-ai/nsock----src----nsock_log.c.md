@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_log.c`
 
-```
+```cpp
 /* $Id$ */
 
 // 包含必要的头文件

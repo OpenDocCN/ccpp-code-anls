@@ -1,6 +1,6 @@
 # `nmap\libnetutil\ICMPv4Header.h`
 
-```
+```cpp
 /* 这段代码最初是 Nping 工具的一部分。*/
 
 #ifndef ICMPv4HEADER_H

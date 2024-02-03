@@ -16,7 +16,7 @@ TODO
 
 Sample output:
 
-```
+```cpp
 $ ./bin/starcoder -h
 usage: ./bin/starcoder [options]
 
@@ -67,7 +67,7 @@ main:    total time =  4580.56 ms
 ```
 
 ## Quick start
-```bash
+```cpp
 git clone https://github.com/ggerganov/ggml
 cd ggml
 
@@ -93,7 +93,7 @@ cmake .. && make -j4 starcoder starcoder-quantize
 
 You can download the original model and convert it to `ggml` format using the script `convert-hf-to-ggml.py`:
 
-```
+```cpp
 # Convert HF model to ggml
 python examples/starcoder/convert-hf-to-ggml.py bigcode/gpt_bigcode-santacoder
 ```
@@ -104,7 +104,7 @@ This conversion requires that you have python and Transformers installed on your
 
 You can also try to quantize the `ggml` models via 4-bit integer quantization.
 
-```
+```cpp
 # quantize the model
 ./bin/starcoder-quantize ../models/bigcode/gpt_bigcode-santacoder-ggml.bin ../models/bigcode/gpt_bigcode-santacoder-ggml-q4_1.bin 3
 ```

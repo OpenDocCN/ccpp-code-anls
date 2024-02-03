@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\socket.h`
 
-```
+```cpp
 /*
  * 设置 C 语言的编辑模式为 c
  * 设置 tab 宽度为 8

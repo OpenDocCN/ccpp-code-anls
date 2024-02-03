@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\dotzlib\DotZLib\AssemblyInfo.cs`
 
-```
+```cpp
 // 使用 System.Reflection 命名空间
 using System.Reflection;
 // 使用 System.Runtime.CompilerServices 命名空间

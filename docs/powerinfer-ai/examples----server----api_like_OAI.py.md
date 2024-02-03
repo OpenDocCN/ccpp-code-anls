@@ -1,6 +1,6 @@
 # `PowerInfer\examples\server\api_like_OAI.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 # 指定脚本的解释器为 Python3
 

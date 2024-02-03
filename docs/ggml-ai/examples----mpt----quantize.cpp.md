@@ -1,6 +1,6 @@
 # `ggml\examples\mpt\quantize.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"
 #include "common-ggml.h"
 #include "common.h"

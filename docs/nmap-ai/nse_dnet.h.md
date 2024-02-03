@@ -1,6 +1,6 @@
 # `nmap\nse_dnet.h`
 
-```
+```cpp
 # 如果未定义 NMAP_LUA_DNET_H，则定义 NMAP_LUA_DNET_H
 #ifndef NMAP_LUA_DNET_H
 # 定义 NMAP_LUA_DNET_H

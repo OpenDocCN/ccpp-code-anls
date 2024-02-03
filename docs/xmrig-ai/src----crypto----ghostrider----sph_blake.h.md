@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_blake.h`
 
-```
+```cpp
 /* $Id: sph_blake.h 252 2011-06-07 17:55:14Z tp $ */
 /**
  * BLAKE interface. BLAKE is a family of functions which differ by their

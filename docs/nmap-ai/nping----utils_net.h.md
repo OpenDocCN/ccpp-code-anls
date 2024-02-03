@@ -1,6 +1,6 @@
 # `nmap\nping\utils_net.h`
 
-```
+```cpp
 // 包含 NpingTarget.h 头文件
 #include "NpingTarget.h"
 

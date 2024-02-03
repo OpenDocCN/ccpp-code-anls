@@ -1,6 +1,6 @@
 # `PowerInfer\examples\server\public\completion.js`
 
-```
+```cpp
 const paramDefaults = {
   stream: true,  // 设置默认参数，流式生成
   n_predict: 500,  // 设置默认参数，预测数量

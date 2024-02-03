@@ -9,7 +9,7 @@ Project URL: https://github.com/flame/blis
 
 Compile BLIS:
 
-```bash
+```cpp
 git clone https://github.com/flame/blis
 cd blis
 ./configure --enable-cblas -t openmp,pthreads auto
@@ -19,7 +19,7 @@ make -j
 
 Install BLIS:
 
-```bash
+```cpp
 sudo make install
 ```
 
@@ -29,14 +29,14 @@ We recommend using openmp since it's easier to modify the cores been used.
 
 Makefile:
 
-```bash
+```cpp
 make LLAMA_BLIS=1 -j
 # make LLAMA_BLIS=1 benchmark-matmult
 ```
 
 CMake:
 
-```bash
+```cpp
 mkdir build
 cd build
 cmake -DLLAMA_BLAS=ON -DLLAMA_BLAS_VENDOR=FLAME ..
@@ -48,7 +48,7 @@ make -j
 According to the BLIS documentation, we could set the following
 environment variables to modify the behavior of openmp:
 
-```bash
+```cpp
 export GOMP_CPU_AFFINITY="0-19"
 export BLIS_NUM_THREADS=14
 ```

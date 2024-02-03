@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_luffa.h`
 
-```
+```cpp
 /* $Id: sph_luffa.h 154 2010-04-26 17:00:24Z tp $ */
 # 定义了 Luffa 接口，Luffa 是一组根据输出大小不同而不同的函数；这个实现定义了输出大小为 224、256、384 和 512 位的 Luffa 函数。
 /**

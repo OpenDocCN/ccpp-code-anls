@@ -1,6 +1,6 @@
 # `nmap\libpcap\missing\strlcpy.c`
 
-```
+```cpp
 /*    $OpenBSD: pcap_strlcpy.c,v 1.12 2015/01/15 03:54:12 millert Exp $    */
 # 包含文件版本信息
 

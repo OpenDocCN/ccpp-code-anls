@@ -1,6 +1,6 @@
 # `nmap\liblua\ldebug.h`
 
-```
+```cpp
 /*
 ** $Id: ldebug.h $
 ** 辅助函数来自调试接口模块

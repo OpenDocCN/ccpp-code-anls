@@ -1,6 +1,6 @@
 # `nmap\nsock\tests\basic.c`
 
-```
+```cpp
 /*
  * Nsock回归测试套件
  * 与nmap具有相同的许可证--请参阅https://nmap.org/book/man-legal.html

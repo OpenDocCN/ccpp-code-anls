@@ -1,6 +1,6 @@
 # `xmrig\src\base\tools\cryptonote\BlobReader.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2012-2013 The Cryptonote developers
  * 版权所有 (c) 2014-2021 The Monero Project

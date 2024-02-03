@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_hamsi.h`
 
-```
+```cpp
 /* $Id: sph_hamsi.h 216 2010-06-08 09:46:57Z tp $ */
 /**
  * Hamsi interface. This code implements Hamsi with the recommended

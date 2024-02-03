@@ -5,7 +5,7 @@ This option is just hint for automatic configuration and can't precise define CP
 
 ### Option definition
 #### Config file:
-```json
+```cpp
 {
     ...
     "cpu": {

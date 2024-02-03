@@ -1,6 +1,6 @@
 # `nmap\nse_debug.h`
 
-```
+```cpp
 #ifndef NSE_DEBUG
 // 如果 NSE_DEBUG 未定义，则定义 NSE_DEBUG
 

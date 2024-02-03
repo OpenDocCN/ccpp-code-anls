@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_newline.c`
 
-```
+```cpp
 # PCRE 是一个支持正则表达式的函数库，其语法和语义尽可能接近 Perl 5 语言
 # 作者：Philip Hazel
 # 原始 API 代码版权所有 (c) 1997-2012 剑桥大学

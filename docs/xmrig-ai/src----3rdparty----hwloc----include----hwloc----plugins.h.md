@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\plugins.h`
 
-```
+```cpp
 /*
  * 版权声明
  * 版权所有 © 2013-2022 Inria

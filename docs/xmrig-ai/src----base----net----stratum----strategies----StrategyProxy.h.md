@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\strategies\StrategyProxy.h`
 
-```
+```cpp
 /* XMRig
  * 版权声明
  */

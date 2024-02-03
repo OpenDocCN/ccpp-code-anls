@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\wincng.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_WINCNG_H
 #define __LIBSSH2_WINCNG_H
 /*

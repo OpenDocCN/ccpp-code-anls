@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-types.h`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  * 2002年至2005年NetGroup，意大利都灵理工大学（Politecnico di Torino）保留所有权利

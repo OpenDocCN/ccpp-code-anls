@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\blake2\blake2.c`
 
-```
+```cpp
 // 包含头文件 string.h
 #include <string.h>
 

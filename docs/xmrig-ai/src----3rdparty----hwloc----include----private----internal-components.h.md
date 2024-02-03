@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\private\internal-components.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2018-2020 Inria。
  *

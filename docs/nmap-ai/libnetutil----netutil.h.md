@@ -1,6 +1,6 @@
 # `nmap\libnetutil\netutil.h`
 
-```
+```cpp
 # 定义网络工具的头文件 netutil.h
 #ifndef _NETUTIL_H_
 #define _NETUTIL_H_ 1

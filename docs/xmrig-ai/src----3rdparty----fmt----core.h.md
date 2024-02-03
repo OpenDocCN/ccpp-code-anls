@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\core.h`
 
-```
+```cpp
 // 格式化 C++ 的库 - 核心 API
 //
 // 版权所有，Victor Zverovich，2012年至今

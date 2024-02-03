@@ -1,6 +1,6 @@
 # `PowerInfer\convert-llama-ggml-to-gguf.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 # 指定脚本解释器为 Python 3
 

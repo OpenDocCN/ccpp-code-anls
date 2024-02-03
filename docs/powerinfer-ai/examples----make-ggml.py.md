@@ -1,6 +1,6 @@
 # `PowerInfer\examples\make-ggml.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 """
 This script converts Hugging Face Llama, StarCoder, Falcon, Baichuan, and GPT-NeoX models to GGUF and quantizes them.

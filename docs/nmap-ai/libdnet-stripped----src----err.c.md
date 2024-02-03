@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\err.c`
 
-```
+```cpp
 /*
  * err.c
  *

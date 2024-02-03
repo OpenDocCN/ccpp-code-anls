@@ -1,6 +1,6 @@
 # `nmap\libz\examples\gun.c`
 
-```
+```cpp
 /* gun.c -- simple gunzip to give an example of the use of inflateBack()
  * Copyright (C) 2003, 2005, 2008, 2010, 2012 Mark Adler
  * For conditions of distribution and use, see copyright notice in zlib.h

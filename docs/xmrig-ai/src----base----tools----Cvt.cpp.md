@@ -1,6 +1,6 @@
 # `xmrig\src\base\tools\Cvt.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有（c）2013-2020 Frank Denis <j at pureftpd dot org>
  * 版权所有（c）2018-2021 SChernykh   <https://github.com/SChernykh>

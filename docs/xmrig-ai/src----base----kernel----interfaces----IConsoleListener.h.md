@@ -1,6 +1,6 @@
 # `xmrig\src\base\kernel\interfaces\IConsoleListener.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 (c) 2018-2020 SChernykh   <https://github.com/SChernykh>

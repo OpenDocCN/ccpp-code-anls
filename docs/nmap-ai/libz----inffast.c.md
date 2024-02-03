@@ -1,6 +1,6 @@
 # `nmap\libz\inffast.c`
 
-```
+```cpp
 /* inffast.c -- 快速解码
  * 版权所有 (C) 1995-2017 Mark Adler
  * 发行和使用条件，请参见 zlib.h 中的版权声明

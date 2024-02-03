@@ -1,6 +1,6 @@
 # `nmap\liblua\lvm.c`
 
-```
+```cpp
 /*
 ** $Id: lvm.c $
 ** Lua虚拟机

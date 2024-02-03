@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_simd.c`
 
-```
+```cpp
 /* $Id: simd.c 227 2010-06-16 17:28:38Z tp $ */
 # 定义了一个字符串常量，用于标识代码的版本信息
 /*

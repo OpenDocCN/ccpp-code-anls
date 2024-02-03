@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\shmem.c`
 
-```
+```cpp
 /*
  * 版权所有 © 2017-2020 Inria。
  * 保留所有权利。请参阅顶层目录中的COPYING文件。

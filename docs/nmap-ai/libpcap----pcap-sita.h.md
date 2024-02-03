@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-sita.h`
 
-```
+```cpp
 /*
  * pcap-sita.h: SITA WAN设备的数据包捕获接口
  * 

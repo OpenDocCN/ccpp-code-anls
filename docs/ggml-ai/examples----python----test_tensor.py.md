@@ -1,6 +1,6 @@
 # `ggml\examples\python\test_tensor.py`
 
-```
+```cpp
 # 导入 pytest 模块
 import pytest
 # 从 pytest 模块中导入 raises 函数

@@ -1,6 +1,6 @@
 # `nmap\libssh2\vms\man2help.c`
 
-```
+```cpp
 #include <stdio.h>  // 包含标准输入输出库
 #include <stdlib.h>  // 包含标准库函数
 #include <string.h>  // 包含字符串处理函数

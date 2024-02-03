@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\error\en.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_ERROR_EN_H_
 #define RAPIDJSON_ERROR_EN_H_
 

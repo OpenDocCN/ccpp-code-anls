@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_maketables.c`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

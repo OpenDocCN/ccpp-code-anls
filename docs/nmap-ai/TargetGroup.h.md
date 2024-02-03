@@ -1,6 +1,6 @@
 # `nmap\TargetGroup.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef TARGETGROUP_H

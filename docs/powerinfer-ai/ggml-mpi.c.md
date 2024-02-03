@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-mpi.c`
 
-```
+```cpp
 #include "ggml-mpi.h"  // 包含 MPI 相关的头文件
 
 #include "ggml.h"  // 包含 ggml 库的头文件

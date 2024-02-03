@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\adl\adl_defines.h`
 
-```
+```cpp
 //
 // Copyright (c) 2016 Advanced Micro Devices, Inc. All rights reserved.
 //

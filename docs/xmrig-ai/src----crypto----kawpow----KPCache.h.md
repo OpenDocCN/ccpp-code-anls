@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\kawpow\KPCache.h`
 
-```
+```cpp
 // 定义了 XMRig_KP_Cache_H 的宏，用于防止头文件被重复包含
 #ifndef XMRIG_KP_CACHE_H
 #define XMRIG_KP_CACHE_H

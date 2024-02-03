@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\eth.h`
 
-```
+```cpp
 #ifndef DNET_ETH_H
 #define DNET_ETH_H
 

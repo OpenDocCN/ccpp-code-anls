@@ -1,6 +1,6 @@
 # `nmap\zenmap\zenmapGUI\FilterBar.py`
 
-```
+```cpp
 # 导入 gi 模块
 import gi
 # 要求使用 Gtk 3.0 版本

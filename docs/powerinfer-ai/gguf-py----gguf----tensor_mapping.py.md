@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\gguf\tensor_mapping.py`
 
-```
+```cpp
 # 从 __future__ 模块中导入 annotations 特性
 from __future__ import annotations
 

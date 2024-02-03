@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\dtoa.h`
 
-```
+```cpp
 // 定义了一个头文件保护宏，避免重复包含
 #ifndef RAPIDJSON_DTOA_
 #define RAPIDJSON_DTOA_

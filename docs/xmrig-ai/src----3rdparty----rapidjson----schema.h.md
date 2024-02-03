@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\schema.h`
 
-```
+```cpp
 // 定义了 RAPIDJSON_SCHEMA_H_ 宏，用于避免重复包含
 #ifndef RAPIDJSON_SCHEMA_H_
 #define RAPIDJSON_SCHEMA_H_

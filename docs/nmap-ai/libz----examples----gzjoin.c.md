@@ -1,6 +1,6 @@
 # `nmap\libz\examples\gzjoin.c`
 
-```
+```cpp
 /* gzjoin -- command to join gzip files into one gzip file
    gzip文件合并命令
 

@@ -1,6 +1,6 @@
 # `ggml\examples\python\ggml\utils.py`
 
-```
+```cpp
 """
   Common helpers for working with ggml + numpy
 """

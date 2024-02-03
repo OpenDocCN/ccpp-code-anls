@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_engines.c`
 
-```
+```cpp
 /* $Id$ */
 
 #ifdef HAVE_CONFIG_H

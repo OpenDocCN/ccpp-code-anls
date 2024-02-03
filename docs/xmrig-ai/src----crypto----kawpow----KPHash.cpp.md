@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\kawpow\KPHash.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权声明，列出了各个作者的版权信息和联系方式
  */

@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-new.c`
 
-```
+```cpp
 /*
  * 版权声明，版权归属及使用条件
  */

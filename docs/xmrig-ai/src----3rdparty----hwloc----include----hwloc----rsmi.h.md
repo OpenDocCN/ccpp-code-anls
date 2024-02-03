@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\rsmi.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2012-2021 Inria。
  * 版权所有 © 2020，Advanced Micro Devices, Inc.。

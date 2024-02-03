@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\unzip.c`
 
-```
+```cpp
 /*
    以上是一些头文件的引入和宏定义的设置
 */

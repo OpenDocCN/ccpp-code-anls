@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-ssse3.c`
 
-```
+```cpp
 #include "argon2-ssse3.h"  // 包含 SSSE3 版本的 Argon2 头文件
 
 #ifdef HAVE_SSSE3  // 如果支持 SSSE3 指令集

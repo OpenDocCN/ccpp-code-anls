@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\r\variant4_random_math.h`
 
-```
+```cpp
 #ifndef VARIANT4_RANDOM_MATH_H
 #define VARIANT4_RANDOM_MATH_H
 

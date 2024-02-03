@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\c_blake256.h`
 
-```
+```cpp
 #ifndef _BLAKE256_H_
 #define _BLAKE256_H_
 

@@ -1,6 +1,6 @@
 # `ggml\examples\common-ggml.cpp`
 
-```
+```cpp
 // 包含通用的 GGML 头文件
 #include "common-ggml.h"
 

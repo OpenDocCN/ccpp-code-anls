@@ -9,7 +9,7 @@ For the x86_64 architecture, the library implements a simple CPU dispatch which 
 ## Using GNU autotools
 
 To prepare the build environment, run:
-```bash
+```cpp
 autoreconf -i
 ./configure
 ```
@@ -29,7 +29,7 @@ Supported architectures:
 ## Using CMake
 
 To prepare the build environment, run:
-```bash
+```cpp
 cmake -DCMAKE_BUILD_TYPE=Release .
 ```
 
@@ -37,7 +37,7 @@ Then you can run `make` to build the library.
 
 ## Using QMake/Qt Creator
 A [QMake](http://doc.qt.io/qt-4.8/qmake-manual.html) project is also available in the `qmake` directory. You can open it in the [Qt Creator IDE](http://wiki.qt.io/Category:Tools::QtCreator) or build it from terminal:
-```bash
+```cpp
 cd qmake
 # see table below for the list of possible ARCH and CONFIG values
 qmake ARCH=... CONFIG+=...

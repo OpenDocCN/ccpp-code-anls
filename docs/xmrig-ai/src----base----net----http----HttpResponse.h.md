@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\http\HttpResponse.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 (c) 2014-2019 heapwolf    <https://github.com/heapwolf>

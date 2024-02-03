@@ -1,6 +1,6 @@
 # `nmap\libnetutil\IPv4Header.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 
 #ifndef IPV4HEADER_H

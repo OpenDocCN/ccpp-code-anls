@@ -1,6 +1,6 @@
 # `nmap\ncat\util.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef UTIL_H_

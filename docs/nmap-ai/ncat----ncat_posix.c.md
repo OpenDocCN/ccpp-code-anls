@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_posix.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "ncat.h"

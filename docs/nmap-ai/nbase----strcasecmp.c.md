@@ -1,6 +1,6 @@
 # `nmap\nbase\strcasecmp.c`
 
-```
+```cpp
 /* $Id$ */
 // 如果没有定义 HAVE_STRCASECMP 或者 HAVE_STRNCASECMP，则包含必要的头文件和声明
 #if !defined(HAVE_STRCASECMP) || !defined(HAVE_STRNCASECMP)

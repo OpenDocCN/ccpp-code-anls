@@ -1,6 +1,6 @@
 # `nmap\nselib\data\jdwp-class\JDWPSystemInfo.java`
 
-```
+```cpp
 import java.io.*;
 import java.util.Date;
 /* This is the JDWPSystemInfo source used for jdwp-info script to get remote

@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_rnd.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nbase.h"  // 包含自定义的头文件 nbase.h

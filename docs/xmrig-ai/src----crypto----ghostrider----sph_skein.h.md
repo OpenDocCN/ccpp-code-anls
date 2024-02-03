@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_skein.h`
 
-```
+```cpp
 # 定义了 Skein 接口，包括 Skein-256、Skein-512 和 Skein-1024 三个主要函数
 # 本代码实现了 Skein-512，可以根据输出长度进一步参数化
 # 在 SHA-3 竞赛中，Skein-512 用于输出长度为 224、256、384 和 512 位的情况

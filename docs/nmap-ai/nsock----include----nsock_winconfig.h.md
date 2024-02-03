@@ -1,6 +1,6 @@
 # `nmap\nsock\include\nsock_winconfig.h`
 
-```
+```cpp
 #ifndef NSOCK_WINCONFIG_H
 #define NSOCK_WINCONFIG_H
 // 如果 NSOCK_PCAP 没有被禁用，则定义 HAVE_PCAP 为 1

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\genkat.c`
 
-```
+```cpp
 /*
  * Argon2源代码包
  *

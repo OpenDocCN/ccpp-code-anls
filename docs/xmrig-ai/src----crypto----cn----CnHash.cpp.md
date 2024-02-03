@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\CnHash.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权 2018      Lee Clagett <https://github.com/vtnerd>

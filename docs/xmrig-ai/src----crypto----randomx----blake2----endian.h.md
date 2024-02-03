@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2\endian.h`
 
-```
+```cpp
 #pragma once
 #include <stdint.h>
 #include <string.h>

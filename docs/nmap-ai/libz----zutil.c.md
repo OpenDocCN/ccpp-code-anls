@@ -1,6 +1,6 @@
 # `nmap\libz\zutil.c`
 
-```
+```cpp
 /* zutil.c -- 压缩库的目标相关实用函数
  * 版权所有 (C) 1995-2017 Jean-loup Gailly
  * 发行和使用条件，请参见 zlib.h 中的版权声明

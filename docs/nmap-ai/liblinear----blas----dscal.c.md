@@ -1,6 +1,6 @@
 # `nmap\liblinear\blas\dscal.c`
 
-```
+```cpp
 #include "blas.h"
 
 int dscal_(int *n, double *sa, double *sx, int *incx)

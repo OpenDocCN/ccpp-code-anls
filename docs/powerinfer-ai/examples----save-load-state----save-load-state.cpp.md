@@ -1,6 +1,6 @@
 # `PowerInfer\examples\save-load-state\save-load-state.cpp`
 
-```
+```cpp
 #include "common.h"
 #include "llama.h"
 

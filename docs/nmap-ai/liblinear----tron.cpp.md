@@ -1,6 +1,6 @@
 # `nmap\liblinear\tron.cpp`
 
-```
+```cpp
 #include <math.h>  // 包含数学函数库
 #include <stdio.h>  // 包含标准输入输出库
 #include <string.h>  // 包含字符串处理库

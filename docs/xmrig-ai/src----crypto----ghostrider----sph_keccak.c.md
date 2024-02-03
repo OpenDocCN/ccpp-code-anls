@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_keccak.c`
 
-```
+```cpp
 /* $Id: keccak.c 259 2011-07-19 22:11:27Z tp $ */
 /*
  * Keccak implementation.

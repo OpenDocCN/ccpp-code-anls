@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\libethash\ethash_internal.h`
 
-```
+```cpp
 #pragma once
 #include "endian.h"
 #include "ethash.h"

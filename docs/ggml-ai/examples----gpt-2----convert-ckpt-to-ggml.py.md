@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-2\convert-ckpt-to-ggml.py`
 
-```
+```cpp
 # Convert a model checkpoint to a ggml compatible file
 # 将模型检查点转换为 ggml 兼容文件
 

@@ -1,6 +1,6 @@
 # `nmap\nse_ssl_cert.h`
 
-```
+```cpp
 # 定义条件编译指令，防止头文件被重复包含
 #ifndef NMAP_SSL_CERT_H
 #define NMAP_SSL_CERT_H

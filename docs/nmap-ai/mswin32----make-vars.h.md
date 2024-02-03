@@ -1,6 +1,6 @@
 # `nmap\mswin32\make-vars.h`
 
-```
+```cpp
 # 定义一个名为IGNORE的宏，内容为#include "../nmap.h"
 define IGNORE
 #include "../nmap.h"

@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cuda\interfaces\ICudaRunner.h`
 
-```
+```cpp
 /*
  * XMRig - 代码版权声明
  * 该程序是自由软件：您可以重新分发和/或修改它

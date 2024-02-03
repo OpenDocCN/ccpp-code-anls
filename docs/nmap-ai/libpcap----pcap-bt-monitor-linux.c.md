@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-bt-monitor-linux.c`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  *

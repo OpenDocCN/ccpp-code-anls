@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\addr.h`
 
-```
+```cpp
 /*
  * addr.h
  *

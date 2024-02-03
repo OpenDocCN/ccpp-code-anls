@@ -1,6 +1,6 @@
 # `nmap\services.h`
 
-```
+```cpp
 // 防止头文件重复包含
 #ifndef SERVICES_H
 #define SERVICES_H

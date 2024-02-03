@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2\avx2\blake2.h`
 
-```
+```cpp
 #ifndef BLAKE2_AVX2_BLAKE2_H
 #define BLAKE2_AVX2_BLAKE2_H
 

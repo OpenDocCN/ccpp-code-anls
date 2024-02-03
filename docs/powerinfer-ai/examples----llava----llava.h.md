@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llava\llava.h`
 
-```
+```cpp
 #ifndef LLAVA_H
 #define LLAVA_H
 

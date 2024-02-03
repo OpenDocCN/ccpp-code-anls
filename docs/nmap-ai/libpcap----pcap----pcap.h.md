@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\pcap.h`
 
-```
+```cpp
 /*
  * 设置 C 语言的编辑模式和缩进格式
  * 版权声明

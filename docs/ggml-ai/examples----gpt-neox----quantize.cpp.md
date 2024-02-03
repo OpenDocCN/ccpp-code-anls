@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-neox\quantize.cpp`
 
-```
+```cpp
     // 包含 ggml 库的头文件
 #include "ggml/ggml.h"
 

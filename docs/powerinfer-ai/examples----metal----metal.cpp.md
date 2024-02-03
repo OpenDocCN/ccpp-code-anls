@@ -1,6 +1,6 @@
 # `PowerInfer\examples\metal\metal.cpp`
 
-```
+```cpp
 // 使用 Metal 执行静态导出的 ggml 计算图
 //
 // - 首先，导出一个 LLaMA 图：

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\private\xml.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2009-2017 Inria。
  * 保留所有权利。请参阅顶层目录中的 COPYING 文件。

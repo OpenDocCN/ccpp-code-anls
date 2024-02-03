@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2\avx2\blake2b_avx2.c`
 
-```
+```cpp
 #include <stddef.h>
 #include <stdint.h>
 #include <stdlib.h>

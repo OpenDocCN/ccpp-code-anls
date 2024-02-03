@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\sse2neon.h`
 
-```
+```cpp
 // 如果未定义 SSE2NEON_H，则定义 SSE2NEON_H
 #ifndef SSE2NEON_H
 #define SSE2NEON_H

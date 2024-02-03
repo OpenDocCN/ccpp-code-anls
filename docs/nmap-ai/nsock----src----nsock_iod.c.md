@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_iod.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock.h"  // 包含 nsock 库的头文件

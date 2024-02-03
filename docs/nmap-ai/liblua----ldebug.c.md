@@ -1,6 +1,6 @@
 # `nmap\liblua\ldebug.c`
 
-```
+```cpp
 /*
 ** $Id: ldebug.c $
 ** Debug Interface

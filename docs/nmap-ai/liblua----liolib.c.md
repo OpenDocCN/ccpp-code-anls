@@ -1,6 +1,6 @@
 # `nmap\liblua\liolib.c`
 
-```
+```cpp
 /*
 ** $Id: liolib.c $
 ** Standard I/O (and system) library

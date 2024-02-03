@@ -1,6 +1,6 @@
 # `ggml\src\ggml-quants.c`
 
-```
+```cpp
 #include "ggml-quants.h"  // 引入自定义的头文件 ggml-quants.h
 #include "ggml-impl.h"  // 引入自定义的头文件 ggml-impl.h
 

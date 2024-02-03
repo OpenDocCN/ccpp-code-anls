@@ -1,6 +1,6 @@
 # `nmap\libnetutil\IPv6ExtensionHeader.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 // 定义了 IPv6 扩展头部的选项代码
 

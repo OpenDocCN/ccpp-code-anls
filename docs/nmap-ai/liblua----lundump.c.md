@@ -1,6 +1,6 @@
 # `nmap\liblua\lundump.c`
 
-```
+```cpp
 /*
 ** $Id: lundump.c $
 ** load precompiled Lua chunks

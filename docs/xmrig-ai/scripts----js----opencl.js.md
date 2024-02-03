@@ -1,6 +1,6 @@
 # `xmrig\scripts\js\opencl.js`
 
-```
+```cpp
 'use strict';
 
 const fs = require('fs');

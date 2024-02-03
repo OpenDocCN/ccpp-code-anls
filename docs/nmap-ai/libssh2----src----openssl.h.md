@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\openssl.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_OPENSSL_H
 #define __LIBSSH2_OPENSSL_H
 /* 定义条件编译，如果__LIBSSH2_OPENSSL_H未定义，则定义__LIBSSH2_OPENSSL_H */

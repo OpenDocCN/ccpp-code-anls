@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\testzlib\testzlib.c`
 
-```
+```cpp
 #include <stdio.h>
 #include <stdlib.h>
 #include <windows.h>

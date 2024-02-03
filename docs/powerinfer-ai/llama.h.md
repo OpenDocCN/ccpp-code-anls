@@ -1,6 +1,6 @@
 # `PowerInfer\llama.h`
 
-```
+```cpp
 #ifndef LLAMA_H
 #define LLAMA_H
 

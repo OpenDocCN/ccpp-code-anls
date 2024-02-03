@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\wrappers\OclPlatform.h`
 
-```
+```cpp
 // 定义了 XMRig 的版权信息
 /* XMRig
  * Copyright 2010      Jeff Garzik <jgarzik@pobox.com>

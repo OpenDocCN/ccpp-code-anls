@@ -1,6 +1,6 @@
 # `xmrig\src\Summary.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2018-2022 SChernykh   <https://github.com/SChernykh>
  * 版权所有 (c) 2016-2022 XMRig       <support@xmrig.com>

@@ -1,6 +1,6 @@
 # `ggml\src\ggml-backend-impl.h`
 
-```
+```cpp
 #pragma once
 
 // ggml-backend internal header

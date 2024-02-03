@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_groestl.c`
 
-```
+```cpp
 /* $Id: groestl.c 260 2011-07-21 01:02:38Z tp $ */
 /* 
  * Groestl implementation.

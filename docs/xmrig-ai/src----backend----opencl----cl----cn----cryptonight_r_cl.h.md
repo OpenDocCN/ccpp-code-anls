@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\cn\cryptonight_r_cl.h`
 
-```
+```cpp
 #pragma once
 
 namespace xmrig {

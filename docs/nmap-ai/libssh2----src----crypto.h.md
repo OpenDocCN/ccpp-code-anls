@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\crypto.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_CRYPTO_H
 #define __LIBSSH2_CRYPTO_H
 /* 定义了一个条件编译宏，用于避免重复包含同一头文件 */

@@ -1,6 +1,6 @@
 # `nmap\xml.h`
 
-```
+```cpp
 /* $Id: xml.h 15135 2009-08-19 21:05:21Z david $ */
 
 #ifndef _XML_H

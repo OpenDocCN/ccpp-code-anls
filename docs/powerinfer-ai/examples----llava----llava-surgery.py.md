@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llava\llava-surgery.py`
 
-```
+```cpp
 # 导入必要的库
 import argparse  # 用于解析命令行参数
 import glob  # 用于查找文件路径模式匹配

@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-grad0.cpp`
 
-```
+```cpp
 #define _CRT_SECURE_NO_DEPRECATE // Disables ridiculous "unsafe" warnigns on Windows
 #include "ggml.h"
 

@@ -1,6 +1,6 @@
 # `nmap\libz\test\example.c`
 
-```
+```cpp
 /* example.c -- zlib压缩库的用法示例
  * 版权所有 (C) 1995-2006, 2011, 2016 Jean-loup Gailly
  * 发行和使用条件，请参见 zlib.h 中的版权声明

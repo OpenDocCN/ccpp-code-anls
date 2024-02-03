@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_ssl.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NSOCK_SSL_H

@@ -1,6 +1,6 @@
 # `PowerInfer\common\console.cpp`
 
-```
+```cpp
 #include "console.h"
 #include <vector>
 #include <iostream>

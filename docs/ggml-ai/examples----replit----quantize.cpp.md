@@ -1,6 +1,6 @@
 # `ggml\examples\replit\quantize.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h" // 引入 ggml 库的头文件
 
 #include "common-ggml.h" // 引入 ggml 公共头文件

@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-bt-linux.h`
 
-```
+```cpp
 /*
  * 版权声明，声明作者保留所有权利
  *

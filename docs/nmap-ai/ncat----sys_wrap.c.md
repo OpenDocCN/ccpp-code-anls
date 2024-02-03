@@ -1,6 +1,6 @@
 # `nmap\ncat\sys_wrap.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include <limits.h>

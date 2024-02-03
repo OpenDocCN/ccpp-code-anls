@@ -1,6 +1,6 @@
 # `nmap\ncat\base64.h`
 
-```
+```cpp
 # 定义条件编译指令，如果未定义 NCAT_BASE64_H，则执行下面的代码
 #ifndef NCAT_BASE64_H
 # 定义 NCAT_BASE64_H，避免重复包含

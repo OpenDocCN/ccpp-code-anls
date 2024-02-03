@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-metal.h`
 
-```
+```cpp
 // Metal接口，允许使用Metal计算ggml_cgraph
 //
 // 这是一个完全功能的接口，为苹果设备的ggml提供了GPU支持。

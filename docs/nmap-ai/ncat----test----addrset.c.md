@@ -1,6 +1,6 @@
 # `nmap\ncat\test\addrset.c`
 
-```
+```cpp
 /*
     Usage: ./addrset [<specification> ...]
 

@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_winunix.c`
 
-```
+```cpp
 /*
    $Id$ 
    代码版本标识

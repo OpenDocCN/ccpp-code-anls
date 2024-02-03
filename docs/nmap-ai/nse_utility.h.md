@@ -1,6 +1,6 @@
 # `nmap\nse_utility.h`
 
-```
+```cpp
 #ifndef NMAP_NSE_UTILITY_H
 #define NMAP_NSE_UTILITY_H
 

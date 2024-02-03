@@ -1,6 +1,6 @@
 # `ggml\examples\sam\main.cpp`
 
-```
+```cpp
 // 定义宏，用于使用数学常量 M_PI
 #define _USE_MATH_DEFINES // for M_PI
 // 定义宏，禁用在 Windows 上荒谬的“不安全”警告

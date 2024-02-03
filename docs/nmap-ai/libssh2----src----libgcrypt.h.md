@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\libgcrypt.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_LIBGCRYPT_H
 #define __LIBSSH2_LIBGCRYPT_H
 /*

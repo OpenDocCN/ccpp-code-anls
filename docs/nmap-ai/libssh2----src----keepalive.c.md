@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\keepalive.c`
 
-```
+```cpp
 /*
  * 版权声明和许可声明
  * 作者：Simon Josefsson

@@ -1,6 +1,6 @@
 # `nmap\timing.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NMAP_TIMING_H

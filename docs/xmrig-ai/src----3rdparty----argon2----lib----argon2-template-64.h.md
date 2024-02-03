@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\argon2-template-64.h`
 
-```
+```cpp
 #include <string.h>
 
 #include "core.h"

@@ -1,6 +1,6 @@
 # `ggml\examples\starcoder\quantize.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"
 
 #include "common.h"

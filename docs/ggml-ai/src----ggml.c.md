@@ -1,6 +1,6 @@
 # `ggml\src\ggml.c`
 
-```
+```cpp
 // 禁用 Windows 上荒谬的“不安全”警告
 #define _CRT_SECURE_NO_DEPRECATE 
 // 在 MSVC 上使用 M_PI

@@ -17,7 +17,7 @@ Example below demonstrate all primary ideas of flexible profiles configuration:
 * `"cn/r"` Exact match, alias to profile `custom-profile`.
 * `"cn/0"` Exact match, disabled algorithm.
 
-```json
+```cpp
 {
     "cpu": {
         "enabled": true,
@@ -51,7 +51,7 @@ Example below demonstrate all primary ideas of flexible profiles configuration:
 Threads can be defined in 3 formats.
 
 #### Array format
-```json
+```cpp
 [
     [1, 0],
     [1, 2],
@@ -62,13 +62,13 @@ Threads can be defined in 3 formats.
 Each line represent one thread, first element is intensity, this option was known as `low_power_mode`, possible values is range from 1 to 5, second element is CPU affinity, special value `-1` means no affinity.
 
 #### Short array format
-```json
+```cpp
 [-1, -1, -1, -1]
 ```
 Each number represent one thread and means CPU affinity, this is default format for algorithm with maximum intensity 1, currently it all RandomX variants and cryptonight-gpu.
 
 #### Short object format
-```json
+```cpp
 {
     "intensity": 2,
     "threads": 8,

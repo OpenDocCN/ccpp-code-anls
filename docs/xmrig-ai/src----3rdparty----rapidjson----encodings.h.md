@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\encodings.h`
 
-```
+```cpp
 // 定义了 rapidjson 的编码概念
 // 包含了字符类型 Ch，字符实际上是 Unicode 编码中的代码单元
 // 定义了是否支持 Unicode 的枚举值

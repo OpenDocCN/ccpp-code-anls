@@ -1,6 +1,6 @@
 # `PowerInfer\examples\train-text-from-scratch\train-text-from-scratch.cpp`
 
-```
+```cpp
 // 包含所需的头文件
 #include "ggml.h"
 #include "ggml-alloc.h"

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\private\private.h`
 
-```
+```cpp
 /*
  * 版权声明，版权归 CNRS 所有
  * 版权声明，版权归 Inria 2009-2022 所有

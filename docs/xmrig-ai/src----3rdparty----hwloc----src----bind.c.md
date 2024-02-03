@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\bind.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 2009年CNRS版权所有

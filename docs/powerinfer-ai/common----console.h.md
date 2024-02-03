@@ -1,6 +1,6 @@
 # `PowerInfer\common\console.h`
 
-```
+```cpp
 // 控制台函数
 
 // 防止头文件重复包含

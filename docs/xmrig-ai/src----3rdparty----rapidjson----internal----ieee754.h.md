@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\ieee754.h`
 
-```
+```cpp
 // 定义了一个宏，用于判断是否已经包含了 IEEE754 头文件
 #ifndef RAPIDJSON_IEEE754_
 #define RAPIDJSON_IEEE754_

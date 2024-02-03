@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\fw.h`
 
-```
+```cpp
 /*
  * fw.h
  *

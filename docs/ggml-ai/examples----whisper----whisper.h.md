@@ -1,6 +1,6 @@
 # `ggml\examples\whisper\whisper.h`
 
-```
+```cpp
 #ifndef WHISPER_H
 #define WHISPER_H
 

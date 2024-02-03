@@ -1,6 +1,6 @@
 # `PowerInfer\examples\finetune\finetune.cpp`
 
-```
+```cpp
 #include "ggml.h"  // 引入 ggml 库的头文件
 #include "ggml-alloc.h"  // 引入 ggml-alloc 库的头文件
 #include "llama.h"  // 引入 llama 库的头文件

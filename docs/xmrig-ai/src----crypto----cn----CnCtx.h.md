@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\CnCtx.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有（c）2018      Lee Clagett <https://github.com/vtnerd>
  * 版权所有（c）2018-2020 SChernykh   <https://github.com/SChernykh>

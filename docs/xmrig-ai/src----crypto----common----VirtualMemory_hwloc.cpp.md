@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\common\VirtualMemory_hwloc.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（C）2018      Lee Clagett <https://github.com/vtnerd>

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\reader.h`
 
-```
+```cpp
 // 定义了 RAPIDJSON_READER_H_ 宏，用于避免重复包含
 #ifndef RAPIDJSON_READER_H_
 #define RAPIDJSON_READER_H_

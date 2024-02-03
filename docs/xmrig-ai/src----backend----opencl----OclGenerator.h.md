@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\OclGenerator.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 2010      Jeff Garzik <jgarzik@pobox.com>

@@ -1,6 +1,6 @@
 # `ggml\tests\test-mul-mat.cpp`
 
-```
+```cpp
 #include "ggml.h"
 #include "ggml/ggml-alloc.h"
 #include "ggml/ggml-backend.h"

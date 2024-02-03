@@ -1,6 +1,6 @@
 # `nmap\libnetutil\PacketParser.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 
 #ifndef __PACKETPARSER_H__

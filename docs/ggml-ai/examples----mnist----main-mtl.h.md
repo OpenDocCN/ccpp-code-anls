@@ -1,6 +1,6 @@
 # `ggml\examples\mnist\main-mtl.h`
 
-```
+```cpp
 #pragma once
 // 防止头文件被重复包含
 

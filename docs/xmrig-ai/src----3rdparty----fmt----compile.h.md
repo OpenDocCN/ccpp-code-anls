@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\compile.h`
 
-```
+```cpp
 // 格式化库的 C++ 实验性格式字符串编译
 //
 // 版权所有，Victor Zverovich 和 fmt 贡献者，2012 年至今

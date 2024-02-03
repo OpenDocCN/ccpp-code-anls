@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\addr.c`
 
-```
+```cpp
 /*
  * addr.c
  *

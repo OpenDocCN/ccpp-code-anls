@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\rx\RxFix.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 (c) 2018-2019 tevador     <tevador@gmail.com>

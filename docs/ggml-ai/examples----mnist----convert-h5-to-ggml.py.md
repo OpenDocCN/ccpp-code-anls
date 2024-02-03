@@ -1,6 +1,6 @@
 # `ggml\examples\mnist\convert-h5-to-ggml.py`
 
-```
+```cpp
 # 将 MNIS h5 转换器模型转换为 ggml 格式
 #
 # 使用 PyTorch 加载保存的模型（state_dict）

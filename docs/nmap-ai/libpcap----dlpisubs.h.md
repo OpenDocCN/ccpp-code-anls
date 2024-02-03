@@ -1,6 +1,6 @@
 # `nmap\libpcap\dlpisubs.h`
 
-```
+```cpp
 #ifndef dlpisubs_h
 #define    dlpisubs_h
 

@@ -1,6 +1,6 @@
 # `ggml\examples\starcoder\starcoder-mmap.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"
 // 引入 ggml 库的头文件
 

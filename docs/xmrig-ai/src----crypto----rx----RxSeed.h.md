@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\rx\RxSeed.h`
 
-```
+```cpp
 # 导入所需的模块和类
 #include "base/net/stratum/Job.h"
 #include "base/tools/Buffer.h"

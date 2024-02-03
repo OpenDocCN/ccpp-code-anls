@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\openfabrics-verbs.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2009 CNRS
  * 版权所有 © 2009-2021 Inria

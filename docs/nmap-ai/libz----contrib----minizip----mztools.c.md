@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\mztools.c`
 
-```
+```cpp
 /*
   Additional tools for Minizip
   Code: Xavier Roche '2004

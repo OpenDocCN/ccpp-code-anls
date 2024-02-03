@@ -1,6 +1,6 @@
 # `nmap\nping\EchoHeader.h`
 
-```
+```cpp
 #ifndef __ECHOHEADER_H__
 #define __ECHOHEADER_H__ 1
 

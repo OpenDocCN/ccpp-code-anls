@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2\blake2b_sse41.c`
 
-```
+```cpp
 /*
  * 版权声明，声明了代码的版权和使用条件
  * 版权所有

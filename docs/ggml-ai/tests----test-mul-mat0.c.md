@@ -1,6 +1,6 @@
 # `ggml\tests\test-mul-mat0.c`
 
-```
+```cpp
 #define _CRT_SECURE_NO_DEPRECATE // Disables ridiculous "unsafe" warnigns on Windows
 #include "ggml/ggml.h"
 

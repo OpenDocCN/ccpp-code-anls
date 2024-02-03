@@ -1,6 +1,6 @@
 # `nmap\libz\gzlib.c`
 
-```
+```cpp
 /* gzlib.c -- zlib functions common to reading and writing gzip files
  * zlib函数，用于读写gzip文件的公共函数
  * 版权所有 (C) 2004-2019 Mark Adler

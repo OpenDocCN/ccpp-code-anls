@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llama-bench\llama-bench.cpp`
 
-```
+```cpp
 // 包含必要的头文件
 #include <algorithm>
 #include <array>

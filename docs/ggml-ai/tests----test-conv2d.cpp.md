@@ -1,6 +1,6 @@
 # `ggml\tests\test-conv2d.cpp`
 
-```
+```cpp
 #include "ggml.h"
 #include "ggml/ggml-alloc.h"
 #include "ggml/ggml-backend.h"

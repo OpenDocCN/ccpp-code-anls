@@ -1,6 +1,6 @@
 # `nmap\nsock\src\gh_heap.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef GH_HEAP_H

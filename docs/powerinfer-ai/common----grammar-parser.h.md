@@ -1,6 +1,6 @@
 # `PowerInfer\common\grammar-parser.h`
 
-```
+```cpp
 // 实现了对扩展的Backus-Naur形式（BNF）的解析器，生成llama.h指定的二进制无上下文语法格式。支持字符范围、分组和重复操作符。例如，算术的语法可能如下所示：
 //
 // root  ::= expr

@@ -1,6 +1,6 @@
 # `nmap\nsock\src\filespace.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock_internal.h"

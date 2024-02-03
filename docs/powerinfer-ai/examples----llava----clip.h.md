@@ -1,6 +1,6 @@
 # `PowerInfer\examples\llava\clip.h`
 
-```
+```cpp
 #ifndef CLIP_H
 #define CLIP_H
 

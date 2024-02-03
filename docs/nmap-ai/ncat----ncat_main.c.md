@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_main.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock.h"  // 包含网络套接字操作的头文件

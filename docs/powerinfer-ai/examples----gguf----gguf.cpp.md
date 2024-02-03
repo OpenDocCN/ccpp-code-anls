@@ -1,6 +1,6 @@
 # `PowerInfer\examples\gguf\gguf.cpp`
 
-```
+```cpp
 #include "ggml.h"
 #include "llama.h"
 

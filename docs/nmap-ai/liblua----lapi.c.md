@@ -1,6 +1,6 @@
 # `nmap\liblua\lapi.c`
 
-```
+```cpp
 /*
 ** $Id: lapi.c $
 ** Lua API

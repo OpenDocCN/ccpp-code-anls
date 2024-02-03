@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-dpdk.c`
 
-```
+```cpp
 /*
  * 版权所有（C）2018 jingle YANG。
  *

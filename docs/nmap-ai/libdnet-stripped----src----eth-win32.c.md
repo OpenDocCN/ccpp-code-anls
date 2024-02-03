@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\eth-win32.c`
 
-```
+```cpp
 /*
  * eth-win32.c
  *

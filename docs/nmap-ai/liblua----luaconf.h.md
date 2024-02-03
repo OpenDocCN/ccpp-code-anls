@@ -1,6 +1,6 @@
 # `nmap\liblua\luaconf.h`
 
-```
+```cpp
 /*
 ** $Id: luaconf.h $
 ** Configuration file for Lua

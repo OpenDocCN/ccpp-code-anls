@@ -1,6 +1,6 @@
 # `PowerInfer\common\sampling.h`
 
-```
+```cpp
 #pragma once
 
 #include "llama.h"  // 包含 llama.h 头文件

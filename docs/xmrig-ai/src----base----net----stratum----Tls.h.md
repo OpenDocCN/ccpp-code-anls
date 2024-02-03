@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\Tls.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有（C）2018      Lee Clagett <https://github.com/vtnerd>
  * 版权所有（C）2018-2021 SChernykh   <https://github.com/SChernykh>

@@ -1,6 +1,6 @@
 # `ggml\examples\yolo\yolov3-tiny.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"  // 引入 ggml 库的头文件
 #include "yolo-image.h"  // 引入 yolo-image 的头文件
 

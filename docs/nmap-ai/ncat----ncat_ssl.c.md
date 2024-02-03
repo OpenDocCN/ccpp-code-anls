@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_ssl.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nbase.h"  // 包含自定义的基础库头文件

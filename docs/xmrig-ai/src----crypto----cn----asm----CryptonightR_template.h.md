@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\asm\CryptonightR_template.h`
 
-```
+```cpp
 // 自动生成的文件，不要编辑
 
 // 定义 CryptonightR 算法的模板部分1

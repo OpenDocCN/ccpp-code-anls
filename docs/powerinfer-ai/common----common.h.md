@@ -1,6 +1,6 @@
 # `PowerInfer\common\common.h`
 
-```
+```cpp
 // Various helper functions and utilities
 
 #pragma once

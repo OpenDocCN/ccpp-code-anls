@@ -1,6 +1,6 @@
 # `ggml\tests\test-backend-ops.cpp`
 
-```
+```cpp
 // 初始化张量的数值为均匀分布的随机数，范围默认为 -1.0 到 1.0
 static void init_tensor_uniform(ggml_tensor * tensor, float min = -1.0f, float max = 1.0f) {
     // 获取张量的元素数量

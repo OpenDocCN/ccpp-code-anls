@@ -20,7 +20,7 @@ The example currently supports only the [ViT-B SAM model checkpoint](https://hug
 - [ ] GPU support
 
 ## Quick start
-```bash
+```cpp
 git clone https://github.com/ggerganov/ggml
 cd ggml
 
@@ -46,7 +46,7 @@ cmake .. && make -j4
 You can download a [model checkpoint](https://github.com/facebookresearch/segment-anything/tree/main#model-checkpoints) and convert it to `ggml` format using the script `convert-pth-to-ggml.py`:
 
 ## Example output on M2 Ultra
-```
+```cpp
  $ ▶ make -j sam && time ./bin/sam -t 8 -i img.jpg
 [ 28%] Built target common
 [ 71%] Built target ggml

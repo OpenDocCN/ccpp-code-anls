@@ -1,6 +1,6 @@
 # `ggml\examples\mnist\main-mtl.cpp`
 
-```
+```cpp
 // 使用预生成的 MNIST 计算图在 M1 GPU 上进行推断，通过 MPS
 //
 // 您可以使用 "mnist" 工具生成计算图：

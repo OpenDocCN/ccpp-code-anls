@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\benchmark\BenchClient.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有（c）2018-2021 SChernykh   <https://github.com/SChernykh>
  * 版权所有（c）2016-2021 XMRig       <https://github.com/xmrig>, <support@xmrig.com>

@@ -6,7 +6,7 @@ Offical HTTP client for API: http://workers.xmrig.info/
 
 Example configuration:
 
-```json
+```cpp
 "api": {
 	"id": null,
 	"worker-id": null,
@@ -61,6 +61,6 @@ Update current miner configuration. Common use case, get current configuration, 
 
 Curl example:
 
-```
+```cpp
 curl -v --data-binary @config.json -X PUT -H "Content-Type: application/json" -H "Authorization: Bearer SECRET" http://127.0.0.1:44444/1/config
 ```

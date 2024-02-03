@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\fw-none.c`
 
-```
+```cpp
 /*
  * fw-none.c
  * 

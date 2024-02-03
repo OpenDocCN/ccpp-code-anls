@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\soft_aes.cpp`
 
-```
+```cpp
 /*
 版权声明
 */

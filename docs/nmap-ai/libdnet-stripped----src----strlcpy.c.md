@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\strlcpy.c`
 
-```
+```cpp
 /*
  * 以下是一个字符串拷贝函数的实现
  * 该函数的作用是将源字符串拷贝到目标字符串中，最多拷贝 siz-1 个字符

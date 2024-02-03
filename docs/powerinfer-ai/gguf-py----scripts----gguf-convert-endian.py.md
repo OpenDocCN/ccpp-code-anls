@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\scripts\gguf-convert-endian.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 from __future__ import annotations
 

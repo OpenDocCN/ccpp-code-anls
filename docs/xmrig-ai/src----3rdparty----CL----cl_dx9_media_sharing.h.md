@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\CL\cl_dx9_media_sharing.h`
 
-```
+```cpp
 /*
  * 版权声明，允许在不受限制的情况下使用和处理材料
  */

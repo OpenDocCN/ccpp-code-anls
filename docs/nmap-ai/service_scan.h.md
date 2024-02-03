@@ -1,6 +1,6 @@
 # `nmap\service_scan.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef SERVICE_SCAN_H

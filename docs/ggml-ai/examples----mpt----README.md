@@ -4,7 +4,7 @@ Ref: https://github.com/mosaicml/llm-foundry#mpt
 
 ## Usage
 
-```bash
+```cpp
 # get the repo and build it
 git clone https://github.com/ggerganov/ggml
 cd ggml

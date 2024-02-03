@@ -1,6 +1,6 @@
 # `ggml\include\ggml\ggml.h`
 
-```
+```cpp
 #pragma once
 
 //

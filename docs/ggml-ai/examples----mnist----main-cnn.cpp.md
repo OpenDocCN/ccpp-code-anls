@@ -1,6 +1,6 @@
 # `ggml\examples\mnist\main-cnn.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"  // 包含 ggml 库的头文件
 
 #include "common.h"  // 包含通用的头文件

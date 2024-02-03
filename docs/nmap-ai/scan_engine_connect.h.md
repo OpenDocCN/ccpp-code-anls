@@ -1,6 +1,6 @@
 # `nmap\scan_engine_connect.h`
 
-```
+```cpp
 /* $Id$ */ 
 // 定义了一个宏，用于标识版本号或者其他信息
 

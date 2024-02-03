@@ -1,6 +1,6 @@
 # `nmap\liblua\lmathlib.c`
 
-```
+```cpp
 /*
 ** $Id: lmathlib.c $
 ** 标准数学库

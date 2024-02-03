@@ -1,6 +1,6 @@
 # `nmap\nbase\getnameinfo.c`
 
-```
+```cpp
 /* $Id$ */
 #include "nbase.h"
 

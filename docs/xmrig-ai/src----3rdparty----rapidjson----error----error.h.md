@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\error\error.h`
 
-```
+```cpp
 // 定义了解析错误码的枚举类型
 //! Error code of parsing.
 /*! \ingroup RAPIDJSON_ERRORS

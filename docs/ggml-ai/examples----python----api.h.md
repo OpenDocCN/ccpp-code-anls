@@ -1,6 +1,6 @@
 # `ggml\examples\python\api.h`
 
-```
+```cpp
 /*
   在这里列出你想在 Python 绑定中公开的所有头文件，
   然后运行 `python regenerate.py`（详细信息请参阅 README.md）

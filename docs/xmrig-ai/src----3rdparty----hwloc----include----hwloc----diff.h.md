@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\hwloc\diff.h`
 
-```
+```cpp
 /*
  * 版权所有 © 2013-2020 Inria。
  * 请查看顶层目录中的 COPYING 文件。

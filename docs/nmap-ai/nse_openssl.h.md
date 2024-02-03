@@ -1,6 +1,6 @@
 # `nmap\nse_openssl.h`
 
-```
+```cpp
 #ifndef OPENSSLLIB
 // 如果未定义 OPENSSLLIB，则定义 OPENSSLLIB
 #define OPENSSLLIBNAME "openssl"

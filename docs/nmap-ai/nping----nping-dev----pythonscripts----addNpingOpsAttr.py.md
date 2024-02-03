@@ -1,6 +1,6 @@
 # `nmap\nping\nping-dev\pythonscripts\addNpingOpsAttr.py`
 
-```
+```cpp
 # 从用户输入中获取方法名
 methname = raw_input("Method name: ")
 # 从用户输入中获取属性名

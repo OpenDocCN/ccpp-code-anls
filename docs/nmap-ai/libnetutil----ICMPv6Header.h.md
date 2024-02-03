@@ -1,6 +1,6 @@
 # `nmap\libnetutil\ICMPv6Header.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 
 #ifndef ICMPv6HEADER_H

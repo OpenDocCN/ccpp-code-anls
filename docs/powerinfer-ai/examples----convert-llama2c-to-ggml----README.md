@@ -7,7 +7,7 @@ To convert the model first download the models from the [llma2.c](https://github
 `$ make -j`
 
 After successful compilation, following usage options are available:
-```
+```cpp
 usage: ./convert-llama2c-to-ggml [options]
 
 options:

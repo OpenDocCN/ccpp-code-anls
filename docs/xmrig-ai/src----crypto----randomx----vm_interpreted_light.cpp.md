@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\vm_interpreted_light.cpp`
 
-```
+```cpp
 /*
 版权声明，允许在源代码和二进制形式下重新分发和使用，需满足以下条件：
 * 在源代码的重新分发中必须保留上述版权声明、条件列表和以下免责声明。

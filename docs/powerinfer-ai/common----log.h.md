@@ -1,6 +1,6 @@
 # `PowerInfer\common\log.h`
 
-```
+```cpp
 #pragma once
 
 #include <chrono>  // 包含时间库

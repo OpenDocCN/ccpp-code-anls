@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\iostream2\zstream.h`
 
-```
+```cpp
 /*
  * 版权声明
  * 1997年

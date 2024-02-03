@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\strtod.h`
 
-```
+```cpp
 // 定义了一个宏，用于防止重复包含头文件
 #ifndef RAPIDJSON_STRTOD_
 #define RAPIDJSON_STRTOD_

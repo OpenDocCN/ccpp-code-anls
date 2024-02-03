@@ -1,6 +1,6 @@
 # `ggml\src\ggml-alloc.c`
 
-```
+```cpp
 #include "ggml-alloc.h"  // 包含自定义的内存分配器头文件
 #include "ggml-backend-impl.h"  // 包含后端实现的头文件
 #include "ggml.h"  // 包含 GGML 库的头文件

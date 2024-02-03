@@ -1,6 +1,6 @@
 # `nmap\libnetutil\FragmentHeader.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 // 定义了一个宏，用于防止头文件被重复包含
 #ifndef __FRAGMENT_HEADER_H__

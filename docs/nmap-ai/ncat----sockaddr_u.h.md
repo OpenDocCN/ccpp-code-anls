@@ -1,6 +1,6 @@
 # `nmap\ncat\sockaddr_u.h`
 
-```
+```cpp
 /* $Id:$ */
 
 #include "ncat_config.h"

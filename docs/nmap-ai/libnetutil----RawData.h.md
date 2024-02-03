@@ -1,6 +1,6 @@
 # `nmap\libnetutil\RawData.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 // 定义了一个名为RAWDATA_H的宏，用于避免重复包含同一个头文件
 #ifndef RAWDATA_H

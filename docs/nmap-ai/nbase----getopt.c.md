@@ -1,6 +1,6 @@
 # `nmap\nbase\getopt.c`
 
-```
+```cpp
 /*
  *  my_getopt.c - my re-implementation of getopt.
  *  Copyright 1997, 2000, 2001, 2002, 2006, Benjamin Sittler

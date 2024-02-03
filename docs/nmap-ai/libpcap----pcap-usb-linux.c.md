@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-usb-linux.c`
 
-```
+```cpp
 /*
  * 版权声明和许可声明
  * 作者：Paolo Abeni (Italy)

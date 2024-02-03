@@ -1,6 +1,6 @@
 # `nmap\liblua\lprefix.h`
 
-```
+```cpp
 /*
 ** $Id: lprefix.h $
 ** Lua代码必须在任何其他头文件之前定义的一些定义

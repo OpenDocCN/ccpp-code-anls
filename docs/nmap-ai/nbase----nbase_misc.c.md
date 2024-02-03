@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_misc.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nbase.h"

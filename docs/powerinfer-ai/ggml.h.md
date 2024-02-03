@@ -1,6 +1,6 @@
 # `PowerInfer\ggml.h`
 
-```
+```cpp
 #pragma once
 
 // GGML Tensor Library

@@ -1,6 +1,6 @@
 # `nmap\ndiff\ndifftest.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 # 设置脚本的解释器为 Python3
 

@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\kernels\rx\RxJitKernel.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有 2010      Jeff Garzik <jgarzik@pobox.com>
  * 版权所有 2012-2014 pooler      <pooler@litecoinpool.org>

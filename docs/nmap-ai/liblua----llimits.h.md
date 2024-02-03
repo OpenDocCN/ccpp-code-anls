@@ -1,6 +1,6 @@
 # `nmap\liblua\llimits.h`
 
-```
+```cpp
 # 定义了一些限制、基本类型和一些其他“与安装相关”的定义
 # 包含了一些标准库头文件
 #ifndef llimits_h

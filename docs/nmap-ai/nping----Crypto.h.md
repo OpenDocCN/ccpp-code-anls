@@ -1,6 +1,6 @@
 # `nmap\nping\Crypto.h`
 
-```
+```cpp
 #ifndef __CRYPTO_H__
 #define __CRYPTO_H__ 1
 #include "nping.h"

@@ -1,6 +1,6 @@
 # `nmap\zenmap\radialnet\gui\RadialNet.py`
 
-```
+```cpp
 # 设置文件编码为 UTF-8
 # 重要提示：NMAP许可证条款
 # Nmap安全扫描仪是Nmap软件有限责任公司（“Nmap项目”）1996-2023年的版权所有。Nmap也是Nmap项目的注册商标。

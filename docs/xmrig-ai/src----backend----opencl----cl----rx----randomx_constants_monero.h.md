@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\rx\randomx_constants_monero.h`
 
-```
+```cpp
 // 定义数据集基本大小（以字节为单位）。必须是2的幂。
 #define RANDOMX_DATASET_BASE_SIZE  2147483648
 

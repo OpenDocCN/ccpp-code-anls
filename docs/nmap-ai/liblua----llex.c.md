@@ -1,6 +1,6 @@
 # `nmap\liblua\llex.c`
 
-```
+```cpp
 /*
 ** $Id: llex.c $
 ** Lexical Analyzer

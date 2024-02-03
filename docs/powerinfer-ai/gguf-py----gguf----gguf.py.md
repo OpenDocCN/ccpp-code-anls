@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\gguf\gguf.py`
 
-```
+```cpp
 # 这个文件保留以确保兼容性。如果你想要从 Python 使用 GGUF API，
 # 则不要直接导入 gguf/gguf.py。如果你正在寻找示例，请查看 gguf-py 目录。
 

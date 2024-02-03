@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\stream.h`
 
-```
+```cpp
 // 包含版权声明和许可证信息
 // 定义了 rapidjson 命名空间
 // 包含了 encodings.h 文件

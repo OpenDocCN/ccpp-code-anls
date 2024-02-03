@@ -1,6 +1,6 @@
 # `nmap\FingerPrintResults.h`
 
-```
+```cpp
 #ifndef FINGERPRINTRESULTS_H
 #define FINGERPRINTRESULTS_H
 

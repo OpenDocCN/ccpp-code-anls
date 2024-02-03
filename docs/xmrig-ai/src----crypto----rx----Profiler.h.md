@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\rx\Profiler.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2018-2020 SChernykh   <https://github.com/SChernykh>
  * 版权所有 (c) 2016-2020 XMRig       <https://github.com/xmrig>, <support@xmrig.com>

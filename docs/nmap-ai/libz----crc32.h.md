@@ -1,6 +1,6 @@
 # `nmap\libz\crc32.h`
 
-```
+```cpp
 # crc32.h -- tables for rapid CRC calculation
 # Generated automatically by crc32.c
 

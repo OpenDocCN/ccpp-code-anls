@@ -1,6 +1,6 @@
 # `nmap\libz\gzwrite.c`
 
-```
+```cpp
 /* gzwrite.c -- zlib functions for writing gzip files
  * zlib函数用于写入gzip文件
  * 版权所有 (C) 2004-2019 Mark Adler

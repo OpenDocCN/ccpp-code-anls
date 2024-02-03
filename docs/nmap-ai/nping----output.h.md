@@ -1,6 +1,6 @@
 # `nmap\nping\output.h`
 
-```
+```cpp
 #ifndef OUTPUT_H
 #define OUTPUT_H
 

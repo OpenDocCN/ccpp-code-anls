@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\https\HttpsClient.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2014-2019 heapwolf    <https://github.com/heapwolf>
  * 版权所有 (c) 2018-2020 SChernykh   <https://github.com/SChernykh>

@@ -1,6 +1,6 @@
 # `nmap\nse_lpeg.h`
 
-```
+```cpp
 # 如果未定义 LPEG，则定义 LPEG
 #ifndef LPEG
 # 定义 LPEG

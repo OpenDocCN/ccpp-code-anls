@@ -1,6 +1,6 @@
 # `nmap\nsock\src\gh_list.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef GH_LIST_H

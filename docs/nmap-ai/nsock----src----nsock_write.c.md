@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_write.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock.h"  // 包含自定义的网络套接字头文件

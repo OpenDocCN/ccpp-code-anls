@@ -1,6 +1,6 @@
 # `nmap\libpcap\scanner.h`
 
-```
+```cpp
 #ifndef pcap_HEADER_H
 #define pcap_HEADER_H 1
 #define pcap_IN_HEADER 1

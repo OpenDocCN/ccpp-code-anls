@@ -1,6 +1,6 @@
 # `PowerInfer\pocs\vdot\vdot.cpp`
 
-```
+```cpp
 #include <cstdio>
 #include <vector>
 #include <random>

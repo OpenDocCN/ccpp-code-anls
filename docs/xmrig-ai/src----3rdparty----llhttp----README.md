@@ -60,7 +60,7 @@ checks could be performed to get even stricter verification of the llhttp.
 
 ## Usage
 
-```C
+```cpp
 #include "llhttp.h"
 
 llhttp_t parser;

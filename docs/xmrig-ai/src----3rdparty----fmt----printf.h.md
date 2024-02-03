@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\printf.h`
 
-```
+```cpp
 // C++格式化库的printf实现
 //
 // 版权所有 (c) 2012 - 2016, Victor Zverovich

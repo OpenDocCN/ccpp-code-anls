@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\libethash\fnv.h`
 
-```
+```cpp
 /*
   这个文件是 cpp-ethereum 的一部分。
 

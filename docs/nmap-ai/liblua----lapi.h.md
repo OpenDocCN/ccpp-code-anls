@@ -1,6 +1,6 @@
 # `nmap\liblua\lapi.h`
 
-```
+```cpp
 /*
 ** $Id: lapi.h $
 ** 辅助函数来自 Lua API

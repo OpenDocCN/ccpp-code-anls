@@ -1,6 +1,6 @@
 # `nmap\ncat\http.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include <string.h>

@@ -1,6 +1,6 @@
 # `nmap\liblua\ldump.c`
 
-```
+```cpp
 # 定义了一个结构体 DumpState，用于保存状态信息
 typedef struct {
   lua_State *L;  # Lua 状态机

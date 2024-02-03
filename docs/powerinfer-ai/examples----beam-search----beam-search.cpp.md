@@ -1,6 +1,6 @@
 # `PowerInfer\examples\beam-search\beam-search.cpp`
 
-```
+```cpp
 // 包含自定义头文件 common.h 和 llama.h
 #include "common.h"
 #include "llama.h"

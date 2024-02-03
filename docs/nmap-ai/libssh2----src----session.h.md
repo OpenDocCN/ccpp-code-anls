@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\session.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_SESSION_H
 #define __LIBSSH2_SESSION_H
 /* 定义宏，用于条件编译，避免重复包含同一头文件 */

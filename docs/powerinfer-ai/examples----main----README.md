@@ -19,13 +19,13 @@ To get started right away, run the following command, making sure to use the cor
 
 #### Unix-based systems (Linux, macOS, etc.):
 
-```bash
+```cpp
 ./main -m models/7B/ggml-model.bin --prompt "Once upon a time"
 ```
 
 #### Windows:
 
-```powershell
+```cpp
 main.exe -m models\7B\ggml-model.bin --prompt "Once upon a time"
 ```
 
@@ -33,7 +33,7 @@ For an interactive experience, try this command:
 
 #### Unix-based systems (Linux, macOS, etc.):
 
-```bash
+```cpp
 ./main -m models/7B/ggml-model.bin -n -1 --color -r "User:" --in-prefix " " -i -p \
 'User: Hi
 AI: Hello. I am an AI chatbot. Would you like to talk?
@@ -44,7 +44,7 @@ User:'
 
 #### Windows:
 
-```powershell
+```cpp
 main.exe -m models\7B\ggml-model.bin -n -1 --color -r "User:" --in-prefix " " -i -e -p "User: Hi\nAI: Hello. I am an AI chatbot. Would you like to talk?\nUser: Sure!\nAI: What would you like to talk about?\nUser:"
 ```
 
@@ -52,13 +52,13 @@ The following command generates "infinite" text from a starting prompt (you can 
 
 #### Unix-based systems (Linux, macOS, etc.):
 
-```bash
+```cpp
 ./main -m models/7B/ggml-model.bin --ignore-eos -n -1 --random-prompt
 ```
 
 #### Windows:
 
-```powershell
+```cpp
 main.exe -m models\7B\ggml-model.bin --ignore-eos -n -1 --random-prompt
 ```
 
@@ -108,7 +108,7 @@ To overcome this limitation, you can use the `--in-prefix` flag to add a space o
 
 The `--in-prefix` flag is used to add a prefix to your input, primarily, this is used to insert a space after the reverse prompt. Here's an example of how to use the `--in-prefix` flag in conjunction with the `--reverse-prompt` flag:
 
-```sh
+```cpp
 ./main -r "User:" --in-prefix " "
 ```
 
@@ -116,7 +116,7 @@ The `--in-prefix` flag is used to add a prefix to your input, primarily, this is
 
 The `--in-suffix` flag is used to add a suffix after your input. This is useful for adding an "Assistant:" prompt after the user's input. It's added after the new-line character (`\n`) that's automatically added to the end of the user's input. Here's an example of how to use the `--in-suffix` flag in conjunction with the `--reverse-prompt` flag:
 
-```sh
+```cpp
 ./main -r "User:" --in-prefix " " --in-suffix "Assistant:"
 ```
 

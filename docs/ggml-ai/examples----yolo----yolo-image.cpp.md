@@ -1,6 +1,6 @@
 # `ggml\examples\yolo\yolo-image.cpp`
 
-```
+```cpp
 // 定义 STB_IMAGE_IMPLEMENTATION，用于包含 stb_image 库的实现代码
 #define STB_IMAGE_IMPLEMENTATION
 // 包含 stb_image 库的头文件

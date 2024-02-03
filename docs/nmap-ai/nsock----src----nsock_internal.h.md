@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_internal.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NSOCK_INTERNAL_H

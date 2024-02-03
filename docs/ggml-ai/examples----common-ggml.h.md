@@ -1,6 +1,6 @@
 # `ggml\examples\common-ggml.h`
 
-```
+```cpp
 // 防止头文件重复包含
 #pragma once
 

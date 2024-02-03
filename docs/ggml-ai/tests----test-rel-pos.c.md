@@ -1,6 +1,6 @@
 # `ggml\tests\test-rel-pos.c`
 
-```
+```cpp
 #include "ggml/ggml.h"  // 引入 ggml 库的头文件
 
 #include <string.h>  // 引入字符串处理函数的头文件

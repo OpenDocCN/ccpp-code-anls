@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\topology-synthetic.c`
 
-```
+```cpp
 /*
  * 版权声明
  */

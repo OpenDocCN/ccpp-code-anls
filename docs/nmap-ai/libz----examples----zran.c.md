@@ -1,6 +1,6 @@
 # `nmap\libz\examples\zran.c`
 
-```
+```cpp
 /* zran.c -- zlib/gzip流索引和随机访问的示例
  * 版权所有 (C) 2005, 2012, 2018 Mark Adler
  * 有关分发和使用条件，请参阅zlib.h中的版权声明

@@ -1,6 +1,6 @@
 # `nmap\ndiff\test-scans\anonymize.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 
 # Anonymize an Nmap XML file, replacing host name and IP addresses with random

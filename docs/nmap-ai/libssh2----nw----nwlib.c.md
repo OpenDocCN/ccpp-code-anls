@@ -1,6 +1,6 @@
 # `nmap\libssh2\nw\nwlib.c`
 
-```
+```cpp
 /*********************************************************************
  * Universal NetWare library stub.                                   *
  * written by Ulrich Neuman and given to OpenSource copyright-free.  *

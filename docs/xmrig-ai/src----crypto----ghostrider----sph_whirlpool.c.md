@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_whirlpool.c`
 
-```
+```cpp
 /* $Id: whirlpool.c 227 2010-06-16 17:28:38Z tp $ */
 #include <stddef.h>
 #include <string.h>

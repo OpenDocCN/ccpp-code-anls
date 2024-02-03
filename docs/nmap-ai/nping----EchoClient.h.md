@@ -1,6 +1,6 @@
 # `nmap\nping\EchoClient.h`
 
-```
+```cpp
 #ifndef __ECHOCLIENT_H__
 #define __ECHOCLIENT_H__ 1
 

@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\rx\randomx_run_gfx900.h`
 
-```
+```cpp
 /*
 This file was auto-generated from randomx_run_gfx900.asm:
 

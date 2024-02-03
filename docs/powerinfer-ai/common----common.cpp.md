@@ -1,6 +1,6 @@
 # `PowerInfer\common\common.cpp`
 
-```
+```cpp
 #include "common.h"
 #include "llama.h"
 

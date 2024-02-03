@@ -1,6 +1,6 @@
 # `ggml\examples\replit\convert-h5-to-ggml.py`
 
-```
+```cpp
 # 导入所需的库
 from pathlib import Path
 import sys

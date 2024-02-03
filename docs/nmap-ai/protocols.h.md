@@ -1,6 +1,6 @@
 # `nmap\protocols.h`
 
-```
+```cpp
 /* $Id$ */
 
 // 如果 PROTOCOLS_H 未定义，则定义 PROTOCOLS_H

@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\wincng.c`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  *

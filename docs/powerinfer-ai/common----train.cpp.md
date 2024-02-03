@@ -1,6 +1,6 @@
 # `PowerInfer\common\train.cpp`
 
-```
+```cpp
 // 包含头文件 train.h 和 common.h
 #include "train.h"
 #include "common.h"

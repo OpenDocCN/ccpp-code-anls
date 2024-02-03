@@ -45,7 +45,7 @@ Option `coin` useful for pools without [algorithm negotiation](https://xmrig.com
 Since version 3 mining [algorithm](#algorithm-names) should specified for each pool separately (`algo` option), earlier versions was use one global `algo` option and per pool `variant` option (this option was removed in v3). If your pool support [mining algorithm negotiation](https://github.com/xmrig/xmrig-proxy/issues/168) you may not specify this option at all.
  
 #### Example
-```json
+```cpp
 {
   "pools": [
     {

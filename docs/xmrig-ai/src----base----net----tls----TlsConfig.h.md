@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\tls\TlsConfig.h`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（C）2018      Lee Clagett <https://github.com/vtnerd>

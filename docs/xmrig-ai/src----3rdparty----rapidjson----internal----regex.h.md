@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\regex.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_INTERNAL_REGEX_H_
 #define RAPIDJSON_INTERNAL_REGEX_H_
 

@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\kawpow\defs.h`
 
-```
+```cpp
 #ifdef cl_clang_storage_class_specifiers
 #pragma OPENCL EXTENSION cl_clang_storage_class_specifiers : enable
 #endif

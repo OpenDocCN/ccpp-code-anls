@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-rdmasniff.h`
 
-```
+```cpp
 // 创建一个新的 rdmasniff 会话，用于捕获指定设备的数据包
 pcap_t *rdmasniff_create(const char *device, char *ebuf, int *is_ours);
 

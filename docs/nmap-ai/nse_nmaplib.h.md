@@ -1,6 +1,6 @@
 # `nmap\nse_nmaplib.h`
 
-```
+```cpp
 #ifndef NSE_NMAPLIB
 // 如果 NSE_NMAPLIB 未定义，则定义 NSE_NMAPLIB
 #define NSE_NMAPLIBNAME  "nmap"

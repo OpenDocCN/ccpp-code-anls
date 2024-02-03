@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cuda\wrappers\CudaDevice.h`
 
-```
+```cpp
 // 包含版权声明和许可证信息
 // 定义 XMRig_CUDADEVICE_H 宏，用于条件编译
 // 包含所需的头文件和命名空间

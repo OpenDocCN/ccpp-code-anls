@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\iostream2\zstream_test.cpp`
 
-```
+```cpp
 #include "zstream.h" // 包含自定义的 zstream 头文件
 #include <math.h> // 包含数学函数库
 #include <stdlib.h> // 包含标准库函数

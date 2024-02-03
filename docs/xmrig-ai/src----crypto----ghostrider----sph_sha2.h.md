@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_sha2.h`
 
-```
+```cpp
 # 定义了一个头文件 sph_sha2.h，用于提供 SHA-224、SHA-256、SHA-384 和 SHA-512 的接口
 # SHA-256 已经在 FIPS 180-2 中发布，现在通过更改通知也包括了 SHA-224（它是 SHA-256 的简单变体）。
 # SHA-384 和 SHA-512 也在 FIPS 180-2 中定义。FIPS 标准可以在以下网址找到：

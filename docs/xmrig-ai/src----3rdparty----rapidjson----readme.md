@@ -193,7 +193,7 @@ NOTE: Be sure to merge the latest from "upstream" before making a pull request!
 
 You can copy and paste the license summary from below.
 
-```
+```cpp
 Tencent is pleased to support the open source community by making RapidJSON available.
 
 Copyright (C) 2015 THL A29 Limited, a Tencent company, and Milo Yip.

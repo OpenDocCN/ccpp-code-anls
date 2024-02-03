@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_core.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "nsock_internal.h"  // 包含内部 nsock 头文件

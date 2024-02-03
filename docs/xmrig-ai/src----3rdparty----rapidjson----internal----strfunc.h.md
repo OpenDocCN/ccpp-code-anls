@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\strfunc.h`
 
-```
+```cpp
 // 定义了一个宏，用于开始命名空间 rapidjson::internal
 #ifndef RAPIDJSON_INTERNAL_STRFUNC_H_
 #define RAPIDJSON_INTERNAL_STRFUNC_H_

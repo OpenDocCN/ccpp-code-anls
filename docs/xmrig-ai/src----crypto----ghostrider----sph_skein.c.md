@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_skein.c`
 
-```
+```cpp
 /* $Id: skein.c 254 2011-06-07 19:38:58Z tp $ */
 /* 
  * Skein implementation.

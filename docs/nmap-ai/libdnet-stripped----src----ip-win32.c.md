@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\ip-win32.c`
 
-```
+```cpp
 /*
  * ip-win32.c
  *

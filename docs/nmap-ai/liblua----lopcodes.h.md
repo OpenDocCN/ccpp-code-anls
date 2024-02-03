@@ -1,6 +1,6 @@
 # `nmap\liblua\lopcodes.h`
 
-```
+```cpp
 /*
 ** $Id: lopcodes.h $
 ** Lua虚拟机的操作码

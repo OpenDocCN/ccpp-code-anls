@@ -1,6 +1,6 @@
 # `nmap\libpcap\grammar.c`
 
-```
+```cpp
 /* 一个由 GNU Bison 3.0.4 生成的 Bison 解析器 */
 
 /* 用于在 C 语言中实现类似 Yacc 的解析器的 Bison 实现

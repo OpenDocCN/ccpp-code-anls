@@ -1,6 +1,6 @@
 # `xmrig\src\base\crypto\keccak.h`
 
-```
+```cpp
 // 声明头文件防止重复包含
 #ifndef XMRIG_KECCAK_H
 #define XMRIG_KECCAK_H

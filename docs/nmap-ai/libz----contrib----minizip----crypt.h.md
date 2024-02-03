@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\crypt.h`
 
-```
+```cpp
 /* crypt.h -- base code for crypt/uncrypt ZIPfile
    版本信息和版权声明
    Version 1.01e, February 12th, 2005

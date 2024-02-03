@@ -28,14 +28,14 @@ the OpenCL API version.
 For example, to enforce usage of no more than the OpenCL 1.2 APIs, you may
 include the OpenCL API headers as follows:
 
-```
+```cpp
 #define CL_TARGET_OPENCL_VERSION 120
 #include <CL/opencl.h>
 ```
 
 ## Directory Structure
 
-```
+```cpp
 README.md               This file
 LICENSE                 Source license for the OpenCL API headers
 CL/                     Unified OpenCL API headers tree

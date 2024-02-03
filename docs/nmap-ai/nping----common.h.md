@@ -1,6 +1,6 @@
 # `nmap\nping\common.h`
 
-```
+```cpp
 # 定义了一个条件编译指令，用于防止头文件的重复包含
 #ifndef COMMON_H
 #define COMMON_H 1

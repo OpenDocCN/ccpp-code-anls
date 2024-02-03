@@ -1,6 +1,6 @@
 # `ggml\examples\whisper\main.cpp`
 
-```
+```cpp
 // 包含自定义头文件 common.h 和 whisper.h
 #include "common.h"
 #include "whisper.h"

@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\kex.c`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  * 作者：Sara Golemon <sarag@libssh2.org> (2004-2007)

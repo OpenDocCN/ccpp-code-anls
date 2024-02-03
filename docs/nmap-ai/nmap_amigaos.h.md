@@ -1,6 +1,6 @@
 # `nmap\nmap_amigaos.h`
 
-```
+```cpp
 // 定义了一个宏，用于替换 pcap_open_live 函数，使用 MiamiPCapOpenLive 函数
 #define pcap_open_live(a, b, c, d...)    MiamiPCapOpenLive(a, b, 0, d)
 // 定义了一个宏，用于替换 pcap_filter 函数，使用 MiamiPCapFilter 函数

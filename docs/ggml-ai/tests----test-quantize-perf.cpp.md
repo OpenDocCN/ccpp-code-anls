@@ -1,6 +1,6 @@
 # `ggml\tests\test-quantize-perf.cpp`
 
-```
+```cpp
 // 在合成数据上对量化特定函数进行基准测试
 
 #include "ggml.h"  // 包含自定义的头文件 ggml.h

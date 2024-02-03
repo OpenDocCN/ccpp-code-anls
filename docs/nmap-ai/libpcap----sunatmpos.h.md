@@ -1,6 +1,6 @@
 # `nmap\libpcap\sunatmpos.h`
 
-```
+```cpp
 /*
  * 版权声明，版权归 Yen Yen Lim 和 North Dakota State University 所有
  * 保留所有权利

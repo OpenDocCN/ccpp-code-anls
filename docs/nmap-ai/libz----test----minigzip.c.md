@@ -1,6 +1,6 @@
 # `nmap\libz\test\minigzip.c`
 
-```
+```cpp
 /* minigzip.c -- 使用 zlib 压缩库模拟 gzip
  * 版权所有 (C) 1995-2006, 2010, 2011, 2016 Jean-loup Gailly
  * 发行和使用条件，请参见 zlib.h 中的版权声明

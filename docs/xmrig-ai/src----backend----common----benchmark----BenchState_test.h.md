@@ -1,6 +1,6 @@
 # `xmrig\src\backend\common\benchmark\BenchState_test.h`
 
-```
+```cpp
 // 包含版权声明和许可证信息
 /* XMRig
  * Copyright (c) 2018-2020 SChernykh   <https://github.com/SChernykh>

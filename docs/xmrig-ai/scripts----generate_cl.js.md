@@ -1,6 +1,6 @@
 # `xmrig\scripts\generate_cl.js`
 
-```
+```cpp
 #!/usr/bin/env node
 'use strict';
 

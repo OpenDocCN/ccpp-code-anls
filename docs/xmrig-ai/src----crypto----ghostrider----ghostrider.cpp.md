@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\ghostrider.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有 2018-2023 SChernykh   <https://github.com/SChernykh>
  * 版权所有 2016-2023 XMRig       <https://github.com/xmrig>, <support@xmrig.com>

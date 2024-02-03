@@ -1,6 +1,6 @@
 # `nmap\nbase\snprintf.c`
 
-```
+```cpp
 /*
  * 从 tcpdump-2000-9-17 CVS 快照 (www.tcpdump.org) 获取的文件
  * 稍作修改以与 libnbase 兼容。修改细节可能在 nbase CHANGELOG 中 - fyodor@nmap.org

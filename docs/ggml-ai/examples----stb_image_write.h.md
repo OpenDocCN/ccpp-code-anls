@@ -1,6 +1,6 @@
 # `ggml\examples\stb_image_write.h`
 
-```
+```cpp
 # 定义了 stb_image_write 的版本信息和使用条款
 # 包含该文件的实现
 # 注意：在包含该文件的文件中，需要定义 #define STB_IMAGE_WRITE_IMPLEMENTATION

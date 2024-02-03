@@ -1,6 +1,6 @@
 # `nmap\nping\nping-dev\pythonscripts\addManSectionEntry.py`
 
-```
+```cpp
 # 从用户输入中获取部分名称
 sectionname = raw_input("Section name: ")
 # 从用户输入中获取连字符名称

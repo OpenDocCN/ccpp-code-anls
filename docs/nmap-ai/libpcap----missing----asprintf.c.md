@@ -1,6 +1,6 @@
 # `nmap\libpcap\missing\asprintf.c`
 
-```
+```cpp
 #include <stdio.h>  // 包含标准输入输出库
 #include <stdlib.h>  // 包含标准库
 #include <stdarg.h>  // 包含可变参数列表的库

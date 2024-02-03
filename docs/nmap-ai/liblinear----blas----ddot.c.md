@@ -1,6 +1,6 @@
 # `nmap\liblinear\blas\ddot.c`
 
-```
+```cpp
 #include "blas.h"
 
 double ddot_(int *n, double *sx, int *incx, double *sy, int *incy)

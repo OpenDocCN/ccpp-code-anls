@@ -1,6 +1,6 @@
 # `nmap\libpcap\nlpid.h`
 
-```
+```cpp
 /*
  * 版权声明
  *    1996年 Juniper Networks, Inc.  保留所有权利。

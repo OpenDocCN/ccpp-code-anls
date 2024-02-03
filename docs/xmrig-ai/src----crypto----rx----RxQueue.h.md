@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\rx\RxQueue.h`
 
-```
+```cpp
 # XMRig是一个开源的加密货币挖矿程序，此处为版权声明和许可证信息
 /* XMRig
  * Copyright (c) 2018      Lee Clagett <https://github.com/vtnerd>

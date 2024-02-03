@@ -1,6 +1,6 @@
 # `nmap\liblua\lopnames.h`
 
-```
+```cpp
 /*
 ** $Id: lopnames.h $
 ** Opcode names

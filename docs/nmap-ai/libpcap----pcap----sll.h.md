@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\sll.h`
 
-```
+```cpp
 /*
  * 对于在 Linux cooked sockets 上的捕获，我们构造一个假的头部
  * 包括：

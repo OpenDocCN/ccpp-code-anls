@@ -1,6 +1,6 @@
 # `nmap\NewTargets.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NEWTARGETS_H

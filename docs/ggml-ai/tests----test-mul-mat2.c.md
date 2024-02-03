@@ -1,6 +1,6 @@
 # `ggml\tests\test-mul-mat2.c`
 
-```
+```cpp
 // 量化矩阵乘法
 
 #include "ggml.h"  // 包含自定义的头文件 ggml.h

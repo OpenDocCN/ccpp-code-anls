@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\mac.c`
 
-```
+```cpp
 /*
  * 版权声明和许可条件
  */

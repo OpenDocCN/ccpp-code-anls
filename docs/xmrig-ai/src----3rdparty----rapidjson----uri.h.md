@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\uri.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_URI_H_
 #define RAPIDJSON_URI_H_
 

@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-enet.c`
 
-```
+```cpp
 /*
  * Stanford Enetfilter子程序用于tcpdump
  *

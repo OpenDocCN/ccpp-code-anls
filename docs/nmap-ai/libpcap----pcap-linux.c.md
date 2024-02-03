@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-linux.c`
 
-```
+```cpp
 #define _GNU_SOURCE
 // 定义_GNU_SOURCE，启用 GNU 扩展
 

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-arch.c`
 
-```
+```cpp
 #include <stdint.h>
 #include <string.h>
 #include <stdlib.h>

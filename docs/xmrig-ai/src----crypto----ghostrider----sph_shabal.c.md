@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_shabal.c`
 
-```
+```cpp
 /*
  * 定义了 Shabal 算法的实现
  * 版权声明

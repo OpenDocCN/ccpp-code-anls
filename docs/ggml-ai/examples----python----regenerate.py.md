@@ -1,6 +1,6 @@
 # `ggml\examples\python\regenerate.py`
 
-```
+```cpp
 # 为 ggml 库生成绑定
 #
 # cffi 需要先对头文件进行 C 预处理，并且它使用 pycparser，对一些东西不太友好

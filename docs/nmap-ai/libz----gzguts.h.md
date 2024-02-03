@@ -1,6 +1,6 @@
 # `nmap\libz\gzguts.h`
 
-```
+```cpp
 /* gzguts.h -- zlib内部头文件定义，用于gz*操作
  * 版权所有 (C) 2004-2019 Mark Adler
  * 发行和使用条件，请参见zlib.h中的版权声明

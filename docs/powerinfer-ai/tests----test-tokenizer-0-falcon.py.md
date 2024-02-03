@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-tokenizer-0-falcon.py`
 
-```
+```cpp
 # 导入所需的库
 import os
 import sys

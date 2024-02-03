@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_pcap.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NSOCK_PCAP_H

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\pointer.h`
 
-```
+```cpp
 // 如果 RAPIDJSON_POINTER_H_ 未定义，则定义 RAPIDJSON_POINTER_H_
 #ifndef RAPIDJSON_POINTER_H_
 #define RAPIDJSON_POINTER_H_

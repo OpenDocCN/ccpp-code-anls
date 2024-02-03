@@ -1,6 +1,6 @@
 # `nmap\nping\NpingOps.h`
 
-```
+```cpp
 #ifndef NPING_NPINGOPS_H
 #define NPING_NPINGOPS_H
 

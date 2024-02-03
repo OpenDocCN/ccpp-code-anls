@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-netmap.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 版权所有（C）2014 Luigi Rizzo。

@@ -1,6 +1,6 @@
 # `ggml\tests\test-blas0.c`
 
-```
+```cpp
 #include "ggml.h"
 
 #include <stdint.h>

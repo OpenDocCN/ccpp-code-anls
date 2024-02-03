@@ -1,6 +1,6 @@
 # `nmap\ncat\http.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef _HTTP_H

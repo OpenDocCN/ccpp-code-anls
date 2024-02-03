@@ -1,6 +1,6 @@
 # `nmap\ncat\test\test-wildcard.c`
 
-```
+```cpp
 /*
 Usage: ./test-wildcard
 

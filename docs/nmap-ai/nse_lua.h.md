@@ -1,6 +1,6 @@
 # `nmap\nse_lua.h`
 
-```
+```cpp
 #ifndef NSE_LUA_H
 #define NSE_LUA_H
 

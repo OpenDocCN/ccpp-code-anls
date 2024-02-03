@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_str.c`
 
-```
+```cpp
 /* $Id$ */
 // 定义一个标识符
 

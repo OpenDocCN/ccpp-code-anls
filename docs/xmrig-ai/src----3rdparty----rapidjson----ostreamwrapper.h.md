@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\ostreamwrapper.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_OSTREAMWRAPPER_H_
 #define RAPIDJSON_OSTREAMWRAPPER_H_
 

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\blake2\blake2.h`
 
-```
+```cpp
 #ifndef ARGON2_BLAKE2_H
 #define ARGON2_BLAKE2_H
 

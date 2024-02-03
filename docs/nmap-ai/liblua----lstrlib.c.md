@@ -1,6 +1,6 @@
 # `nmap\liblua\lstrlib.c`
 
-```
+```cpp
 /*
 ** $Id: lstrlib.c $
 ** 字符串操作和模式匹配的标准库

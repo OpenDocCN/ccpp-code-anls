@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cpu\platform\BasicCpuInfo.h`
 
-```
+```cpp
 // XMRig程序的版权声明
 // 版权声明和许可证信息
 

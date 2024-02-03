@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\jit_compiler_x86.cpp`
 
-```
+```cpp
 # 版权声明
 # 本软件的版权归版权持有人和贡献者所有
 # 在满足以下条件的情况下，允许以源代码和二进制形式重新分发和使用：

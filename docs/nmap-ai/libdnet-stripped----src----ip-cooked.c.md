@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\ip-cooked.c`
 
-```
+```cpp
 /*
  * ip-cooked.c
  *

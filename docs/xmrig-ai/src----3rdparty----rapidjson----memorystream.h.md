@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\memorystream.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_MEMORYSTREAM_H_  // 如果未定义 RAPIDJSON_MEMORYSTREAM_H_，则包含以下代码
 #define RAPIDJSON_MEMORYSTREAM_H_
 

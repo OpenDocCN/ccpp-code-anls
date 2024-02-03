@@ -1,6 +1,6 @@
 # `nmap\liblinear\linear.h`
 
-```
+```cpp
 #ifndef _LIBLINEAR_H
 #define _LIBLINEAR_H
 

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-sse2.c`
 
-```
+```cpp
 #include "argon2-sse2.h"
 
 #ifdef HAVE_SSE2

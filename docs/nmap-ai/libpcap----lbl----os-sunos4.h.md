@@ -1,6 +1,6 @@
 # `nmap\libpcap\lbl\os-sunos4.h`
 
-```
+```cpp
 /*
  * 版权声明，保留所有权利
  */

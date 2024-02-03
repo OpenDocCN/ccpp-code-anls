@@ -1,6 +1,6 @@
 # `nmap\nsock\tests\tests_main.c`
 
-```
+```cpp
 /*
  * Nsock regression test suite
  * Same license as nmap -- see https://nmap.org/book/man-legal.html

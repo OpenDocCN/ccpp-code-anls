@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\Pool.h`
 
-```
+```cpp
 // XMRig程序的版权声明和许可信息
 /* XMRig
  * Copyright (c) 2019      Howard Chu  <https://github.com/hyc>

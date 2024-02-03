@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\sftp.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_SFTP_H
 #define __LIBSSH2_SFTP_H
 /*

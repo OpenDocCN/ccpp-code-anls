@@ -1,6 +1,6 @@
 # `ggml\examples\mnist\main-cpu.cpp`
 
-```
+```cpp
 // Use a pre-generated MNIST compute graph for inference on the CPU
 //
 // You can generate a compute graph using the "mnist" tool:

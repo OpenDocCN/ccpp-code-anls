@@ -1,6 +1,6 @@
 # `PowerInfer\examples\benchmark\benchmark-matmult.cpp`
 
-```
+```cpp
 #include "common.h"  // 包含 common.h 头文件
 #include "ggml.h"  // 包含 ggml.h 头文件
 

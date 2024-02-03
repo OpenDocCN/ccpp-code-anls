@@ -1,6 +1,6 @@
 # `nmap\libz\examples\gzlog.h`
 
-```
+```cpp
 /* gzlog.h
   版权所有 2004 年，2008 年，2012 年 Mark Adler，保留所有权利
   版本 2.2，2012 年 8 月 14 日

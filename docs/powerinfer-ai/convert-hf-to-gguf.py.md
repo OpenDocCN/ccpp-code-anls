@@ -1,6 +1,6 @@
 # `PowerInfer\convert-hf-to-gguf.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 
 from __future__ import annotations  # 导入未来版本的注解特性

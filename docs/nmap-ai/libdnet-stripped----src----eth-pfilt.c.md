@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\eth-pfilt.c`
 
-```
+```cpp
 #include "config.h"
 // 包含自定义的配置文件
 

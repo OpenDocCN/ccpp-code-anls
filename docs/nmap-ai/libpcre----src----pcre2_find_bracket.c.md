@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2_find_bracket.c`
 
-```
+```cpp
 /*************************************************
 *      Perl-Compatible Regular Expressions       *
 *************************************************/

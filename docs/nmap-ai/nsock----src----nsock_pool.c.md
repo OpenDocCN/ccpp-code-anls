@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_pool.c`
 
-```
+```cpp
 /* $Id$ */
 // 定义文件标识符
 

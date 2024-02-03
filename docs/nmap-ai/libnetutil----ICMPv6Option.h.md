@@ -1,6 +1,6 @@
 # `nmap\libnetutil\ICMPv6Option.h`
 
-```
+```cpp
 /* This code was originally part of the Nping tool.                        */
 // 定义了 ICMPv6Option 类，继承自 NetworkLayerElement 类
 

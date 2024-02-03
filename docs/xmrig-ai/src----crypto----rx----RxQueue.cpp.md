@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\rx\RxQueue.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有（c）2018      Lee Clagett <https://github.com/vtnerd>
  * 版权所有（c）2018-2019 tevador     <tevador@gmail.com>

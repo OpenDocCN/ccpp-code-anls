@@ -1,6 +1,6 @@
 # `nmap\nmap_tty.h`
 
-```
+```cpp
 // 如果 NMAP_TTY_H 未定义，则定义 NMAP_TTY_H
 #ifndef NMAP_TTY_H
 #define NMAP_TTY_H

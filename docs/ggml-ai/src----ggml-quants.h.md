@@ -1,6 +1,6 @@
 # `ggml\src\ggml-quants.h`
 
-```
+```cpp
 #pragma once
 
 #include "ggml-impl.h"

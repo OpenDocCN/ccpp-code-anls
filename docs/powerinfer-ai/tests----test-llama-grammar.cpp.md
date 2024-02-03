@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-llama-grammar.cpp`
 
-```
+```cpp
 #ifdef NDEBUG
 #undef NDEBUG
 #endif

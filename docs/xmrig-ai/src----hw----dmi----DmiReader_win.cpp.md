@@ -1,6 +1,6 @@
 # `xmrig\src\hw\dmi\DmiReader_win.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 (c) 2002-2006 Hugo Weber  <address@hidden>

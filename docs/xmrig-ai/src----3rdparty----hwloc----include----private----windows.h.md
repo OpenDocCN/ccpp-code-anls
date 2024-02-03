@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\private\windows.h`
 
-```
+```cpp
 /*
  * 版权声明，版权归 Université Bordeaux 所有，保留所有权利
  * 版权归 2020-2022 Inria 所有，保留所有权利

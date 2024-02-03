@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-xop.c`
 
-```
+```cpp
 #include "argon2-xop.h"  // 包含自定义的头文件 argon2-xop.h
 
 #ifdef HAVE_XOP  // 如果定义了 HAVE_XOP 宏

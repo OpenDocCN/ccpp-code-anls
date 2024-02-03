@@ -1,6 +1,6 @@
 # `nmap\libssh2\vms\libssh2_config.h`
 
-```
+```cpp
 #ifndef LIBSSH2_CONFIG_H
 #ifdef __VMS
 

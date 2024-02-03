@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\publickey.c`
 
-```
+```cpp
 # 版权声明和许可条件
 /* Copyright (c) 2004-2007, Sara Golemon <sarag@libssh2.org>
  * Copyright (c) 2010-2014 by Daniel Stenberg

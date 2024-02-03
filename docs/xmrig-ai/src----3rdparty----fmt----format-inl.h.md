@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\format-inl.h`
 
-```
+```cpp
 // 格式化库的 C++ 实现
 //
 // 版权所有 (c) 2012 - 2016, Victor Zverovich

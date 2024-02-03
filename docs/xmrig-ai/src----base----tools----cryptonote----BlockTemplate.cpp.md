@@ -1,6 +1,6 @@
 # `xmrig\src\base\tools\cryptonote\BlockTemplate.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有 (c) 2012-2013 The Cryptonote developers

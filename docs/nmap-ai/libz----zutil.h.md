@@ -1,6 +1,6 @@
 # `nmap\libz\zutil.h`
 
-```
+```cpp
 /* zutil.h -- 内部接口和压缩库的配置
  * 版权所有 (C) 1995-2022 Jean-loup Gailly, Mark Adler
  * 发行和使用条件，请参见 zlib.h 中的版权声明

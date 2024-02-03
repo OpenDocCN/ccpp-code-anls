@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\rx\RxDataset.h`
 
-```
+```cpp
 // 包含版权声明和许可信息
 /* XMRig
  * Copyright (c) 2018-2019 tevador     <tevador@gmail.com>

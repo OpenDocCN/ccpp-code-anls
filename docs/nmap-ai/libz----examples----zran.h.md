@@ -1,6 +1,6 @@
 # `nmap\libz\examples\zran.h`
 
-```
+```cpp
 /* zran.h -- example of zlib/gzip stream indexing and random access
  * zlib/gzip流索引和随机访问的示例
  * 版权所有 (C) 2005, 2012, 2018 Mark Adler

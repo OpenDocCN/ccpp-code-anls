@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\infback9\inffix9.h`
 
-```
+```cpp
     /* inffix9.h -- table for decoding deflate64 fixed codes
      * Generated automatically by makefixed9().
      */

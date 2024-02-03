@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\blast\blast.c`
 
-```
+```cpp
 /* blast.c
  * 版权所有 (C) 2003, 2012, 2013 Mark Adler
  * 发行和使用条件，请参见 blast.h 中的版权声明

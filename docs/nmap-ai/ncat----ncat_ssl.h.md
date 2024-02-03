@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_ssl.h`
 
-```
+```cpp
 /* $Id$ */
 #ifndef NCAT_SSL_H
 #define NCAT_SSL_H

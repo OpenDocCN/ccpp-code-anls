@@ -1,6 +1,6 @@
 # `xmrig\src\base\tools\String.h`
 
-```
+```cpp
 /**
  * @brief XMRig字符串类的头文件
  *

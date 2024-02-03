@@ -1,6 +1,6 @@
 # `PowerInfer\tests\test-sampling.cpp`
 
-```
+```cpp
 #include "ggml.h"  // 引入 ggml 库的头文件
 #include "llama.h"  // 引入 llama 库的头文件
 

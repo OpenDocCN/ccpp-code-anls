@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_echo.c`
 
-```
+```cpp
 /* $Id: echo.c 227 2010-06-16 17:28:38Z tp $ */
 /* 
  * ECHO implementation.

@@ -1,6 +1,6 @@
 # `nmap\nse_fs.h`
 
-```
+```cpp
 #ifndef NSE_FS
 // 如果 NSE_FS 未定义，则定义 NSE_FS
 #define NSE_FS

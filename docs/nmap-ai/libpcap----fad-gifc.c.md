@@ -1,6 +1,6 @@
 # `nmap\libpcap\fad-gifc.c`
 
-```
+```cpp
 /*
  * 声明代码的模式、缩进等信息
  */

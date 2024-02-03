@@ -1,6 +1,6 @@
 # `nmap\nsock\src\gh_heap.c`
 
-```
+```cpp
 /* $Id$ */
 
 #ifdef HAVE_CONFIG_H

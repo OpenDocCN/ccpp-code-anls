@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\llhttp\llhttp.c`
 
-```
+```cpp
 #if LLHTTP_STRICT_MODE
 
 #include <stdlib.h>  // 包含标准库头文件

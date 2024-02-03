@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\rx\RxNUMAStorage.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2018-2019 tevador     <tevador@gmail.com>
  * 版权所有 (c) 2018-2023 SChernykh   <https://github.com/SChernykh>

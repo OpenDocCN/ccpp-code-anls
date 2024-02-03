@@ -1,6 +1,6 @@
 # `PowerInfer\scripts\verify-checksum-models.py`
 
-```
+```cpp
 #!/usr/bin/env python3
 
 # 导入操作系统和哈希库

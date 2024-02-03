@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\base64.c`
 
-```
+```cpp
 /*
  * 版权所有 © 2012-2018 Inria。保留所有权利。
  * 请参阅顶层目录中的COPYING文件。

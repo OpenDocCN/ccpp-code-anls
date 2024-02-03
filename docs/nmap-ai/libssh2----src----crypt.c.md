@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\crypt.c`
 
-```
+```cpp
 /*
  * 版权声明和许可声明
  * 保留所有权利

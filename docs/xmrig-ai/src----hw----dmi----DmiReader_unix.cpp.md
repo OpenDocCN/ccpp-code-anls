@@ -1,6 +1,6 @@
 # `xmrig\src\hw\dmi\DmiReader_unix.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2000-2002 Alan Cox     <alan@redhat.com>

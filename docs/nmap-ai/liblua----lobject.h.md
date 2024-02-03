@@ -1,6 +1,6 @@
 # `nmap\liblua\lobject.h`
 
-```
+```cpp
 /*
 ** $Id: lobject.h $
 ** Type definitions for Lua objects

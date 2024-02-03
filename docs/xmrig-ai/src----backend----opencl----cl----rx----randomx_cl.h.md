@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\cl\rx\randomx_cl.h`
 
-```
+```cpp
 #pragma once
 
 namespace xmrig {

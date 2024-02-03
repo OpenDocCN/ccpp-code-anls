@@ -1,6 +1,6 @@
 # `nmap\nmap.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NMAP_H

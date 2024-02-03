@@ -1,6 +1,6 @@
 # `nmap\nbase\inet_pton.c`
 
-```
+```cpp
 /*
  * 版权所有（c）1996年由Internet Software Consortium。
  *

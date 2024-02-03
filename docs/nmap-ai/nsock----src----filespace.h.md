@@ -1,6 +1,6 @@
 # `nmap\nsock\src\filespace.h`
 
-```
+```cpp
 /* $Id$ */
 
 // 如果 FILESPACE_H 未定义，则定义 FILESPACE_H

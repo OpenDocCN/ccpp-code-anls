@@ -14,7 +14,7 @@
 
 ### Docker
 
-```
+```cpp
 docker pull apachecn0/ccpp-code-anal
 docker run -tid -p <port>:80 apachecn0/ccpp-code-anal
 # 访问 http://localhost:{port} 查看文档
@@ -22,7 +22,7 @@ docker run -tid -p <port>:80 apachecn0/ccpp-code-anal
 
 ### NPM
 
-```
+```cpp
 npm install -g ccpp-code-anal
 ccpp-code-anal <port>
 # 访问 http://localhost:{port} 查看文档

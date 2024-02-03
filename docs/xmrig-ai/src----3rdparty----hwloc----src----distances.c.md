@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\distances.c`
 
-```
+```cpp
 /*
  * 版权声明
  * 版权所有 © 2010-2022 Inria

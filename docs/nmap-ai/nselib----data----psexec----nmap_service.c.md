@@ -1,6 +1,6 @@
 # `nmap\nselib\data\psexec\nmap_service.c`
 
-```
+```cpp
 #include <stdio.h>
 #include <windows.h>
 

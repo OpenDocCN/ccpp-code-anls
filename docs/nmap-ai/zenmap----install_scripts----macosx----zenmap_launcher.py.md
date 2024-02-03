@@ -1,6 +1,6 @@
 # `nmap\zenmap\install_scripts\macosx\zenmap_launcher.py`
 
-```
+```cpp
 # 导入所需的模块
 from os.path import join, dirname, abspath, normpath
 import sys, os

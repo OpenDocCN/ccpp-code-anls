@@ -1,6 +1,6 @@
 # `xmrig\src\base\crypto\sha3.h`
 
-```
+```cpp
 #ifndef SHA3_H
 #define SHA3_H
 

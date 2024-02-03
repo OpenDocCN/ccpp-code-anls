@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cuda\wrappers\NvmlHealth.h`
 
-```
+```cpp
 // XMRig程序的版权声明
 // 定义XMRig_NVMLHEALTH_H的宏，用于条件编译
 #ifndef XMRIG_NVMLHEALTH_H

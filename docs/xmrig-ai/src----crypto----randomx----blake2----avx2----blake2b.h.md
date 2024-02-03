@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\randomx\blake2\avx2\blake2b.h`
 
-```
+```cpp
 # 如果 BLAKE2_AVX2_BLAKE2B_H 还没有被定义，则定义 BLAKE2_AVX2_BLAKE2B_H
 #ifndef BLAKE2_AVX2_BLAKE2B_H
 # 包含标准库的头文件，用于定义 size_t 类型

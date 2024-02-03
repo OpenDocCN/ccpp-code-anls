@@ -1,6 +1,6 @@
 # `xmrig\src\base\io\log\backends\SysLog.h`
 
-```
+```cpp
 /* XMRig
  * 版权所有 (c) 2019      Spudz76     <https://github.com/Spudz76>
  * 版权所有 (c) 2018-2020 SChernykh   <https://github.com/SChernykh>

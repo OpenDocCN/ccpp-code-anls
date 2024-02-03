@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\tun-solaris.c`
 
-```
+```cpp
 /*
  * tun-solaris.c
  *

@@ -8,13 +8,13 @@ To get started right away, run the following command, making sure to use the cor
 
 ### Unix-based systems (Linux, macOS, etc.):
 
-```bash
+```cpp
 ./embedding -m ./path/to/model --log-disable -p "Hello World!" 2>/dev/null
 ```
 
 ### Windows:
 
-```powershell
+```cpp
 embedding.exe -m ./path/to/model --log-disable -p "Hello World!" 2>$null
 ```
 

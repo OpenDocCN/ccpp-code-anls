@@ -1,6 +1,6 @@
 # `nmap\nbase\test\test-escape_windows_command_arg.c`
 
-```
+```cpp
 /*
 Usage: test-escape_windows_command_arg.exe
 

@@ -1,6 +1,6 @@
 # `nmap\nmap_error.h`
 
-```
+```cpp
 /* $Id$ */
 
 // 如果没有定义 NMAP_ERROR_H，则定义 NMAP_ERROR_H

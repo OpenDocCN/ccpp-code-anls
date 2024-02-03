@@ -1,6 +1,6 @@
 # `nmap\payload.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef PAYLOAD_H

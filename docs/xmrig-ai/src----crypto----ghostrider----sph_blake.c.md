@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_blake.c`
 
-```
+```cpp
 /* $Id: blake.c 252 2011-06-07 17:55:14Z tp $ */
 /* 
  * BLAKE implementation.

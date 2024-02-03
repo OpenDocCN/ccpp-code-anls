@@ -1,6 +1,6 @@
 # `nmap\libz\examples\gznorm.c`
 
-```
+```cpp
 /* gznorm.c -- normalize a gzip stream
  * 对 gzip 流进行规范化
  * Copyright (C) 2018 Mark Adler

@@ -9,7 +9,7 @@ There are 2 modes of operation:
 - `prompt not shared` - each batch has a separate prompt of size `PP` (i.e. `N_KV = B*(PP + TG)`)
 - `prompt is shared` - there is a common prompt of size `PP` used by all batches (i.e. `N_KV = PP + B*TG`)
 
-```bash
+```cpp
 ./batched-bench MODEL_PATH [N_KV_MAX] [IS_PP_SHARED] [NGL] [MMQ] <PP> <TG> <PL>
 
 # LLaMA 7B, F16, N_KV_MAX = 16384 (8GB), prompt not shared

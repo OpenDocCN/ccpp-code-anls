@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\libssh2_priv.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_PRIV_H
 #define __LIBSSH2_PRIV_H
 /* 定义宏，用于条件编译，确保该头文件只被包含一次 */

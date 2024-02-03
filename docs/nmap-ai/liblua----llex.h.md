@@ -1,6 +1,6 @@
 # `nmap\liblua\llex.h`
 
-```
+```cpp
 /*
 ** $Id: llex.h $
 ** 词法分析器

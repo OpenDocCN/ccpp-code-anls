@@ -1,6 +1,6 @@
 # `nmap\liblua\lbaselib.c`
 
-```
+```cpp
 /*
 ** $Id: lbaselib.c $
 ** 基本库

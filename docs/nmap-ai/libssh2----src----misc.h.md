@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\misc.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_MISC_H
 #define __LIBSSH2_MISC_H
 /* 定义宏，用于避免重复包含该头文件 */

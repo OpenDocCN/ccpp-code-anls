@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\kernels\rx\ExecuteVmKernel.cpp`
 
-```
+```cpp
 // 包含版权声明和许可协议信息
 /* XMRig
  * Copyright 2010      Jeff Garzik <jgarzik@pobox.com>

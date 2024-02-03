@@ -1,6 +1,6 @@
 # `ggml\examples\sam\convert-pth-to-ggml.py`
 
-```
+```cpp
 # Convert a SAM model checkpoint to a ggml compatible file
 
 # 导入所需的库

@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_shavite.c`
 
-```
+```cpp
 # 定义了一个宏，用于将常量转换为32位无符号整数
 #define C32   SPH_C32
 

@@ -1,6 +1,6 @@
 # `nmap\liblua\ldo.c`
 
-```
+```cpp
 /*
 ** $Id: ldo.c $
 ** Stack and Call structure of Lua

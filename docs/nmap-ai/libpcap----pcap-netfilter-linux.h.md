@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap-netfilter-linux.h`
 
-```
+```cpp
 /*
  * 版权声明，版权所有
  *

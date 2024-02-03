@@ -18,7 +18,7 @@ Performance testing tool for llama.cpp.
 
 ## Syntax
 
-```
+```cpp
 usage: ./llama-bench [options]
 
 options:
@@ -55,7 +55,7 @@ For a description of the other options, see the [main example](../main/README.md
 
 ### Text generation with different models
 
-```sh
+```cpp
 $ ./llama-bench -m models/7B/ggml-model-q4_0.gguf -m models/13B/ggml-model-q4_0.gguf -p 0 -n 128,256,512
 ```
 
@@ -70,7 +70,7 @@ $ ./llama-bench -m models/7B/ggml-model-q4_0.gguf -m models/13B/ggml-model-q4_0.
 
 ### Prompt processing with different batch sizes
 
-```sh
+```cpp
 $ ./llama-bench -n 0 -p 1024 -b 128,256,512,1024
 ```
 
@@ -83,7 +83,7 @@ $ ./llama-bench -n 0 -p 1024 -b 128,256,512,1024
 
 ### Different numbers of threads
 
-```sh
+```cpp
 $ ./llama-bench -n 0 -n 16 -p 64 -t 1,2,4,8,16,32
 ```
 
@@ -104,7 +104,7 @@ $ ./llama-bench -n 0 -n 16 -p 64 -t 1,2,4,8,16,32
 
 ### Different numbers of layers offloaded to the GPU
 
-```sh
+```cpp
 $ ./llama-bench -ngl 10,20,30,31,32,33,34,35
 ```
 
@@ -133,7 +133,7 @@ By default, llama-bench outputs the results in markdown format. The results can 
 
 ### Markdown
 
-```sh
+```cpp
 $ ./llama-bench -o md
 ```
 
@@ -144,11 +144,11 @@ $ ./llama-bench -o md
 
 ### CSV
 
-```sh
+```cpp
 $ ./llama-bench -o csv
 ```
 
-```csv
+```cpp
 build_commit,build_number,cuda,opencl,metal,gpu_blas,blas,cpu_info,gpu_info,model_filename,model_type,model_size,model_n_params,n_batch,n_threads,f16_kv,n_gpu_layers,main_gpu,mul_mat_q,tensor_split,n_prompt,n_gen,test_time,avg_ns,stddev_ns,avg_ts,stddev_ts
 "3469684","1275","1","0","0","1","1","13th Gen Intel(R) Core(TM) i9-13900K","NVIDIA GeForce RTX 3090 Ti","models/7B/ggml-model-q4_0.gguf","llama 7B mostly Q4_0","3825065984","6738415616","512","16","1","99","0","1","0.00","512","0","2023-09-23T12:09:01Z","212155977","732372","2413.341687","8.305961"
 "3469684","1275","1","0","0","1","1","13th Gen Intel(R) Core(TM) i9-13900K","NVIDIA GeForce RTX 3090 Ti","models/7B/ggml-model-q4_0.gguf","llama 7B mostly Q4_0","3825065984","6738415616","512","16","1","99","0","1","0.00","0","128","2023-09-23T12:09:02Z","969320879","2728399","132.052051","0.371342"
@@ -156,11 +156,11 @@ build_commit,build_number,cuda,opencl,metal,gpu_blas,blas,cpu_info,gpu_info,mode
 
 ### JSON
 
-```sh
+```cpp
 $ ./llama-bench -o json
 ```
 
-```json
+```cpp
 [
   {
     "build_commit": "3469684",
@@ -231,11 +231,11 @@ $ ./llama-bench -o json
 
 SQL output is suitable for importing into a SQLite database. The output can be piped into the `sqlite3` command line tool to add the results to a database.
 
-```sh
+```cpp
 $ ./llama-bench -o sql
 ```
 
-```sql
+```cpp
 CREATE TABLE IF NOT EXISTS test (
   build_commit TEXT,
   build_number INTEGER,

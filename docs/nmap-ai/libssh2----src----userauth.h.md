@@ -1,6 +1,6 @@
 # `nmap\libssh2\src\userauth.h`
 
-```
+```cpp
 #ifndef __LIBSSH2_USERAUTH_H
 #define __LIBSSH2_USERAUTH_H
 /* 定义宏，用于条件编译，如果__LIBSSH2_USERAUTH_H未定义，则定义__LIBSSH2_USERAUTH_H */

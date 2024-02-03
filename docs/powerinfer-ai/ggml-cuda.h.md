@@ -1,6 +1,6 @@
 # `PowerInfer\ggml-cuda.h`
 
-```
+```cpp
 #pragma once
 
 #include "ggml.h"  // 包含 ggml.h 头文件

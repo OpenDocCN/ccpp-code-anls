@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\minizip\iowin32.c`
 
-```
+```cpp
 /*
     该文件是用于压缩/解压缩.zip文件的IO基本函数的头文件
     版本1.1，2010年2月14日

@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-j\main.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"
 
 #include "common.h"

@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\stratum\Client.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2019      jtgrassie   <https://github.com/jtgrassie>

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\src\test-feature-ssse3.c`
 
-```
+```cpp
 #include <x86intrin.h>  // 包含 x86 SIMD 指令集的头文件
 
 void function_ssse3(__m128i *dst, const __m128i *a, const __m128i *b)

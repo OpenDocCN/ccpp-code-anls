@@ -11,7 +11,7 @@ This folder contains:
 
 Provided you set `GGML_LIBRARY=.../path/to/libggml_shared.so` (see instructions below), it's trivial to do some operations on quantized tensors:
 
-```python
+```cpp
 # Make sure libllama.so is in your [DY]LD_LIBRARY_PATH, or set GGML_LIBRARY=.../libggml_shared.so
 
 from ggml import lib, ffi
@@ -50,7 +50,7 @@ You'll need a shared library of ggml to use the bindings.
 
 As of this writing the best is to use [ggerganov/llama.cpp](https://github.com/ggerganov/llama.cpp)'s generated `libggml_shared.so` or `libllama.so`, which you can build as follows:
 
-```bash
+```cpp
 git clone https://github.com/ggerganov/llama.cpp
 # On a CUDA-enabled system add -DLLAMA_CUBLAS=1
 # On a Mac add -DLLAMA_METAL=1
@@ -76,7 +76,7 @@ If you added or changed any signatures of the C API, you'll want to regenerate t
 
 Luckily it's a one-liner using [regenerate.py](./regenerate.py):
 
-```bash
+```cpp
 pip install -q cffi
 
 python regenerate.py
@@ -84,7 +84,7 @@ python regenerate.py
 
 By default it assumes `llama.cpp` was cloned in ../../../llama.cpp (alongside the ggml folder). You can override this with:
 
-```bash
+```cpp
 C_INCLUDE_DIR=$LLAMA_CPP_DIR python regenerate.py
 ```
 
@@ -92,7 +92,7 @@ You can also edit [api.h](./api.h) to control which files should be included in 
 
 In fact, if you wanted to only generate bindings for the current version of the `ggml` repo itself (instead of `llama.cpp`; you'd loose support for k-quants), you could run:
 
-```bash
+```cpp
 API=../../include/ggml/ggml.h python regenerate.py
 ```
 
@@ -100,7 +100,7 @@ API=../../include/ggml/ggml.h python regenerate.py
 
 Run tests:
 
-```bash
+```cpp
 pytest
 ```
 

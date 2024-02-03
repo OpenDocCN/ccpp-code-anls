@@ -1,6 +1,6 @@
 # `nmap\libpcap\missing\strtok_r.c`
 
-```
+```cpp
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif

@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-2\convert-h5-to-ggml.py`
 
-```
+```cpp
 # Convert GPT-2 h5 transformer model to ggml format
 #
 # Load the model using GPT2Model.

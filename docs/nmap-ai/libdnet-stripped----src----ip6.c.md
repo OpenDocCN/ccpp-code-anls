@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\ip6.c`
 
-```
+```cpp
 /*
  * ip6.c
  *

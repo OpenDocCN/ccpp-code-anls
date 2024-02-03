@@ -1,6 +1,6 @@
 # `nmap\nsock\src\nsock_ssl.c`
 
-```
+```cpp
 /* $Id$ */
 
 // 包含必要的头文件

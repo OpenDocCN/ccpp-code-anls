@@ -1,6 +1,6 @@
 # `nmap\libz\zlib.h`
 
-```
+```cpp
 /* zlib.h -- interface of the 'zlib' general purpose compression library
   version 1.2.13, October 13th, 2022
 

@@ -1,6 +1,6 @@
 # `PowerInfer\gguf-py\gguf\vocab.py`
 
-```
+```cpp
 # 导入必要的模块和类
 from __future__ import annotations
 import json

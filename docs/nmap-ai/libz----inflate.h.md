@@ -1,6 +1,6 @@
 # `nmap\libz\inflate.h`
 
-```
+```cpp
 /* inflate.h -- internal inflate state definition
  * 压缩文件头文件，定义内部解压缩状态
  * 版权所有 (C) 1995-2019 Mark Adler

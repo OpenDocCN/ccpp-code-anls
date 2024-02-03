@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef NBASE_H

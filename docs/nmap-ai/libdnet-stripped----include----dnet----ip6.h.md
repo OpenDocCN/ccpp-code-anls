@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\ip6.h`
 
-```
+```cpp
 # 定义 IPv6 地址长度
 #define IP6_ADDR_LEN    16
 # 定义 IPv6 地址位数

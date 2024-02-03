@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\blast\blast.h`
 
-```
+```cpp
 /* blast.h -- interface for blast.c
   声明 blast.c 的接口
   Copyright (C) 2003, 2012, 2013 Mark Adler

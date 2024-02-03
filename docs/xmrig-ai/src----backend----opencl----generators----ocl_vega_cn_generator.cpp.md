@@ -1,6 +1,6 @@
 # `xmrig\src\backend\opencl\generators\ocl_vega_cn_generator.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2018-2021 SChernykh   <https://github.com/SChernykh>

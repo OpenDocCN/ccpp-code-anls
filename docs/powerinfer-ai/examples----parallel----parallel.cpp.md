@@ -1,6 +1,6 @@
 # `PowerInfer\examples\parallel\parallel.cpp`
 
-```
+```cpp
 // 一个模拟具有多个客户端的服务器的基本应用程序。
 // 客户端向服务器提交请求，并且这些请求会并行处理。
 

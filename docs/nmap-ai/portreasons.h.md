@@ -1,6 +1,6 @@
 # `nmap\portreasons.h`
 
-```
+```cpp
 /*
  * Written by Eddie Bell <ejlbell@gmail.com> 2007
  * Modified by Colin Rice <dah4k0r@gmail.com> 2011

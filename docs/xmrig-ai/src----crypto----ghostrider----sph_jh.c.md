@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_jh.c`
 
-```
+```cpp
 /* $Id: jh.c 255 2011-06-07 19:50:20Z tp $ */
 // 定义了文件的版本信息
 

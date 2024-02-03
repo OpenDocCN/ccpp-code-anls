@@ -1,6 +1,6 @@
 # `PowerInfer\powerinfer-py\powerinfer\export_split.py`
 
-```
+```cpp
 import argparse  # 导入命令行参数解析模块
 import pickle  # 导入 pickle 序列化模块
 import gguf  # 导入 gguf 模块

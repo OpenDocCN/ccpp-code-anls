@@ -1,6 +1,6 @@
 # `ggml\examples\gpt-2\main-alloc.cpp`
 
-```
+```cpp
 #include "ggml/ggml.h"  // 引入 ggml 库的头文件
 #include "ggml/ggml-alloc.h"  // 引入 ggml-alloc 库的头文件
 

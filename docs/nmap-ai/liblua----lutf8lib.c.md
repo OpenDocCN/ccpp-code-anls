@@ -1,6 +1,6 @@
 # `nmap\liblua\lutf8lib.c`
 
-```
+```cpp
 # 定义 lutf8lib_c 宏，用于标识 lutf8lib.c 文件
 #define lutf8lib_c
 # 定义 LUA_LIB 宏，用于标识该文件为 Lua 标准库

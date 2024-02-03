@@ -1,6 +1,6 @@
 # `ggml\examples\prompts\tokenize_huggingface.py`
 
-```
+```cpp
 # 导入操作系统模块
 import os
 # 从transformers库中导入AutoTokenizer类

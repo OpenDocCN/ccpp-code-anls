@@ -1,6 +1,6 @@
 # `xmrig\src\base\io\Watcher.h`
 
-```
+```cpp
 /* XMRig
  * 版权声明
  */

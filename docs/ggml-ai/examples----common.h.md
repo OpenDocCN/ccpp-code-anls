@@ -1,6 +1,6 @@
 # `ggml\examples\common.h`
 
-```
+```cpp
 // Various helper functions and utilities
 
 #pragma once

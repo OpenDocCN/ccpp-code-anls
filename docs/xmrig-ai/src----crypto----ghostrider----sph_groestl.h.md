@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\ghostrider\sph_groestl.h`
 
-```
+```cpp
 # 定义了 Groestl 接口的相关信息和许可证声明
 # 包含了必要的头文件和库
 # 定义了 Groestl-224 的输出大小

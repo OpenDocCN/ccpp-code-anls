@@ -1,6 +1,6 @@
 # `nmap\struct_ip.h`
 
-```
+```cpp
 /* The C library on AIX defines the names of various members of struct ip to
    something else in <netinet/ip.h>:
 

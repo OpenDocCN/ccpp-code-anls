@@ -73,7 +73,7 @@ With ggml you can efficiently run [GPT-2](examples/gpt-2) and [GPT-J](examples/g
 
 Here is how to run the example programs:
 
-```bash
+```cpp
 # Build ggml + examples
 git clone https://github.com/ggerganov/ggml
 cd ggml
@@ -117,7 +117,7 @@ For GPT-2 models, offloading to GPU is possible. Note that it will not improve i
 
 To enable GPU offloading on MacOS:
 
-```bash
+```cpp
 cmake -DGGML_METAL=ON -DBUILD_SHARED_LIBS=Off ..
 
 # add -ngl 1
@@ -126,21 +126,21 @@ cmake -DGGML_METAL=ON -DBUILD_SHARED_LIBS=Off ..
 
 ## Using cuBLAS
 
-```bash
+```cpp
 # fix the path to point to your CUDA compiler
 cmake -DGGML_CUBLAS=ON -DCMAKE_CUDA_COMPILER=/usr/local/cuda-12.1/bin/nvcc ..
 ```
 
 ## Using clBLAST
 
-```bash
+```cpp
 cmake -DGGML_CLBLAST=ON ..
 ```
 ## Compiling for Android
 
 Download and unzip the NDK from this download [page](https://developer.android.com/ndk/downloads). Set the NDK_ROOT_PATH environment variable or provide the absolute path to the CMAKE_ANDROID_NDK in the command below.
 
-```bash
+```cpp
 cmake .. \
    -DCMAKE_SYSTEM_NAME=Android \
    -DCMAKE_SYSTEM_VERSION=33 \
@@ -149,7 +149,7 @@ cmake .. \
    -DCMAKE_ANDROID_STL_TYPE=c++_shared 
 ```
 
-```bash
+```cpp
 # Create directories
 adb shell 'mkdir /data/local/tmp/bin'
 adb shell 'mkdir /data/local/tmp/models'

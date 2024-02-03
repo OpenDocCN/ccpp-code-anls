@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cuda\runners\CudaRxRunner.cpp`
 
-```
+```cpp
 /* XMRig
  * 版权声明
  * 该程序是自由软件：您可以重新发布或修改它，遵循 GNU 通用公共许可证的条款，可以选择遵循许可证的第3版或者之后的版本。

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\libethash\ethash_internal.c`
 
-```
+```cpp
 /*
   这个文件是 ethash 的一部分。
 

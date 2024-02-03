@@ -1,6 +1,6 @@
 # `nmap\liblua\lauxlib.h`
 
-```
+```cpp
 /*
 ** $Id: lauxlib.h $
 ** 辅助函数，用于构建 Lua 库

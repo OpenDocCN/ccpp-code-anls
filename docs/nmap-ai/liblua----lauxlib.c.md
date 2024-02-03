@@ -1,6 +1,6 @@
 # `nmap\liblua\lauxlib.c`
 
-```
+```cpp
 /*
 ** $Id: lauxlib.c $
 ** Auxiliary functions for building Lua libraries

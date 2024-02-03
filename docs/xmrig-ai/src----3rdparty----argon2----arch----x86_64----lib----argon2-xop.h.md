@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\arch\x86_64\lib\argon2-xop.h`
 
-```
+```cpp
 // 如果 ARGON2_XOP_H 未定义，则定义 ARGON2_XOP_H
 #ifndef ARGON2_XOP_H
 #define ARGON2_XOP_H

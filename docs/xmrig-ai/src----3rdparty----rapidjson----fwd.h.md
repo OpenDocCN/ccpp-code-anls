@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\fwd.h`
 
-```
+```cpp
 #ifndef RAPIDJSON_FWD_H_
 #define RAPIDJSON_FWD_H_
 

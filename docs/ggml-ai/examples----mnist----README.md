@@ -5,7 +5,7 @@ The first example uses convolutional neural network (CNN), the second one uses f
 
 ## Building the examples
 
-```bash
+```cpp
 git clone https://github.com/ggerganov/ggml
 cd ggml
 mkdir build && cd build
@@ -21,7 +21,7 @@ This implementation achieves ~99% accuracy on the MNIST test set.
 
 Use the `mnist-cnn.py` script to train the model and convert it to GGUF format:
 
-```
+```cpp
 $ python3 ../examples/mnist/mnist-cnn.py train mnist-cnn-model
 ...
 Keras model saved to 'mnist-cnn-model'
@@ -29,7 +29,7 @@ Keras model saved to 'mnist-cnn-model'
 
 Convert the model to GGUF format:
 
-```
+```cpp
 $ python3 ../examples/mnist/mnist-cnn.py convert mnist-cnn-model
 ...
 Model converted and saved to 'mnist-cnn-model.gguf'
@@ -37,7 +37,7 @@ Model converted and saved to 'mnist-cnn-model.gguf'
 
 ### Running the example
 
-```bash
+```cpp
 $ ./bin/mnist-cnn mnist-cnn-model.gguf ../examples/mnist/models/mnist/t10k-images.idx3-ubyte
 main: loaded model in     5.17 ms
 _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
@@ -100,14 +100,14 @@ plus the model weights and biases. Run convert-h5-to-ggml.py to convert your pyt
 Run ```convert-h5-to-ggml.py mnist_model.state_dict``` where `mnist_model.state_dict` is the saved pytorch model from the Google Colab. For
 quickstart, it is included in the mnist/models directory.
 
-```bash
+```cpp
 mkdir -p models/mnist
 python3 ../examples/mnist/convert-h5-to-ggml.py ../examples/mnist/models/mnist/mnist_model.state_dict
 ```
 
 ### Running the example
 
-```bash
+```cpp
 ./bin/mnist ./models/mnist/ggml-model-f32.bin ../examples/mnist/models/mnist/t10k-images.idx3-ubyte
 ```
 
@@ -120,7 +120,7 @@ Computation graph:
 
 The example can be compiled with Emscripten like this:
 
-```bash
+```cpp
 cd examples/mnist
 emcc -I../../include -I../../include/ggml -I../../examples ../../src/ggml.c main.cpp -o web/mnist.js -s EXPORTED_FUNCTIONS='["_wasm_eval","_wasm_random_digit","_malloc","_free"]' -s EXPORTED_RUNTIME_METHODS='["ccall"]' -s ALLOW_MEMORY_GROWTH=1 --preload-file models/mnist
 ```

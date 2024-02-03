@@ -1,6 +1,6 @@
 # `nmap\ncat\ncat_lua.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef _NCAT_LUA_H

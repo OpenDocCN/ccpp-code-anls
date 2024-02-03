@@ -1,6 +1,6 @@
 # `nmap\liblua\lmem.h`
 
-```
+```cpp
 /*
 ** $Id: lmem.h $
 ** 内存管理器接口

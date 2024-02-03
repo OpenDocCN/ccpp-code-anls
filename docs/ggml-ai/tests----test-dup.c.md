@@ -1,6 +1,6 @@
 # `ggml\tests\test-dup.c`
 
-```
+```cpp
 #include "ggml/ggml.h"
 
 #include <stdio.h>

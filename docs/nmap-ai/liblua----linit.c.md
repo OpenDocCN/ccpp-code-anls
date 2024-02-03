@@ -1,6 +1,6 @@
 # `nmap\liblua\linit.c`
 
-```
+```cpp
 /*
 ** $Id: linit.c $
 ** Initialization of libraries for lua.c and other clients

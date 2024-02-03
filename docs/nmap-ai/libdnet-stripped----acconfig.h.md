@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\acconfig.h`
 
-```
+```cpp
 @BOTTOM@
 // 定义了一些系统类型
 

@@ -1,6 +1,6 @@
 # `xmrig\src\backend\cpu\CpuLaunchData.cpp`
 
-```
+```cpp
 /*
  * 以下是XMRig程序的版权声明
  * 该程序是自由软件，您可以根据GNU通用公共许可证的条款重新分发或修改它

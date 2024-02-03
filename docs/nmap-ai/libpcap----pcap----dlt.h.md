@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\dlt.h`
 
-```
+```cpp
 # 版权声明，版权归加利福尼亚大学所有
 # 代码来源于Stanford/CMU enet数据包过滤器(net/enet.c)，作为4.3BSD的一部分分发，由Steven McCanne和Van Jacobson在劳伦斯伯克利实验室贡献代码给伯克利
 # 允许以源代码和二进制形式重新分发和使用，但需要满足以下条件：

@@ -1,6 +1,6 @@
 # `nmap\nselib\data\jdwp-class\JDWPExecCmd.java`
 
-```
+```cpp
 // 导入 java.io 包
 import java.io.*;
 

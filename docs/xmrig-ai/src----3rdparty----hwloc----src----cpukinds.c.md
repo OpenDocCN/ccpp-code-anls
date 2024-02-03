@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\src\cpukinds.c`
 
-```
+```cpp
 /*
  * 版权所有 © 2020-2022 Inria。
  * 保留所有权利。请参阅顶层目录中的COPYING文件。

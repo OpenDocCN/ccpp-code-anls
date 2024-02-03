@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\include\dnet\tun.h`
 
-```
+```cpp
 /*
  * tun.h
  *

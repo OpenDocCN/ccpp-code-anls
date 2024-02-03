@@ -1,6 +1,6 @@
 # `nmap\osscan2.h`
 
-```
+```cpp
 #ifndef OSSCAN2_H
 #define OSSCAN2_H
 

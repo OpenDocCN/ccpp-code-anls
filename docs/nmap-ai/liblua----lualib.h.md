@@ -1,6 +1,6 @@
 # `nmap\liblua\lualib.h`
 
-```
+```cpp
 /*
 ** $Id: lualib.h $
 ** Lua标准库

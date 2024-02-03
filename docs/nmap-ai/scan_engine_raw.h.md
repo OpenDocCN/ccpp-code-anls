@@ -1,6 +1,6 @@
 # `nmap\scan_engine_raw.h`
 
-```
+```cpp
 /* $Id$ */
 
 // 防止头文件被重复包含

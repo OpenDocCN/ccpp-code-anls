@@ -1,6 +1,6 @@
 # `nmap\nse_libssh2.h`
 
-```
+```cpp
 # 如果 LIBSSH2 未定义，则定义 LIBSSH2
 #ifndef LIBSSH2
 # 定义 LIBSSH2

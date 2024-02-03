@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\rapidjson\internal\stack.h`
 
-```
+```cpp
 // 定义了一个名为 Stack 的模板类，用于存储不同类型的数据
 // 模板参数 Allocator 用于分配栈内存
 template <typename Allocator>

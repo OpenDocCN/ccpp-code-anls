@@ -1,6 +1,6 @@
 # `nmap\libpcre\src\pcre2posix_test.c`
 
-```
+```cpp
 /*************************************************
 *        PCRE2 POSIX interface test program      *
 *************************************************/

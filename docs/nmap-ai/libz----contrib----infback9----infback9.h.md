@@ -1,6 +1,6 @@
 # `nmap\libz\contrib\infback9\infback9.h`
 
-```
+```cpp
 /* infback9.h -- header for using inflateBack9 functions
  * 定义了使用 inflateBack9 函数的头文件
  * 版权声明

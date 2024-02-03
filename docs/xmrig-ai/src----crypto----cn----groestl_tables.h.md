@@ -1,6 +1,6 @@
 # `xmrig\src\crypto\cn\groestl_tables.h`
 
-```
+```cpp
 #ifndef __tables_h
 #define __tables_h
 

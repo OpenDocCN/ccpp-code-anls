@@ -1,6 +1,6 @@
 # `nmap\liblua\lzio.c`
 
-```
+```cpp
 /*
 ** $Id: lzio.c $
 ** Buffered streams

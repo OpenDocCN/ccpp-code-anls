@@ -1,6 +1,6 @@
 # `nmap\libz\adler32.c`
 
-```
+```cpp
 /* adler32.c -- compute the Adler-32 checksum of a data stream
  * 计算数据流的Adler-32校验和
  * 版权所有（C）1995-2011, 2016 Mark Adler

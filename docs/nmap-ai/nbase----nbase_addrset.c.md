@@ -1,6 +1,6 @@
 # `nmap\nbase\nbase_addrset.c`
 
-```
+```cpp
 /* $Id$ */
 
 /* The code in this file has tests in the file ncat/tests/test-addrset.sh. Run that

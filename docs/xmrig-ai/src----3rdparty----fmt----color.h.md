@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\fmt\color.h`
 
-```
+```cpp
 // 格式化库的C++版本 - 支持颜色
 //
 // 版权所有 (c) 2018 - 至今，Victor Zverovich 和 fmt 贡献者

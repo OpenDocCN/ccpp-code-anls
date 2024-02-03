@@ -1,6 +1,6 @@
 # `nmap\FPEngine.h`
 
-```
+```cpp
 /* $Id$ */
 
 #ifndef __FPENGINE_H__

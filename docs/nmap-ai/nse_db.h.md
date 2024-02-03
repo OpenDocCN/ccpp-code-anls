@@ -1,6 +1,6 @@
 # `nmap\nse_db.h`
 
-```
+```cpp
 #ifndef NSE_DB
 // 如果 NSE_DB 未定义，则定义 NSE_DB
 #define NSE_DB

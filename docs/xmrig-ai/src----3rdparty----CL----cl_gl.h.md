@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\CL\cl_gl.h`
 
-```
+```cpp
 // 版权声明和许可声明
 // 定义了__OPENCL_CL_GL_H宏，避免重复包含
 // 包含了OpenCL的头文件

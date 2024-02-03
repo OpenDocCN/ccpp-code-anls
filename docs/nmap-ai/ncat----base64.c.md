@@ -1,6 +1,6 @@
 # `nmap\ncat\base64.c`
 
-```
+```cpp
 /* $Id$ */
 
 #include "base64.h"

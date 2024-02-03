@@ -1,6 +1,6 @@
 # `nmap\nsock\tests\proxychain.c`
 
-```
+```cpp
 /*
  * Nsock regression test suite
  * Same license as nmap -- see https://nmap.org/book/man-legal.html

@@ -1,6 +1,6 @@
 # `nmap\libdnet-stripped\src\eth-snoop.c`
 
-```
+```cpp
 /*
  * eth-snoop.c
  *

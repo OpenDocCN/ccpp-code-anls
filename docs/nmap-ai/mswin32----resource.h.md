@@ -1,6 +1,6 @@
 # `nmap\mswin32\resource.h`
 
-```
+```cpp
 // {{NO_DEPENDENCIES}} - 宏定义，用于标识资源文件中不包含任何依赖项
 // Microsoft Developer Studio generated include file. - 由 Microsoft Developer Studio 生成的包含文件
 // Used by nmap.rc - 被 nmap.rc 使用

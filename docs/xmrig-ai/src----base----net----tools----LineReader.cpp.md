@@ -1,6 +1,6 @@
 # `xmrig\src\base\net\tools\LineReader.cpp`
 
-```
+```cpp
 /*
  * XMRig
  * 版权所有（c）2020      cohcho      <https://github.com/cohcho>

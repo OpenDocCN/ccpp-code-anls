@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\CL\cl_va_api_media_sharing_intel.h`
 
-```
+```cpp
 # 版权声明，允许在遵循一定条件下使用和处理材料
 /**********************************************************************************
  * Copyright (c) 2008-2019 The Khronos Group Inc.

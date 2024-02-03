@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\hwloc\include\private\cpuid-x86.h`
 
-```
+```cpp
 /*
  * 版权声明
  * 版权所有 © 2010-2012, 2014 波尔多大学

@@ -1,6 +1,6 @@
 # `nmap\liblua\lgc.h`
 
-```
+```cpp
 /*
 ** $Id: lgc.h $
 ** 垃圾收集器

@@ -1,6 +1,6 @@
 # `xmrig\src\3rdparty\argon2\lib\impl-select.c`
 
-```
+```cpp
 #include <time.h>
 #include <string.h>
 

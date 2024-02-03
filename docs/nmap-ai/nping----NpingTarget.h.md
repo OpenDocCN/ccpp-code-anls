@@ -1,6 +1,6 @@
 # `nmap\nping\NpingTarget.h`
 
-```
+```cpp
 // 防止头文件重复包含
 #ifndef NPINGTARGET_H
 #define NPINGTARGET_H

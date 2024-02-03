@@ -1,6 +1,6 @@
 # `nmap\nping\common_modified.h`
 
-```
+```cpp
 // 如果 COMMON_MODIFIED_H 未定义，则定义为 1
 #ifndef COMMON_MODIFIED_H
 #define COMMON_MODIFIED_H 1

@@ -1,6 +1,6 @@
 # `PowerInfer\examples\export-lora\export-lora.cpp`
 
-```
+```cpp
 #include "common.h"
 #include "ggml.h"
 #include "ggml-alloc.h"

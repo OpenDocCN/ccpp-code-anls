@@ -1,6 +1,6 @@
 # `nmap\libpcap\pcap\nflog.h`
 
-```
+```cpp
 /*
  * 版权声明
  * 2013年，Petar Alilovic，Faculty of Electrical Engineering and Computing, University of Zagreb
