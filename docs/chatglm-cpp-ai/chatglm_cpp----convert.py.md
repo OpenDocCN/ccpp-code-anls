@@ -1,6 +1,6 @@
 # `chatglm.cpp\chatglm_cpp\convert.py`
 
-```
+```cpp
 """
 Convert Hugging Face ChatGLM/ChatGLM2 models to GGML format
 """

@@ -1,6 +1,6 @@
 # `chatglm.cpp\chatglm.cpp`
 
-```
+```cpp
 // 包含 chatglm.h 头文件
 #include "chatglm.h"
 // 包含一些标准库头文件

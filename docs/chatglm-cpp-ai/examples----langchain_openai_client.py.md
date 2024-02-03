@@ -1,6 +1,6 @@
 # `chatglm.cpp\examples\langchain_openai_client.py`
 
-```
+```cpp
 # 从 langchain.chat_models 模块中导入 ChatOpenAI 类
 from langchain.chat_models import ChatOpenAI
 

@@ -1,17 +1,17 @@
 # Documentation Resources
 
 Use [terminalizer](https://github.com/faressoft/terminalizer) to record terminal events into animated GIF.
-```sh
+```cpp
 terminalizer record chatglm -d zsh -k
 ```
 
 Then render it. This will take a long time. Here I use step size 2 to reduce file size.
-```sh
+```cpp
 terminalizer render -s 2 chatglm
 ```
 
 To debug rendering, use a lower quality and larger step. For example:
-```sh
+```cpp
 terminalizer render -q 50 -s 4 chatglm  # for debugging purpose
 ```
 

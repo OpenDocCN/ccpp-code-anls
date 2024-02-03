@@ -1,6 +1,6 @@
 # `chatglm.cpp\examples\cli_demo.py`
 
-```
+```cpp
 # 导入必要的模块
 import argparse
 from pathlib import Path

@@ -1,6 +1,6 @@
 # `chatglm.cpp\chatglm_cpp\__init__.py`
 
-```
+```cpp
 # 导入必要的库
 import tempfile
 from dataclasses import dataclass

@@ -1,6 +1,6 @@
 # `chatglm.cpp\examples\openai_client.py`
 
-```
+```cpp
 # 导入 argparse 模块，用于解析命令行参数
 import argparse
 

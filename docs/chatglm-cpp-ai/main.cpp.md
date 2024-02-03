@@ -1,6 +1,6 @@
 # `chatglm.cpp\main.cpp`
 
-```
+```cpp
 #include "chatglm.h"
 #include <fstream>
 #include <iomanip>

@@ -1,6 +1,6 @@
 # `chatglm.cpp\tests\test_convert.py`
 
-```
+```cpp
 # 导入 sys 模块
 import sys
 # 从 pathlib 模块中导入 Path 类

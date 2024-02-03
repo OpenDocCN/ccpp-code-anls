@@ -1,3 +1,5 @@
+# ChatGLM.CPP 源码解析
+
 # ChatGLM.cpp
 
 [![CMake](https://github.com/li-plus/chatglm.cpp/actions/workflows/cmake.yml/badge.svg)](https://github.com/li-plus/chatglm.cpp/actions/workflows/cmake.yml)
@@ -28,25 +30,25 @@ Support Matrix:
 **Preparation**
 
 Clone the ChatGLM.cpp repository into your local machine:
-```sh
+```cpp
 git clone --recursive https://github.com/li-plus/chatglm.cpp.git && cd chatglm.cpp
 ```
 
 If you forgot the `--recursive` flag when cloning the repository, run the following command in the `chatglm.cpp` folder:
-```sh
+```cpp
 git submodule update --init --recursive
 ```
 
 **Quantize Model**
 
 Install necessary packages for loading and quantizing Hugging Face models:
-```sh
+```cpp
 python3 -m pip install -U pip
 python3 -m pip install torch tabulate tqdm transformers accelerate sentencepiece
 ```
 
 Use `convert.py` to transform ChatGLM-6B into quantized GGML format. For example, to convert the fp16 original model to q4_0 (quantized int4) GGML model, run:
-```sh
+```cpp
 python3 chatglm_cpp/convert.py -i THUDM/chatglm-6b -t q4_0 -o chatglm-ggml.bin
 ```
 
@@ -71,7 +73,7 @@ For LoRA model, add `-l <lora_model_name_or_path>` flag to merge your LoRA weigh
 **Build & Run**
 
 Compile the project using CMake:
-```sh
+```cpp
 cmake -B build
 cmake --build build -j --config Release
 ```
@@ -80,12 +82,12 @@ Now you may chat with the quantized ChatGLM-6B model by running:
 ```sh
 ./build/bin/main -m chatglm-ggml.bin -p 你好
 # 你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。
-```
+```cpp
 
 To run the model in interactive mode, add the `-i` flag. For example:
 ```sh
 ./build/bin/main -m chatglm-ggml.bin -i
-```
+```cpp
 In interactive mode, your chat history will serve as the context for the next-round conversation.
 
 Run `./build/bin/main -h` to explore more options!
@@ -99,7 +101,7 @@ Run `./build/bin/main -h` to explore more options!
 python3 chatglm_cpp/convert.py -i THUDM/chatglm2-6b -t q4_0 -o chatglm2-ggml.bin
 ./build/bin/main -m chatglm2-ggml.bin -p 你好 --top_p 0.8 --temp 0.8
 # 你好👋！我是人工智能助手 ChatGLM2-6B，很高兴见到你，欢迎问我任何问题。
-```
+```cpp
 </details>
 
 <details open>
@@ -112,13 +114,13 @@ Chat mode:
 python3 chatglm_cpp/convert.py -i THUDM/chatglm3-6b -t q4_0 -o chatglm3-ggml.bin
 ./build/bin/main -m chatglm3-ggml.bin -p 你好 --top_p 0.8 --temp 0.8
 # 你好👋！我是人工智能助手 ChatGLM3-6B，很高兴见到你，欢迎问我任何问题。
-```
+```cpp
 
 Setting system prompt:
 ```sh
 ./build/bin/main -m chatglm3-ggml.bin -p 你好 -s "You are ChatGLM3, a large language model trained by Zhipu.AI. Follow the user's instructions carefully. Respond using markdown."
 # 你好👋！我是 ChatGLM3，有什么问题可以帮您解答吗？
-```
+```cpp
 
 Function call:
 ~~~
@@ -128,7 +130,7 @@ Prompt   > 生成一个随机数
 ChatGLM3 > random_number_generator
 ```python
 tool_call(seed=42, range=(0, 100))
-```
+```cpp
 Tool Call   > Please manually call function `random_number_generator` with args `tool_call(seed=42, range=(0, 100))` and provide the results below.
 Observation > 23
 ChatGLM3 > 根据您的要求，我使用随机数生成器API生成了一个随机数。根据API返回结果，生成的随机数为23。
@@ -158,7 +160,7 @@ def is_prime(n):
 
 primes_upto_100 = [i for i in range(2, 101) if is_prime(i)]
 primes_upto_100
-```
+```cpp
 
 Code Interpreter > Please manually run the code and provide the results below.
 Observation      > [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
@@ -191,7 +193,7 @@ def bubble_sort(list):
 
 
 print(bubble_sort([5, 4, 3, 2, 1]))
-```
+```cpp
 </details>
 
 <details>
@@ -201,7 +203,7 @@ print(bubble_sort([5, 4, 3, 2, 1]))
 python3 chatglm_cpp/convert.py -i baichuan-inc/Baichuan-13B-Chat -t q4_0 -o baichuan-13b-chat-ggml.bin
 ./build/bin/main -m baichuan-13b-chat-ggml.bin -p 你好 --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.1
 # 你好！有什么我可以帮助你的吗？
-```
+```cpp
 </details>
 
 <details>
@@ -211,7 +213,7 @@ python3 chatglm_cpp/convert.py -i baichuan-inc/Baichuan-13B-Chat -t q4_0 -o baic
 python3 chatglm_cpp/convert.py -i baichuan-inc/Baichuan2-7B-Chat -t q4_0 -o baichuan2-7b-chat-ggml.bin
 ./build/bin/main -m baichuan2-7b-chat-ggml.bin -p 你好 --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.05
 # 你好！很高兴为您提供帮助。请问有什么问题我可以帮您解答？
-```
+```cpp
 </details>
 
 <details>
@@ -221,7 +223,7 @@ python3 chatglm_cpp/convert.py -i baichuan-inc/Baichuan2-7B-Chat -t q4_0 -o baic
 python3 chatglm_cpp/convert.py -i baichuan-inc/Baichuan2-13B-Chat -t q4_0 -o baichuan2-13b-chat-ggml.bin
 ./build/bin/main -m baichuan2-13b-chat-ggml.bin -p 你好 --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.05
 # 你好！今天我能为您提供什么帮助？
-```
+```cpp
 </details>
 
 <details>
@@ -231,7 +233,7 @@ python3 chatglm_cpp/convert.py -i baichuan-inc/Baichuan2-13B-Chat -t q4_0 -o bai
 python3 chatglm_cpp/convert.py -i internlm/internlm-chat-7b-v1_1 -t q4_0 -o internlm-chat-7b-ggml.bin
 ./build/bin/main -m internlm-chat-7b-ggml.bin -p 你好 --top_p 0.8 --temp 0.8
 # 你好，我是书生·浦语，有什么可以帮助你的吗？
-```
+```cpp
 </details>
 
 <details>
@@ -241,7 +243,7 @@ python3 chatglm_cpp/convert.py -i internlm/internlm-chat-7b-v1_1 -t q4_0 -o inte
 python3 chatglm_cpp/convert.py -i internlm/internlm-chat-20b -t q4_0 -o internlm-chat-20b-ggml.bin
 ./build/bin/main -m internlm-chat-20b-ggml.bin -p 你好 --top_p 0.8 --temp 0.8
 # 你好！有什么我可以帮到你的吗？
-```
+```cpp
 </details>
 
 ## Using BLAS
@@ -257,20 +259,20 @@ Accelerate Framework is automatically enabled on macOS. To disable it, add the C
 OpenBLAS provides acceleration on CPU. Add the CMake flag `-DGGML_OPENBLAS=ON` to enable it.
 ```sh
 cmake -B build -DGGML_OPENBLAS=ON && cmake --build build -j
-```
+```cpp
 
 **cuBLAS**
 
 cuBLAS uses NVIDIA GPU to accelerate BLAS. Add the CMake flag `-DGGML_CUBLAS=ON` to enable it.
 ```sh
 cmake -B build -DGGML_CUBLAS=ON && cmake --build build -j
-```
+```cpp
 
 By default, all kernels will be compiled for all possible CUDA architectures and it takes some time. To run on a specific type of device, you may specify `CUDA_ARCHITECTURES` to speed up the nvcc compilation. For example:
 ```sh
 cmake -B build -DGGML_CUBLAS=ON -DCUDA_ARCHITECTURES="80"       # for A100
 cmake -B build -DGGML_CUBLAS=ON -DCUDA_ARCHITECTURES="70;75"    # compatible with both V100 and T4
-```
+```cpp
 
 To find out the CUDA architecture of your GPU device, see [Matching CUDA arch and CUDA gencode for various NVIDIA architectures](https://arnon.dk/matching-sm-architectures-arch-and-gencode-for-various-nvidia-cards/).
 
@@ -279,7 +281,7 @@ To find out the CUDA architecture of your GPU device, see [Matching CUDA arch an
 MPS (Metal Performance Shaders) allows computation to run on powerful Apple Silicon GPU. Add the CMake flag `-DGGML_METAL=ON` to enable it.
 ```sh
 cmake -B build -DGGML_METAL=ON && cmake --build build -j
-```
+```cpp
 
 ## Python Binding
 
@@ -290,17 +292,17 @@ The Python binding provides high-level `chat` and `stream_chat` interface simila
 Install from PyPI (recommended): will trigger compilation on your platform.
 ```sh
 pip install -U chatglm-cpp
-```
+```cpp
 
 To enable cuBLAS acceleration on NVIDIA GPU:
 ```sh
 CMAKE_ARGS="-DGGML_CUBLAS=ON" pip install -U chatglm-cpp
-```
+```cpp
 
 To enable Metal on Apple silicon devices:
 ```sh
 CMAKE_ARGS="-DGGML_METAL=ON" pip install -U chatglm-cpp
-```
+```cpp
 
 You may also install from source. Add the corresponding `CMAKE_ARGS` for acceleration.
 ```sh
@@ -308,7 +310,7 @@ You may also install from source. Add the corresponding `CMAKE_ARGS` for acceler
 pip install git+https://github.com/li-plus/chatglm.cpp.git@main
 # or install from your local source after git cloning the repo
 pip install .
-```
+```cpp
 
 Pre-built wheels for CPU backend on Linux / MacOS / Windows are published on [release](https://github.com/li-plus/chatglm.cpp/releases). For CUDA / Metal backends, please compile from source code or source distribution.
 
@@ -321,17 +323,17 @@ Here is a simple demo that uses `chatglm_cpp.Pipeline` to load the GGML model an
 >>> pipeline = chatglm_cpp.Pipeline("../chatglm-ggml.bin")
 >>> pipeline.chat([chatglm_cpp.ChatMessage(role="user", content="你好")])
 ChatMessage(role="assistant", content="你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。", tool_calls=[])
-```
+```cpp
 
 To chat in stream, run the below Python example:
 ```sh
 python3 cli_demo.py -m ../chatglm-ggml.bin -i
-```
+```cpp
 
 Launch a web demo to chat in your browser:
 ```sh
 python3 web_demo.py -m ../chatglm-ggml.bin
-```
+```cpp
 
 ![web_demo](docs/web_demo.jpg)
 
@@ -343,7 +345,7 @@ For other models:
 ```sh
 python3 cli_demo.py -m ../chatglm2-ggml.bin -p 你好 --temp 0.8 --top_p 0.8  # CLI demo
 python3 web_demo.py -m ../chatglm2-ggml.bin --temp 0.8 --top_p 0.8  # web demo
-```
+```cpp
 </details>
 
 <details open>
@@ -354,17 +356,17 @@ python3 web_demo.py -m ../chatglm2-ggml.bin --temp 0.8 --top_p 0.8  # web demo
 Chat mode:
 ```sh
 python3 cli_demo.py -m ../chatglm3-ggml.bin -p 你好 --temp 0.8 --top_p 0.8
-```
+```cpp
 
 Function call:
 ```sh
 python3 cli_demo.py -m ../chatglm3-ggml.bin --temp 0.8 --top_p 0.8 --sp system/function_call.txt -i
-```
+```cpp
 
 Code interpreter:
 ```sh
 python3 cli_demo.py -m ../chatglm3-ggml.bin --temp 0.8 --top_p 0.8 --sp system/code_interpreter.txt -i
-```
+```cpp
 
 **Web Demo**
 
@@ -372,12 +374,12 @@ Install Python dependencies and the IPython kernel for code interpreter.
 ```sh
 pip install streamlit jupyter_client ipython ipykernel
 ipython kernel install --name chatglm3-demo --user
-```
+```cpp
 
 Launch the web demo:
 ```sh
 streamlit run chatglm3_demo.py
-```
+```cpp
 
 | Function Call               | Code Interpreter               |
 |-----------------------------|--------------------------------|
@@ -396,7 +398,7 @@ python3 cli_demo.py -m ../codegeex2-ggml.bin --temp 0 --mode generate -p "\
 "
 # web demo
 python3 web_demo.py -m ../codegeex2-ggml.bin --temp 0 --max_length 512 --mode generate --plain
-```
+```cpp
 </details>
 
 <details>
@@ -405,7 +407,7 @@ python3 web_demo.py -m ../codegeex2-ggml.bin --temp 0 --max_length 512 --mode ge
 ```sh
 python3 cli_demo.py -m ../baichuan-13b-chat-ggml.bin -p 你好 --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.1 # CLI demo
 python3 web_demo.py -m ../baichuan-13b-chat-ggml.bin --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.1   # web demo
-```
+```cpp
 </details>
 
 <details>
@@ -414,7 +416,7 @@ python3 web_demo.py -m ../baichuan-13b-chat-ggml.bin --top_k 5 --top_p 0.85 --te
 ```sh
 python3 cli_demo.py -m ../baichuan2-7b-chat-ggml.bin -p 你好 --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.05 # CLI demo
 python3 web_demo.py -m ../baichuan2-7b-chat-ggml.bin --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.05   # web demo
-```
+```cpp
 </details>
 
 <details>
@@ -423,7 +425,7 @@ python3 web_demo.py -m ../baichuan2-7b-chat-ggml.bin --top_k 5 --top_p 0.85 --te
 ```sh
 python3 cli_demo.py -m ../baichuan2-13b-chat-ggml.bin -p 你好 --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.05 # CLI demo
 python3 web_demo.py -m ../baichuan2-13b-chat-ggml.bin --top_k 5 --top_p 0.85 --temp 0.3 --repeat_penalty 1.05   # web demo
-```
+```cpp
 </details>
 
 <details>
@@ -432,7 +434,7 @@ python3 web_demo.py -m ../baichuan2-13b-chat-ggml.bin --top_k 5 --top_p 0.85 --t
 ```sh
 python3 cli_demo.py -m ../internlm-chat-7b-ggml.bin -p 你好 --top_p 0.8 --temp 0.8  # CLI demo
 python3 web_demo.py -m ../internlm-chat-7b-ggml.bin --top_p 0.8 --temp 0.8  # web demo
-```
+```cpp
 </details>
 
 <details>
@@ -441,7 +443,7 @@ python3 web_demo.py -m ../internlm-chat-7b-ggml.bin --top_p 0.8 --temp 0.8  # we
 ```sh
 python3 cli_demo.py -m ../internlm-chat-20b-ggml.bin -p 你好 --top_p 0.8 --temp 0.8 # CLI demo
 python3 web_demo.py -m ../internlm-chat-20b-ggml.bin --top_p 0.8 --temp 0.8 # web demo
-```
+```cpp
 </details>
 
 **Converting Hugging Face LLMs at Runtime**
@@ -456,19 +458,19 @@ Processing model states: 100%|████████████████�
 ...
 >>> pipeline.chat([chatglm_cpp.ChatMessage(role="user", content="你好")])
 ChatMessage(role="assistant", content="你好👋！我是人工智能助手 ChatGLM-6B，很高兴见到你，欢迎问我任何问题。", tool_calls=[])
-```
+```cpp
 
 Likewise, replace the GGML model path with Hugging Face model in any example script, and it just works. For example:
 ```sh
 python3 cli_demo.py -m THUDM/chatglm-6b -p 你好 -i
-```
+```cpp
 
 ## API Server
 
 We support various kinds of API servers to integrate with popular frontends. Extra dependencies can be installed by:
 ```sh
 pip install 'chatglm-cpp[api]'
-```
+```cpp
 Remember to add the corresponding `CMAKE_ARGS` to enable acceleration.
 
 **LangChain API**
@@ -476,12 +478,12 @@ Remember to add the corresponding `CMAKE_ARGS` to enable acceleration.
 Start the api server for LangChain:
 ```sh
 MODEL=./chatglm2-ggml.bin uvicorn chatglm_cpp.langchain_api:app --host 127.0.0.1 --port 8000
-```
+```cpp
 
 Test the api endpoint with `curl`:
 ```sh
 curl http://127.0.0.1:8000 -H 'Content-Type: application/json' -d '{"prompt": "你好"}'
-```
+```cpp
 
 Run with LangChain:
 ```python
@@ -490,7 +492,7 @@ Run with LangChain:
 >>> llm = ChatGLM(endpoint_url="http://127.0.0.1:8000")
 >>> llm.predict("你好")
 '你好👋！我是人工智能助手 ChatGLM2-6B，很高兴见到你，欢迎问我任何问题。'
-```
+```cpp
 
 For more options, please refer to [examples/langchain_client.py](examples/langchain_client.py) and [LangChain ChatGLM Integration](https://python.langchain.com/docs/integrations/llms/chatglm).
 
@@ -499,13 +501,13 @@ For more options, please refer to [examples/langchain_client.py](examples/langch
 Start an API server compatible with [OpenAI chat completions protocol](https://platform.openai.com/docs/api-reference/chat):
 ```sh
 MODEL=./chatglm3-ggml.bin uvicorn chatglm_cpp.openai_api:app --host 127.0.0.1 --port 8000
-```
+```cpp
 
 Test your endpoint with `curl`:
 ```sh
 curl http://127.0.0.1:8000/v1/chat/completions -H 'Content-Type: application/json' \
     -d '{"messages": [{"role": "user", "content": "你好"}]}'
-```
+```cpp
 
 Use the OpenAI client to chat with your model:
 ```python
@@ -515,17 +517,17 @@ Use the OpenAI client to chat with your model:
 >>> response = client.chat.completions.create(model="default-model", messages=[{"role": "user", "content": "你好"}])
 >>> response.choices[0].message.content
 '你好👋！我是人工智能助手 ChatGLM3-6B，很高兴见到你，欢迎问我任何问题。'
-```
+```cpp
 
 For stream response, check out the example client script:
 ```sh
 OPENAI_BASE_URL=http://127.0.0.1:8000/v1 python3 examples/openai_client.py --stream --prompt 你好
-```
+```cpp
 
 Tool calling is also supported:
 ```sh
 OPENAI_BASE_URL=http://127.0.0.1:8000/v1 python3 examples/openai_client.py --tool_call --prompt 上海天气怎么样
-```
+```cpp
 
 With this API server as backend, ChatGLM.cpp models can be seamlessly integrated into any frontend that uses OpenAI-style API, including [mckaywrigley/chatbot-ui](https://github.com/mckaywrigley/chatbot-ui), [fuergaosi233/wechat-chatgpt](https://github.com/fuergaosi233/wechat-chatgpt), [Yidadaa/ChatGPT-Next-Web](https://github.com/Yidadaa/ChatGPT-Next-Web), and more.
 
@@ -546,7 +548,7 @@ docker run -it --rm -v $PWD:/opt -p 8000:8000 -e MODEL=/opt/chatglm-ggml.bin cha
 # openai api server
 docker run -it --rm -v $PWD:/opt -p 8000:8000 -e MODEL=/opt/chatglm-ggml.bin chatglm.cpp \
     uvicorn chatglm_cpp.openai_api:app --host 0.0.0.0 --port 8000
-```
+```cpp
 
 For CUDA support, make sure [nvidia-docker](https://github.com/NVIDIA/nvidia-docker) is installed. Then run:
 ```sh
@@ -554,7 +556,7 @@ docker build . --network=host -t chatglm.cpp-cuda \
     --build-arg BASE_IMAGE=nvidia/cuda:12.2.0-devel-ubuntu20.04 \
     --build-arg CMAKE_ARGS="-DGGML_CUBLAS=ON"
 docker run -it --rm --gpus all -v $PWD:/chatglm.cpp/models chatglm.cpp-cuda ./build/bin/main -m models/chatglm-ggml.bin -p "你好"
-```
+```cpp
 
 **Option 2: Using Pre-built Image**
 
@@ -564,13 +566,13 @@ To pull from Docker Hub and run demo:
 ```sh
 docker run -it --rm -v $PWD:/opt liplusx/chatglm.cpp:main \
     ./build/bin/main -m /opt/chatglm-ggml.bin -p "你好"
-```
+```cpp
 
 To pull from GHCR and run demo:
 ```sh
 docker run -it --rm -v $PWD:/opt ghcr.io/li-plus/chatglm.cpp:main \
     ./build/bin/main -m /opt/chatglm-ggml.bin -p "你好"
-```
+```cpp
 
 Python demo and API servers are also supported in pre-built image. Use it in the same way as **Option 1**.
 
@@ -642,7 +644,7 @@ We measure model quality by evaluating the perplexity over the WikiText-2 test d
 Download and unzip the dataset from [link](https://s3.amazonaws.com/research.metamind.io/wikitext/wikitext-2-raw-v1.zip). Measure the perplexity with a stride of 512 and max input length of 2048:
 ```sh
 ./build/bin/perplexity -m <model_path> -f wikitext-2-raw/wiki.test.raw -s 512 -l 2048
-```
+```cpp
 
 |                         | Q4_0  | Q4_1  | Q5_0  | Q5_1  | Q8_0  | F16   |
 |-------------------------|-------|-------|-------|-------|-------|-------|
@@ -659,12 +661,12 @@ To perform unit tests, add this CMake flag `-DCHATGLM_ENABLE_TESTING=ON` to enab
 mkdir -p build && cd build
 cmake .. -DCHATGLM_ENABLE_TESTING=ON && make -j
 ./bin/chatglm_test
-```
+```cpp
 
 For benchmark only:
 ```sh
 ./bin/chatglm_test --gtest_filter='Benchmark.*'
-```
+```cpp
 
 **Lint**
 

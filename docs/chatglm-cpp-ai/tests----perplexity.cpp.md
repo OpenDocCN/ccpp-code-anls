@@ -1,6 +1,6 @@
 # `chatglm.cpp\tests\perplexity.cpp`
 
-```
+```cpp
 // 包含头文件 chatglm.h
 #include "chatglm.h"
 // 包含标准库头文件

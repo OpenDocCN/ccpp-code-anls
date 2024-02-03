@@ -1,6 +1,6 @@
 # `chatglm.cpp\chatglm.h`
 
-```
+```cpp
 #pragma once
 
 #include <cmath> // 包含数学函数库

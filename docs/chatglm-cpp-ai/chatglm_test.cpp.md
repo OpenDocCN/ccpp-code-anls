@@ -1,6 +1,6 @@
 # `chatglm.cpp\chatglm_test.cpp`
 
-```
+```cpp
 // 包含 chatglm.h 头文件
 #include "chatglm.h"
 // 包含文件系统和测试框架的头文件

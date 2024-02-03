@@ -1,6 +1,6 @@
 # `chatglm.cpp\chatglm_pybind.cpp`
 
-```
+```cpp
 #include "chatglm.h"
 #include <pybind11/pybind11.h>
 #include <pybind11/stl.h>

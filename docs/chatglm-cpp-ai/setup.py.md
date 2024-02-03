@@ -1,6 +1,6 @@
 # `chatglm.cpp\setup.py`
 
-```
+```cpp
 # 引入必要的库
 import os
 import re

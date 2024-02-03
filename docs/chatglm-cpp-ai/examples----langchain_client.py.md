@@ -1,6 +1,6 @@
 # `chatglm.cpp\examples\langchain_client.py`
 
-```
+```cpp
 # 从 langchain.llms 模块中导入 ChatGLM 类
 from langchain.llms import ChatGLM
 
